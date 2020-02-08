@@ -1,0 +1,58 @@
+/*========================================================
+  25.  ALERTS LISTING 
+========================================================== */
+    
+    /** Manage Alerts */
+	#dashboard-body {
+
+		/** Alert Form */
+		#submit-alert-form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-left: -15px;
+
+			fieldset {
+				width: 50%;
+				&:first-of-type { width: 100%; }
+				flex-direction: column;
+				border: 0;
+				margin-bottom: 0;
+				padding: 0 15px 10px 15px;
+				label {
+					width: 100%;
+					margin-top: 5px !important;
+					transform: translateY(32px);
+				}
+				.field { width: 100%; }
+
+				@include breakpoint($mobile) { width: 100%; }
+			}
+
+			> p {
+				width: 100%; padding-right: 25px;
+				@include breakpoint($touch) { padding: 0 15px; }
+			}
+
+			input[type="search"], input[type="search"]:focus { border: 0; box-shadow: none; }
+
+			input[type="submit"] {
+				margin-left: 15px;
+				display: inline-block;
+				background: #7dc146; background: var(--tertiary-accent-color);
+				border: 1px solid #7dc146; border: 1px solid var(--tertiary-accent-color);
+				height: 53px;
+				line-height: 53px;
+				padding: 0 60px;
+				border-radius: 5px;
+				text-transform: uppercase;
+				color: #FFF;
+				font-size: 15px;
+				font-weight: 600;
+				letter-spacing: .5px;
+				margin-top: 20px;
+
+				@include breakpoint($mobile) { width: 100% !important; text-align: center; }
+			}
+		}
+	}

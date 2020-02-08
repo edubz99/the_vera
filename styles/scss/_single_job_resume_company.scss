@@ -1,0 +1,876 @@
+/*========================================================
+  15.  JOB/RESUME/COMPANY SINGLE
+========================================================== */
+
+/** == SIDEBAR == */
+/** ================================================== */
+
+body.single-job_listing,
+body.single-resume,
+body.single-company
+{
+    .page-sidebar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        /** Back Link */
+        .back-link {
+            @include breakpoint($touch) { margin-top: 45px; }
+        }
+
+        /** Profile Module */
+        .profile-module {
+            width: 100%;
+            background: #F7F7F7;
+            border-radius: 5px;
+            padding: 30px 43px 40px 43px;
+            margin-bottom: 60px;
+
+            @include breakpoint($full-hd) { padding: 35px 45px 45px 45px; }
+
+            // Company Info
+            .info {
+                .title {
+                    font-family: $primary-font-stack;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #95989A;
+                    margin: 0;
+                }
+                .name {
+                    font-family: $secondary-font-stack;
+                    font-size: 38px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin: 10px 0;
+                    overflow-wrap: break-word;
+                }
+                .tagline {
+                    font-family: $secondary-font-stack;
+                    font-size: 23px;
+                    font-weight: 300;
+                    line-height: 1.5;
+                    margin: 0;
+                    overflow-wrap: break-word;
+                }
+            }
+
+            // Company Meta
+            .meta-info {
+                $social-icon-dim: 30px;
+                $social-icon-height-delta: 5px;
+
+                ul.social-links,
+                ul.resume-links
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 20px 0 0 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        position: relative;
+                        display: inline-block;
+                        margin-right: 8px;
+                        a {
+                            display: block;
+                            font-size: 26px;
+                            color: #95989A;
+                            outline: none;
+                            width: $social-icon-dim;
+                            height: $social-icon-dim + $social-icon-height-delta;
+
+                            &:hover { color: #545454; }
+                        }
+                        [class^="fa"],
+                        [class^="jmfe-custom-field"]
+                        {
+                            position: relative;
+                            text-indent: -9999px;
+                            width: $social-icon-dim;
+                            height: $social-icon-dim + $social-icon-height-delta;
+
+                            &:before {
+                                display: inline;
+                                position: absolute;
+                                text-indent: 9999px;
+                                width: $social-icon-dim;
+                                height: $social-icon-dim + $social-icon-height-delta;
+                            }
+                        }
+                    }
+                }
+
+                // Button
+                .button-default {
+                    margin-top: 20px;
+                    white-space: initial;
+                    width: 100%;
+                    height: auto;
+                    line-height: 1.5;
+                    padding: 14px 35px;
+                    overflow-wrap: break-word;
+                }
+            }
+
+        }
+
+        /** Permalink Module **/
+        .permalink-module {
+            width: 100%;
+            margin-bottom: 60px;
+
+            .module-title {
+                font-family: $primary-font-stack;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #95989A;
+                margin: 0 0 30px 0;
+            }
+
+            .field-group {
+                position: relative;
+
+                input[type="text"] { padding-right: 115px; }
+
+                .button.button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-color: var(--secondary-accent-color);
+                    background: #5786EC;
+                    background: var(--secondary-accent-color);
+                    color: #FFF;
+                    border-radius: 0 5px 5px 0;
+                    font-size: 15px;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                    padding: 0 29px;
+                    height: 55px !important;
+                    max-height: 55px !important;
+                    line-height: 55px !important;
+
+                    @include breakpoint($touch) { width: auto !important; }
+
+                    &:hover, &:focus {
+                        border-color: var(--secondary-accent-color) !important;
+                        background: #5786EC !important;
+                        background: var(--secondary-accent-color) !important;
+                    }
+                }
+            }
+        }
+
+        /** Related Entries Module */
+        .related-entries-module {
+            width: 100%;
+            margin-bottom: 60px;
+
+            // Title
+            .module-title {
+                font-family: $primary-font-stack;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #95989A;
+                margin: 0 0 30px 0;
+            }
+
+            // Entries List
+            .entries-list {
+                .listing-entry {
+                    margin-bottom: 20px;
+
+                    .entry-header {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        .title {
+                            font-family: $primary-font-stack;
+                            font-size: 18px;
+                            font-weight: 600;
+                            margin: 0 10px 0 0;
+
+                            a {
+                                background-image: linear-gradient(#f76020, #f76020);
+                                background-size: 0% 1px;
+                                background-position: 0 calc(100% + -1px);
+                                background-repeat: no-repeat;
+                                transition: all 150ms linear;
+                                &:hover {
+                                    background-size: 100% 1px;
+                                }
+                            }
+
+                        }
+                        .type, .location {
+                            font-size: 15px;
+                            color: #9A9A9A;
+                            white-space: nowrap;
+                            
+                            a {
+                                display: none;
+                                &:first-of-type { display: inline-flex; }
+                            }
+                        }
+                    }
+                    .entry-footer {
+                        display: flex;
+                        color: #535353;
+                        font-size: 16px;
+                        overflow: hidden;
+
+                        .category {
+                            a {
+                                display: none;
+                                &:first-of-type { display: inline-flex; }
+                            }
+
+                            &:before {
+                                content: '—';
+                                padding-right: 10px;
+                                padding-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Alternative CTA
+            .alt-cta {
+                margin-top: 40px;
+                color: #9A9A9A;
+                a {
+                    color: #027BFC; color: var(--secondary-accent-color);
+                    &:hover { color: #fa6800; }
+                }
+            }
+        }
+
+        /** Native Widgets Module */
+        #widgets-module {
+
+            .widget {
+                width: 100%;
+                margin: 0 0 60px 0;
+
+                // Title
+                .widget-title {
+                    font-family: $primary-font-stack;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #95989A;
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+/** == MAIN CONTENT == */
+/** ================================================== */
+
+body.single-job_listing,
+body.single-resume,
+body.single-company
+{
+    .page-content {
+
+        /** Job Details */
+        .entry-details {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .woocommerce-message { display: none; }
+
+            // Job Header
+            .entry-header {
+                width: 100%;
+                display: flex;
+                margin-bottom: 40px;
+                @include breakpoint($touch) { flex-direction: column; }
+
+                .left {
+                    margin-right: 30px;
+                    @include breakpoint($touch) { margin-bottom: 25px; }
+                    @include breakpoint($full-hd) { margin-right: 35px; }
+                    .logo, .photo {
+                        border: 1px solid #efefef;
+                        border-radius: 3px;
+                        background: #FFF;
+                        display: flex;
+                        justify-content: center; align-items: center;
+                        width: 120px; height: 120px;
+                    }
+                    .company_logo,
+                    .candidate_photo
+                    {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 5px;
+                    }
+                }
+                .right {
+                    .heading {
+                        display: flex;
+                        @include breakpoint($mobile) { flex-wrap: wrap; }
+
+                        .title {
+                            font-family: $secondary-font-stack;
+                            font-size: 42px;
+                            font-weight: 600;
+                            line-height: 1;
+                            margin: 0 0 10px 0;
+                            flex: 1;
+                        }
+                        .type, .positions {
+                            align-self: center;
+                            margin-left: 20px;
+                            font-size: 14px;
+                            border-radius: 3px;
+                            padding: 1px 7px;
+                            color: #FFF;
+                            background: #1D1D1D !important;
+
+                            @include breakpoint($mobile) { order: -1; margin: 0 50% 10px 0; }
+                            
+                            &.full-time { background: #5BBC2E; }
+                            &.internship { background: #48B4B5; }
+                            &.temporary { background: #e05288; }
+                            &.part-time { background: #48B4B5; }
+
+                            a:not(:first-of-type):before {
+                                content: ', ';
+                            }
+                        }
+                    }
+                    ul.meta-info {
+                        display: flex;
+                        flex-wrap: wrap;
+                        list-style: none;
+                        margin: 0; padding: 0;
+
+                        li {
+                            margin-right: 15px;
+                            font-weight: 400;
+                            color: #adadad;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 5px;
+
+                            strong { font-weight: 400; color: inherit; padding-right: 7px; }
+                            .icon { width: 18px; height: auto; margin-right: 5px; }
+
+                            &.company {
+                                // font-weight: 600;
+                                color: #71a5cb;
+                            }
+                            &.location {
+                                &:before {
+                                    font-family: "Flaticon";
+                                    content: $fi-location-pointer;
+                                    padding-right: 3px;
+                                }
+                            }
+
+                            &:nth-child(3n+3) { color: #F98C71; }
+                            &:nth-child(4n+4) { color: #5fba7d; }
+                        }
+                    }
+                    .taxonomy-terms {
+                        margin-top: 10px;
+
+                        a, span {
+                            display: inline-block;
+                            background: #F7F7F7;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            padding: 6px 12px;
+                            margin-right: 10px;
+                            margin-bottom: 8px;
+                            border-radius: 3px;
+                            letter-spacing: 0.3px;
+                        }
+                    }
+                }
+            }
+
+            // Meta Fields
+            .entry-meta {
+                position: relative;
+                width: 100%;
+                border: 1px solid #E1E1E1;
+                box-shadow: 0 2px 0 #f3f3f3;
+                padding: 25px 30px;
+                margin: 0 0 40px 0;
+                border-radius: 5px;
+                background: #FFF url('../../images/meta-info-bg.svg') 0 0 no-repeat;
+                background-size: 155px auto;
+                background-position: calc(100% + 20px) calc(100% - -30px);
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .section-title {
+                    width: 100%;
+                    font-family: $primary-font-stack;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0 0 20px 0;
+                    text-transform: uppercase;
+                    color: #95989a;
+                    letter-spacing: .4px;
+                }
+
+                .meta-link {
+                    display: none;
+                    position: absolute;
+                    top: 18px; right: 30px;
+                    align-items: center;
+                    font-size: 16px;
+                    color: #5786ec;
+                    color: var(--secondary-accent-color);
+
+                    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                        /* IE10+ CSS styles go here */
+                        top: -40px;
+                    }
+
+                    &.is-visible { display: flex; }
+
+                    .icon {
+                        width: 12px;
+                        height: auto;
+                        margin-left: 6px;
+                        path { fill: var(--secondary-accent-color); }
+                    }
+
+                    span.see-more {
+                        display: block;
+                        .count { font-style: normal; }
+                    }
+                    span.see-less { display: none; }
+
+                    &.expanded {
+                        span.see-more { display: none; }
+                        span.see-less { display: block; }
+
+                        .icon {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                }
+
+                ul.meta-fields {
+                    position: relative;
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 0; padding: 0 0 10px 0;
+
+                    &:after {
+                        position: absolute;
+                        top: 0; bottom: 0; left: 50%;
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        background: #DCDCDC;
+                        @include breakpoint($mobile) { display: none; }
+                    }
+
+                    > li {
+                        width: 48%;
+                        text-align: left;
+
+                        @include breakpoint($mobile) { width: 100%; flex-wrap: wrap; }
+
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        letter-spacing: 0 !important;
+
+                        margin: 7px 0;
+
+                        &:nth-child(1n+1) {
+                            padding-right: 10px;
+                            @include breakpoint($mobile) { padding-right: 0; }
+                        }
+                        &:nth-child(2n+2) {
+                            padding-left: 10px;
+                            @include breakpoint($mobile) { padding-left: 0; }
+                        }
+
+                        &.is-hidden { display: none; }
+                        &.is-full-width,
+                        &[data-width="100%"]
+                        {
+                            width: 100%;
+                            background: #FFF;
+                            z-index: 10;
+                        }
+
+                        a {
+                            color: #027BFC; color: var(--secondary-accent-color);
+                            &:hover { color: #fa6800; }
+                        }
+
+                        .icon {
+                            width: 24px; min-width: 24px;
+                            height: auto;
+                            max-height: 26px; /** IE 11 FIX */
+                            margin-right: 15px;
+
+                            @include breakpoint($mobile) { width: 28px !important; margin-bottom: 5px; }
+
+                            path {
+                                fill: var(--secondary-accent-color);
+                                fill: #95989A;
+                            }
+
+                            .qualification-meta & { width: 24px; }
+                        }
+                        label,
+                        .jmfe-custom-field-label
+                        {
+                            font-family: $secondary-font-stack;
+                            font-size: 17px;
+                            font-weight: 500;
+                            letter-spacing: 0;
+                            text-transform: capitalize;
+                            color: #000;
+                            margin: 0 12px 0 0;
+                            width: auto;
+
+                            @include breakpoint($mobile) { width: 100%; }
+                        }
+                        .value {
+                            font-family: $primary-font-stack;
+                            font-size: 16px;
+                            font-weight: 400;
+                            letter-spacing: 0.3px;
+                            color: #000;
+                            word-wrap: break-word;
+                            word-break: break-word;
+                        }
+
+                        &.qualification-meta {
+                            .icon { width: 24px; }
+                        }
+                        &.career-level-meta {
+                            .icon { width: 23px; }
+                        }
+                    }
+                }
+            }
+            .entry-meta--before,
+            .entry-meta--after
+            {
+                display: flex;
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    font-family: $primary-font-stack;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: #000;
+
+                    a {
+                        font-weight: 400;
+                        color: #027BFC; color: var(--secondary-accent-color);
+                        &:hover { color: #fa6800; }
+                    }
+
+                    .jmfe-custom-field-label {
+                        font-family: $primary-font-stack;
+                        font-weight: 400;
+                        color: #95989A;
+                    }
+
+                    &:before {
+                        content: '\2014';
+                        padding: 0 5px;
+                        color: #95989A;
+                    }
+                    &:first-of-type:before {
+                        content: '';
+                        padding: 0;
+                    }
+                }
+            }
+            .entry-meta--before {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            .entry-meta--after {
+                margin-top: -30px;
+                margin-bottom: 40px;
+            }
+
+            // Job Description
+            .entry-description {
+                width: 100%;
+                position: relative;
+                padding: 0;
+                margin-bottom: 45px;
+
+                h1, h2, h3, h4, h5, h6,
+                .jmfe-custom-field-label
+                {
+                    &:not(.section-title) {
+                        display: block;
+                        font-family: $primary-font-stack;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin: 40px 0 20px 0;
+                        text-transform: uppercase;
+                        color: #95989a;
+                        letter-spacing: 0.4px;
+
+                        &:first-of-type { margin-top: 0; }
+                    }
+                }
+
+                img {
+                    margin-bottom: 10px;
+                }
+                p { font-size: 16px; line-height: 1.7; }
+                ul {
+                    list-style: disc;
+                    margin: 0 0 40px 20px;
+                    padding: 0;
+                    li {
+                        margin: 0;
+                        line-height: 1.9;
+                        font-size: 16px;
+                        color: #545454;
+                    }
+                }
+                .job_tags { display: none; }
+
+                .inner, .jmfe-custom-field-wrap { margin-bottom: 25px; }
+
+                .candidate-video, .company_video {
+                    position: relative;
+                    padding-bottom: 56.25%; /* 16:9 */
+                    padding-top: 25px;
+                    height: 0;
+
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+            }
+
+            // Job Tags
+            .entry-tags {
+                width: 100%;
+
+                .tags-header {
+                    .title {
+                        font-family: $primary-font-stack;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin: 0 0 20px 0;
+                        text-transform: uppercase;
+                        color: #95989a;
+                        letter-spacing: 0.4px;
+                    }
+                }
+                
+                ul.tags-list {
+                    width: 100%;
+                    list-style: none;
+                    margin: 40px 0 10px 0; padding: 0;
+        
+                    display: flex;
+                    flex-wrap: wrap;
+        
+                    li {
+                        width: 100px;
+                        margin-right: 25px;
+                        margin-bottom: 30px;
+                        text-align: center;
+                        a {
+                            border: 0;
+        
+                            .icon {
+                                display: block;
+                                .svg-icon {
+                                    width: 45px;
+                                    height: auto;
+                                    margin-bottom: 10px;
+
+                                    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                                        /* IE10+ CSS styles go here */
+                                        max-height: 45px;
+                                    }
+
+                                    path { fill: #03BEE1; }
+                                }
+                            }
+        
+                            .title {
+                                display: block;
+                                color: #03BEE1;;
+                                font-family: $primary-font-stack;
+                                font-size: 15.2px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 0.3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Job Actions
+            .entry-actions {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 100%;
+                margin-top: 20px;
+
+                @include breakpoint($mobile) {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+                > a {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 55px;
+                    height: 53px;
+                    line-height: 53px;
+                    border-radius: 5px;
+                    margin-left: 15px;
+                    outline: none;
+
+                    font-family: $primary-font-stack;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: .5px;
+
+                    white-space: nowrap;
+                    transition: 300ms ease-in all;
+
+                    &:first-of-type { margin-left: 0; }
+                }
+                
+                .apply-job,
+                .contact-candidate
+                {
+                    @include breakpoint($mobile) { width: 100%; margin-bottom: 15px; }
+                }
+                .add-bookmark {
+                    border: 2px solid #5786ec;
+                    border: 2px solid var(--secondary-accent-color);
+                    background: transparent;
+                    color: #5786ec;
+                    color: var(--secondary-accent-color);
+                    margin-left: 15px;
+
+                    &:hover {
+                        color: #5786ec !important;
+                        color: var(--secondary-accent-color) !important;
+                    }
+
+                    @include breakpoint($mobile) { flex: 1; margin-left: 0; padding: 0 45px; }
+                }
+                .more-actions {
+                    position: relative;
+                    margin-left: 15px;
+                    
+                    // @include breakpoint($mobile) { margin-left: 0; }
+
+                    .trigger {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 53px;
+                        height: 53px;
+                        border: 1px solid #D2D2D2;
+                        border-radius: 5px;
+                        outline: none;
+
+                        img, .svg-icon {
+                            width: auto !important;
+                            height: auto !important;
+                            max-width: 13px !important;
+                        }
+                    }
+                    ul.dropdown {
+                        display: none;
+                        width: 225px;
+                        position: absolute;
+                        bottom: calc(100% + 10px); right: 0;
+                        padding: 15px 25px;
+                        border: 1px solid #e1e1e1;
+                        border-radius: 5px;
+                        background-color: #FFF;
+                        box-shadow: 0 2px 0 #f3f3f3;
+                        cursor: pointer;
+                        list-style: none;
+                        margin: 0 0 0 15px;
+                        transition: box-shadow 600ms cubic-bezier(.165, .84, .44, 1);
+
+                        &.open { display: block; }
+
+                        li {
+                            padding: 5px 0;
+
+                            a {
+                                font-size: 16px;
+                                &:hover {
+                                    color: #fa6800;
+                                }
+                            }
+
+                            &.report-listing {
+                                a { color: red; }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            // WooCommerce Notice
+            .woocommerce-message {
+                @extend .flash-notification;
+            }
+
+        }
+
+    }
+
+}

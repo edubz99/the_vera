@@ -1,0 +1,62 @@
+/*========================================================
+  0.  PRINT 
+========================================================== */
+
+/** == GENERAL == */
+/** ================================================== */
+
+    body.single-job_listing, body.single-resume {
+        #site-header, #site-body .page-sidebar, #site-footer, #comments, .page-breadcrumbs,
+        .entry-actions, #page-controls, #site-bgs
+        { display: none !important; }
+
+        #application-deadline {
+            width: 100%;
+            position: relative !important;
+            top: 0; right: 0;
+            border: 1px solid #e1e1e1;
+            margin: 0 20px;
+            .text {
+                color: #000 !important;
+            }
+        }
+        .type {
+            font-size: 14px;
+            border-radius: 3px;
+            padding: 1px 7px;
+            color: #FFF;
+            background: #1d1d1d !important;
+        }
+
+        // Job Tags
+        .entry-tags {
+            
+            ul.tags-list {
+                li {
+                    width: auto;
+                    text-align: left !important;
+                    margin-right: 45px;
+
+                    a {
+                        border: 0;
+                        display: flex;
+    
+                        .icon {
+                            margin-right: 10px;
+                            .svg-icon {
+                                width: 10px;
+                                margin-bottom: 0;
+                                path { fill: #000 !important; }
+                            }
+                        }
+    
+                        .title {
+                            color: #000 !important;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }

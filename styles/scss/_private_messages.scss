@@ -1,0 +1,344 @@
+/*========================================================
+  0.  PRIVATE MESSAGES 
+========================================================== */
+
+
+/** == MESSAGES NOTICE == */
+/** ================================================== */
+
+    .pm-notice {
+        @extend .flash-notification;
+        background: #EAF6FB;
+        margin: -30px 0 45px 0 !important;
+        p { color: #28A8D3 !important; }
+    }
+
+
+/** == MESSAGES FILTER == */
+/** ================================================== */
+
+    .pm--filters {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        ul.pm-list--filters {
+            display: flex;
+            list-style: none;
+            margin: 0; padding: 0;
+    
+            li {
+                margin-right: 25px;
+                a {
+                    color: #0070C9;
+                    font-size: 16px;
+                    padding-bottom: 5px;
+                }
+                &.active {
+                    a {
+                        border-bottom: 2px solid #0070C9;
+                    }
+                }
+            }
+        }
+
+        .pm-mark-all-as-read {
+            align-self: center;
+            border: 0 !important;
+            background: #000;
+            border-radius: 2px;
+            font-size: 9px;
+            text-transform: uppercase;
+            color: #FFF;
+            padding: 0 5px;
+        }
+    }
+
+
+/** == MESSAGES NOTICE == */
+/** ================================================== */
+
+    .pm-action-row { display: none; }
+
+
+/** == SECTION TITLE == */
+/** ================================================== */
+
+    .pm-section-title {
+        font-family: $primary-font-stack;
+
+        // position: relative;
+        // font-weight: 700;
+        // font-size: 16px;
+        // color: #a7a7a7;
+        // letter-spacing: 1px;
+        // text-transform: uppercase;
+        // overflow-x: hidden;
+        // margin-bottom: 20px;
+
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        color: #636363;
+    }
+
+
+/** == MESSAGES LIST == */
+/** ================================================== */
+
+    table.pm-table {
+        thead {
+            tr {
+                th {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #636363;
+                }
+            }
+        }
+        tbody {
+            tr {
+                display: flex;
+
+                @include breakpoint($touch) {
+                    display: flex !important;
+                    flex-wrap: wrap;
+
+                    td { padding: 15px 0 15px 0 !important; }
+
+                    td.pm-column--userinfo {
+                        order: 3;
+                        .pm-userinfo { align-items: flex-start; }
+                    }
+                    td.pm-column--overview { order: 2; }
+                    td.pm-column--actions { order: 1; padding-top: 0 !important; }
+                }
+
+                td {
+                    font-size: 18px;
+                    padding: 20px 16px 20px 0;
+                    transition: all linear 300ms;
+
+                    &.pm-column--userinfo {
+                        order: 3;
+                        width: 100%;
+
+                        .pm-userinfo {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            
+                            .pm-userinfo__date {
+                                margin: 3px 0 0 0;
+                                span { font-size: 14px; color: #95989A; }
+                            }
+
+                            .pm-user__actions {
+                                display: flex;
+                                margin-top: 8px;
+
+                                .pm-set-star, .pm-delete-thread {
+                                    font-family: $primary-font-stack;
+                                    
+                                    &:before { display: none !important; }
+                                    display: inline-flex;
+                                    width: auto;
+                                    height: auto;
+                                    padding: 2px 5px;
+                                    
+                                    .screen-reader-text {
+                                        font-size: 13px;
+                                        height: auto;
+                                        width: auto;
+                                        position: static !important;
+                                    }
+                                }
+                                .pm-set-star {
+                                    color: #000;
+
+                                    &:after {
+                                        font-size: 13px;
+                                        content: '\00B7';
+                                        padding: 0 4px;
+                                    }
+                                }
+                                .pm-delete-thread {
+                                    align-self: center;
+                                    border: 0 !important;
+                                    background: #dd1713;
+                                    border-radius: 2px;
+                                    text-transform: uppercase;
+                                    color: #FFF;
+
+                                    .screen-reader-text { font-size: 9px; }
+                                }
+                            }
+
+                        }
+                    }
+                    &.pm-column--overview {
+                        order: 2;
+                        width: 115%;
+
+                        a {
+                            font-size: 16px;
+                            color: #95989a;
+
+                            .title {
+                                display: flex;
+                                align-items: center;
+
+                                .message__subject {
+                                    font-size: 18px;
+                                    margin: 0 0 3px 0;
+                                    color: #000;
+                                }
+                                .seperator {
+                                    display: inline-block;
+                                    margin: 0 7px;
+                                    font-size: 13px;
+                                    font-style: normal;
+                                }
+                                .message__author {
+                                    background: #E1E1E1;
+                                    border-radius: 3px;
+                                    font-size: 13px !important;
+                                    align-self: center;
+                                    padding: 1px 3px;
+                                    color: #000 !important;
+                                }
+                            }
+
+                            br { display: none; }
+                        }
+                    }
+                    &.pm-column--actions {
+                        order: 1;
+
+                        .pm-message-status {
+                            display: inline-block;
+                            width: 13px;
+                            height: 13px;
+                            border: 0 !important;
+                            background: #5A44FF;
+                            border-radius: 100%;
+                
+                            em { display: none; }
+
+                            &.pm-message-status--read { background: #B2B2B2; }
+                        }
+                        .pm-set-star { display: none;  margin: 0 5px; }
+                        .pm-delete-thread { display: none; color: #DD1713; }
+                    }
+                }
+            }
+        }
+    }
+
+
+/** == DETAIL MESSAGE == */
+/** ================================================== */
+
+    .pm-message-subject {
+        font-family: $primary-font-stack;
+        font-size: 20px;
+        font-weight: 600 !important;
+        letter-spacing: 0 !important;
+    }
+
+    table.pm-table {
+        tbody {
+            tr {
+                td.pm-column--message {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    &.author {
+                        align-items: flex-end;
+                        .pm-message { text-align: right !important; }
+                    }
+
+                    .pm-userinfo {
+                        display: flex;
+                        align-items: center;
+
+                        .pm-userinfo__avatar { display: none; }
+                        .pm-userinfo__author {
+                            font-size: 18px !important;
+                            font-weight: 600;
+                            margin: 0 0 3px 0;
+                            color: #000 !important;
+                        }
+                        .seperator {
+                            display: inline-block;
+                            margin: 0 7px;
+                            font-size: 13px;
+                            font-style: normal;
+                            color: #95989a;
+                            text-transform: lowercase;
+                        }
+                        .pm-userinfo__date {
+                            background: #E1E1E1;
+                            border-radius: 3px;
+                            font-size: 13px !important;
+                            align-self: center;
+                            padding: 1px 3px;
+                            color: #000 !important;
+                        }
+                    }
+                    .pm-message {
+                        margin: 4px 0;
+                        width: 50%;
+                        p { color: #737373; }
+                    }
+                    .pm-delete-reply {
+                        border: 0 !important;
+                        background: #dd1713;
+                        border-radius: 2px;
+                        text-transform: uppercase;
+                        color: #FFF;
+                        font-size: 9px;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+
+
+/** == COMPOSE MESSAGE == */
+/** ================================================== */
+
+    .pm-form--compose-message {
+        width: 100%;
+
+        .pm-form__row {
+            width: 100%;
+            margin-bottom: 0;
+
+            label { transform: translateY(33px); }
+
+            &.pm-form__row--recipient {
+                select { display: none; }
+            }
+            &.pm-form__row--subject { margin-bottom: 25px; }
+            &.pm-form__row--attachments { margin: 25px 0; }
+        }
+    }
+
+    #apply-job, #contact-candidate {
+        .pm-section-title { display: none; }
+        .pm-form__row--recipient { display: none; }
+
+        iframe#pm_message_ifr {
+            height: 0px !important;
+        }
+        textarea#pm_message {
+            display: block !important;
+        }
+        div.mce-panel { display: none; }
+    }
+
+

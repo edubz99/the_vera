@@ -1,0 +1,362 @@
+/*========================================================
+  20.  RESUME POSTING 
+========================================================== */
+
+	#submit-resume-form {
+
+		/** Resume Info Fields */
+		.resume-info-fields {
+
+			.form-fields {
+
+                /** Repeatable Fields */
+                .fieldset-links,
+                .fieldset-candidate_education,
+                .fieldset-candidate_experience
+                {
+                    margin-top: 20px;
+                    > label { padding-left: 0; padding-bottom: 10px; transform: translateY(0); }
+
+                    .field {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        /** Data Row Handler */
+                        a.resume-manager-add-row {
+                            display: inline-block;
+                            background: #CCCCCC;
+                            color: #000;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            border-radius: 2px;
+                            padding: 0 40px;
+                            width: 215px;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+
+                            &:hover { background: #000; color: #FFF; }
+
+                            @include breakpoint($mobile) { width: 100%; height: 42px; line-height: 42px; }
+                        }
+                        .description {
+                            flex: 1;
+                            padding-left: 45px;
+                            line-height: 1.5;
+                            margin: 0 !important;
+
+                            @include breakpoint($mobile) { flex: 100%; padding-left: 0; margin-top: 10px !important; }
+                        }
+
+                        /** Data Row */
+                        .resume-manager-data-row {
+                            width: 100%;
+                            background: #F9F9F9;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            padding: 30px;
+                            margin-bottom: 20px;
+                            border: 1px solid #ECECEC;
+                            border-radius: 3px;
+
+                            @include breakpoint($mobile) { padding: 23px 23px; }
+
+                            [class^='fieldset-'], [class*=' fieldset-'] {
+                                width: 49%;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0 15px;
+                                margin-bottom: 15px;
+                                border: 0;
+
+                                @include breakpoint($mobile) { width: 100%; }
+
+                                &.fieldset-date,
+                                &.fieldset-notes
+                                {
+                                    width: 100%;
+                                }
+                            }
+                            
+                            /** Remove Row */
+                            .resume-manager-remove-row {
+                                top: -25px;
+                                right: 7px;
+                                background: rgb(0, 0, 0);
+                                color: #FFF;
+                                border-radius: 100%;
+                                width: 33px;
+                                height: 33px;
+                                line-height: 33px;
+                                text-align: center;
+                                text-indent: -999999px;
+
+                                &:before {
+                                    content: '\2715';
+                                    width: 33px;
+                                    height: 33px;
+                                    line-height: 34px;
+                                    text-align: center;
+                                    text-indent: 0;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+
+
+			}
+        }
+        
+    }
+
+
+    // Resume Notifiation
+    .resume-submitted {
+        @extend .flash-notification;
+        @include clearfix();
+    }
+
+
+/** == RESUME POSTING - PREVIEW == */
+/** ================================================== */
+
+    #resume_preview {
+        display: flex;
+        flex-direction: column;
+
+        .single-resume {
+            padding: 0;
+            border: 0;
+
+            > h1 { display: none; }
+        }
+
+        // Entry Header
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            
+            .left {
+                .title {
+                    font-size: 36px;
+                    font-weight: 600;
+                    letter-spacing: -0.3px;
+                    margin-bottom: 0;
+                }
+                .tagline {
+                    color: #A2A2A2;
+                }
+            }
+            .right {
+                display: flex;
+
+                ul.listing-links {
+                    list-style: none;
+                    margin: 0; padding: 0;
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        font-size: 20px;
+                        color: #95989A;
+                        margin: 0 0 0 17px;
+
+                        a:hover {
+                            color: #434343;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        // Entry Meta
+        .entry-meta {
+            background: #F7F7F7;
+            border-radius: 5px;
+            margin: 40px 0;
+            padding: 36px 50px 36px 45px;
+
+            .title {
+                font-family: $primary-font-stack;
+                font-size: 16px;
+                font-weight: 400;
+                color: #707070;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-top: 0;
+            }
+            ul.meta-fields {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    margin-bottom: 16px;
+                    width: 50%;
+                    &:last-child { margin-bottom: 0; }
+
+                    &.close-date { text-align: right; }
+                    &.tagline { width: 100%; }
+
+
+                    label, span:not(.value), strong, .jmfe-custom-field-label {
+						display: inline-block;
+						font-family: $primary-font-stack;
+						font-size: 16px;
+						font-weight: 600;
+						color: #000;
+						margin-right: 25px;
+
+						@include breakpoint($mobile) { margin-right: 15px; }
+                    }
+
+                    .icon { display: none; }
+                }
+            }
+        }
+
+        // Entry Content
+        .entry-content {
+            margin-bottom: 60px;
+
+            .section-title,
+            .jmfe-custom-field-label
+            {
+                display: block;
+                font-family: $primary-font-stack;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 40px 0 10px 0;
+                text-transform: uppercase;
+                color: #95989a;
+                letter-spacing: 0.4px;
+
+                &:first-of-type { margin-top: 0; }
+            }
+            .jmfe-custom-field-wrap { margin-bottom: 25px; }
+
+
+            .resume-opening {
+                h1, h2, h3, h4, h5, h6 {
+                    display: block;
+                    font-family: $primary-font-stack;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 40px 0 10px 0;
+                    text-transform: uppercase;
+                    color: #95989a;
+                    letter-spacing: 0.4px;
+    
+                    &:first-of-type { margin-top: 0; }
+                }
+    
+                img {
+                    margin-bottom: 10px;
+                }
+                p { font-size: 16px; line-height: 1.7; margin-bottom: 25px; }
+                ul {
+                    list-style: disc;
+                    margin: 0 0 40px 20px;
+                    padding: 0;
+                    li {
+                        margin: 0;
+                        line-height: 1.9;
+                        font-size: 16px;
+                        color: #545454;
+                    }
+                }
+            }
+
+
+            /** Candidate Education + Experience */
+            dl.candidate-education,
+            dl.candidate-experience
+            {
+                list-style: disc;
+                margin: 0 0 60px 0;
+                padding: 0;
+                dt {
+                    margin-bottom: 20px;
+
+                    .title {
+                        font-family: $primary-font-stack;
+                        font-size: 19px;
+                        font-weight: 600;
+                        margin-bottom: 0;
+
+                        span {
+                            display: inline-block;
+                            margin-right: 15px;
+                        }
+
+                        .date {
+                            background: #000;
+                            color: #FFF;
+                            border-radius: 3px;
+                            padding: 2px 5px;
+                            text-transform: uppercase;
+                            font-size: 11px;
+                        }
+                    }
+                    .qualification,
+                    .designation
+                    {
+                        font-family: $primary-font-stack;
+                        font-size: 15.5px;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        color: #959595;
+                    }
+                }
+                dd {
+                    margin-bottom: 45px;
+                }
+            }
+            
+
+        }
+
+        // Entry Footer
+        .resume_preview_title {
+            display: flex;
+            background: transparent;
+            padding: 0;
+            order: 1;
+
+            > h2 { display: none; }
+
+            .button {
+                width: auto;
+                
+                &[name="edit_resume"] {
+                    background: transparent;
+                    border: 0;
+                    display: inline-block;
+                    font-family: $primary-font-stack;
+                    padding: 0 45px;
+                    height: 53px;
+                    line-height: 53px;
+                    text-transform: uppercase;
+                    color: #969696;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: .5px;
+                    text-align: center;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    transition: 300ms ease-in all;
+
+                    &:hover, &:focus, &:active {
+                        color: #000 !important;
+                        background: transparent !important;
+                        border: 0 !important;
+                    }
+                }
+            }
+        }
+    }

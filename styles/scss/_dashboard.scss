@@ -1,0 +1,622 @@
+/*========================================================
+  31.  DASHBOARD 
+========================================================== */
+
+	body.page-template-template-dashboard {
+		&:before { top: 0; }
+
+		// Table Styling
+		table { border-bottom: 1px solid #ededed; border-collapse: collapse; border-spacing: 0; line-height: 2; margin: 0 0 2em; width: 100%; }
+		caption,
+		th,
+		td { text-align: left; }
+		td a { border: 0 !important; }
+		caption { font-size: 16px; margin: 20px 0; }
+		th { text-transform: uppercase; font-size: 16px; font-weight: 400; color: #636363; padding: .5em 1em .5em 0; }
+		td { border-top: 1px solid #ededed; padding: .5em 1em .5em 0; line-height: 1.3;  }
+	}
+
+
+	#dashboard-container {
+		display: flex;
+
+		@include breakpoint($touch) { flex-direction: column; }
+
+		/** Logout Dashboard */
+		#logout-dashboard {
+			position: fixed;
+			min-width: 299px;
+			left: 0;
+			bottom: 0;
+			background: #fff;
+			border-top: 1px solid #EBEBEC;
+			
+			.logout-link {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				font-size: 16px;
+				color: #373737;
+				text-decoration: none;
+				padding: 15px 20px 15px 35px;
+
+				.icon {
+					max-width: 17px;
+					height: auto;
+					margin-right: 6px;
+					transition: all ease-in 200ms;
+				}
+
+				@include breakpoint($touch) { display: none; }
+			}
+		}
+
+		@import 'menu_primary';
+		@import 'menu_icons';
+		@import 'menu_icons_dashboard';
+
+		/** Icons Navigation */
+		#dashboard-icons-nav {
+			position: absolute;
+			top: 80px;
+			right: 70px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 30px;
+			flex: 1;
+			z-index: 500;
+			list-style: none;
+			padding: 0; margin: 0;
+
+			@include breakpoint($touch) { top: 40px; right: 30px; }
+
+			li {
+				margin-right: 20px;
+				&:last-child { margin-right: 0; }
+
+				&.back {
+					.icon {
+						width: 27px; height: 27px;
+					}
+					@include breakpoint($touch) { display: none; }
+				}
+
+				&.messages {
+					position: relative;
+					.count {
+						font-family: $primary-font-stack;
+						position: absolute;
+						top: -1px; right: -8px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 15px;
+						height: 15px;
+						border-radius: 100%;
+						background: #FF3B3B;
+						color: #FFF;
+						font-size: 10px;
+						line-height: 1;
+					}
+					img {
+						width: 30px; height: 30px;
+						@include breakpoint($touch) { width: 33px; height: 33px; }
+					}
+				}
+
+				&.account {
+					.icon {
+						width: 30px; height: 30px;
+					}
+					ul#account-menu-module {
+						left: auto; // reset the default positioning
+						right: 0; // this makes the submenu fly out to the left
+						&:before { left: auto; right: 22px; }
+						&:after { left: auto; right: 23px; }
+					}
+					@include breakpoint($touch) { display: none; }
+				}
+
+				&.hamburger {
+					.hamburger-icon { width: 33px; }
+					@include breakpoint($no-touch) { display: none; }
+				}
+			}
+
+		}
+
+	  /** Sidebar */
+	  #dashboard-sidebar {
+			position: fixed;
+			position: sticky;
+			top: 0; left: 0; bottom: 0;
+			height: 100vh;
+			min-width: 300px;
+			padding-top: 45px;
+			overflow-y: scroll;
+			border-right: 1px solid #EBEBEC;
+			z-index: 800;
+
+			/** Hide Scrollbar */
+			overflow-y: scroll;
+			scrollbar-width: none; /* Firefox */
+			-ms-overflow-style: none;  /* IE 10+ */
+			&::-webkit-scrollbar { width: 0; height: 0; }
+
+			@include breakpoint($touch) {
+				position: relative;
+				width: 100%;
+				height: auto;
+				display: flex;
+				justify-content: space-between;
+				padding-top: 0;
+				overflow-y: inherit; /** IMPORTANT */
+			}
+
+			#dashboard-logo {
+				padding: 30px 60px;
+				@include breakpoint($touch) { padding: 30px; flex: 1; }
+			
+				img { height: auto; }
+			}
+
+			.dashboard-menus-wrap {
+				padding-bottom: 60px;
+				@include breakpoint($touch) { display: none; }
+			}
+
+			> .nav-container {
+				@include breakpoint($touch) { display: none; }
+			}
+
+			.nav-container {
+				padding: 20px 60px;
+
+				.title {
+					font-family: $primary-font-stack;
+					font-size: 16px;
+					font-weight: 700;
+					text-transform: uppercase;
+					margin-top: 0;
+				}
+				.nav-links {
+					font-family: $primary-font-stack;
+					font-size: 17px;
+					list-style: none;
+					padding: 0;
+					margin: 0;
+
+					li {
+						display: flex;
+						line-height: 1.2;
+						margin-bottom: 6px;
+
+						&.current-menu-item {
+							a { border-bottom: 1px solid #000; }
+						}
+						a {
+							color: #373737;
+							text-decoration: none;
+							&:hover { color: #fa6800 !important; color: var(--primary-accent-color) !important; }
+						}
+						a.add-new {
+							opacity: 0;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 22px;
+							font-weight: 300;
+							color: #5D5D5D;
+							width: 22px;
+							height: 22px;
+							border: 1px solid #5D5D5D;
+							border-radius: 100%;
+							margin-left: auto;
+							transition: all ease-in 300ms;
+							&:hover {
+								background: #000;
+								border: 1px solid #000;
+								color: #FFF !important;
+							}
+						}
+						&:hover {
+							a.add-new {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+
+			hr {
+				border-top: 1px solid #EBEBEC;
+				height: 1px !important;
+				padding: 0 !important;
+				@include breakpoint($touch) { padding: 20px 30px; }
+			}
+
+			.assign-menu {
+				background: #eee;
+				border: 3px dashed #b7b7b7;
+				padding: 50px 30px;
+				max-width: 275px;
+			}
+
+	  }
+
+		/** Body */
+		#dashboard-body {
+			flex-grow: 1;
+			padding: 45px 70px 60px 70px;
+			width: 100%; /** IE 11 FIX */
+			max-width: 1440px;
+				
+			@include breakpoint($touch) { width: 100%; padding: 45px 30px; }
+		
+			@include breakpoint($no-touch) { 
+				@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+				  /* IE10+ CSS styles go here */
+				  margin-left: 300px;
+				}
+			}
+
+			// Page Title
+			.page-title {
+				font-family: $primary-font-stack;
+				font-size: 22px;
+				font-weight: 400;
+				letter-spacing: 0;
+				margin-bottom: 60px;
+
+				@include breakpoint($touch) { margin-bottom: 30px; }
+			}
+
+			.job-manager-form, .wppb-user-forms {
+				@include breakpoint($full-hd) { max-width: 100%; }
+			}
+
+			.button { font-size: 16px !important; font-weight: 600; }
+		
+		}
+
+	}
+
+
+	/** Dashboard Main */
+	#dashboard-body {
+
+		// Welcome Message
+		.message-box {
+			border: 1px solid #D9D9D9;
+			border-radius: 5px;
+			padding: 25px 45px 28px 45px;
+			font-size: 18px;
+			margin-bottom: 40px;
+			
+			h4 {
+				font-family: $primary-font-stack;
+				font-size: inherit;
+				margin: 0 0 10px 0;
+				span {
+					font-weight: 600;
+					color: #3ABEEF;
+				}
+			}
+			p { font-size: 17px; color: #95989A; }
+		}
+
+		// Quick Links
+		.quick-links {
+			.title {
+				font-family: $primary-font-stack;
+				font-size: 16px;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				color: #95989a;
+				margin: 0 0 25px 0;
+			}
+			ul.links-list {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				@include breakpoint($mobile) { justify-content: space-between; }
+
+				li {
+					margin: 0 30px 30px 0;
+
+					@include breakpoint($mobile) {
+						width: 46%;
+						margin: 0 0 25px 0;
+						&:nth-child(even) { margin-right: 0; }
+					}
+
+					a.inner {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 170px;
+						height: 150px;
+						border: 1px solid #D9D9D9;
+						border-radius: 4px;
+						padding: 0 10px;
+
+						@include breakpoint($mobile) { width: auto; padding: 0 15px; }
+
+						&:hover {
+							border-color: #5786ec;
+							border-color: var(--secondary-accent-color);
+							border-width: 2px;
+						}
+
+						.icon {
+							img { width: 55px; max-height: 55px; height: auto; }
+							@include breakpoint($mobile) {
+								img { width: 50px; max-height: 50px; }
+							}
+						}
+						.label {
+							text-align: center;
+							line-height: 1.3;
+							margin-top: 3px;
+						}
+					}
+					.caption {
+						font-size: 13px;
+						color: #95989a;
+
+						a {
+							color: #5786ec;
+							color: var(--secondary-accent-color);
+
+							&:hover {
+								color: #fa6800;
+								color: var(--primary-accent-color);
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		// HTML Table
+		table {
+			@include breakpoint($touch) {
+				@include mobile-table;
+			}
+		}
+		input[type="submit"] {
+			font-weight: 600 !important;
+			width: 100%;
+			@include breakpoint($touch) { width: 100% !important; }
+		}
+	}
+
+	/** Chosen: Single-Select Field */
+	.chosen-container-single,
+	.chosen-container-active
+	{
+		.chosen-single {
+			border: 0 !important;
+			border-radius: 0 !important;
+			background: transparent !important;
+			background-image: none !important;
+			box-shadow: none;
+			font-size: 16px;
+			padding: 3px 0 0 0;
+			height: 28px;
+		}
+		.chosen-drop {
+			.chosen-search {
+				input {
+					padding: 10px 20px !important;
+					border: 1px solid #D2D2D2 !important;
+					box-shadow: none !important;
+				}
+			}
+		}
+	}
+
+	/** Chosen: Muti-Select Field */
+	.chosen-container-single,
+	.chosen-container-multi
+	{
+		display: block;
+		width: 100%;
+		background: #fff;
+		color: #898989;
+		border: 1px solid #D2D2D2;
+		border-radius: 5px;
+		margin: 0;
+		vertical-align: baseline;
+
+		min-height: 72px;
+		padding: 3.2rem 2rem 1rem 2rem;
+
+		&.chosen-container-active {
+			border: 2px solid #9A94E8;
+		}
+
+		ul.chosen-choices {
+			border: 0;
+			box-shadow: none;
+			background-image: none;
+
+			li.search-field {
+				input {
+					font-family: $primary-font-stack !important;
+					font-size: 16px !important;
+					letter-spacing: 0 !important;
+					padding: 2px !important;
+					color: #AFAFAF;
+					opacity: 0.9;
+				}
+			}
+			li.search-choice {
+				background: #E4E2F9;
+				border-radius: 3px;
+				border: 0;
+				padding: 8px 30px 8px 12px;
+				margin: 0 7px 7px 0;
+
+				&:last-of-type { margin-bottom: 0; }
+				span {
+					font-size: 15px;
+					color: #6B62DB;
+				}
+				a.search-choice-close {
+					top: 8px;
+					right: 8px;
+					background: transparent;
+					&:before {
+						position: absolute;
+						top: 0; left: 0;
+						content: '×';
+						font-size: 18px;
+						font-weight: 400;
+						color: #6b62db;
+					}
+				}
+			}
+		}
+		.chosen-drop {
+			border-color: #D2D2D2;
+			box-shadow: none;
+
+			ul.chosen-results {
+				li {
+					padding: 9px 24px;
+					line-height: 15px;
+					font-size: 15px;
+
+					&.highlighted {
+
+					}
+				}
+			}
+		}
+	}
+
+	/** Select2: Dropdown Field */
+	.select2-container--default
+	{
+		width: 100% !important;
+
+		// Selection Area
+		.select2-selection {
+			border: 1px solid #D2D2D2;
+			min-height: 72px !important;
+			height: auto !important;
+			padding: 3.2rem 2rem 0 2rem !important;
+
+			span.select2-selection__rendered { padding: 0; }
+
+			ul.select2-selection__rendered {
+				padding: 0 !important;
+
+				// Search Type Area
+				li.select2-search--inline {
+					margin-bottom: 0;
+
+					input.select2-search__field {
+						width: 100% !important;
+						padding: 0 !important;
+						height: 30px !important;
+						margin-top: 0 !important;
+					}
+				}
+
+				// Seleted Choices
+				li.select2-selection__choice {
+					display: flex;
+					align-items: center;
+					background: #E4E2F9;
+					font-size: 15px !important;
+					color: #6B62DB;
+					border-radius: 3px;
+					border: 0;
+					padding: 0 14px 0 12px;
+					margin: 6px 7px 2px 0 !important;
+	
+					&:last-of-type { margin-bottom: 0; }
+	
+					.select2-selection__choice__remove {
+						top: 11px;
+						right: 8px;
+						font-size: 18px;
+						font-weight: 400;
+						color: #6b62db;
+						padding-right: 5px;
+					}
+				}
+			}
+
+			.select2-selection__arrow {
+				top: 30px; right: 15px;
+			}
+		}
+
+		// Selection Area - Focus
+		&.select2-container--focus {
+			.select2-selection {
+				outline: medium none;
+				border: 1px solid #9a94e8;
+				box-shadow: 0 0 0 1px #9a94e8;
+			}
+		}
+		.select2-selection {
+			&[aria-expanded="true"] {
+				outline: medium none;
+				border: 1px solid #9a94e8;
+				box-shadow: 0 0 0 1px #9a94e8;
+			}
+		}
+
+		// Dropdown List
+		.select2-dropdown {
+			border-color: #D2D2D2;
+
+			// Search Field
+			.select2-search {
+				margin-top: 7px;
+				padding: 4px 20px 10px 20px;
+				.select2-search__field {
+					width: 100%;
+					height: 45px;
+					background: #f3f3f3;
+					border: 0;
+					border-radius: 5px;
+					padding: 5px 15px;
+
+					&:focus, &:active {
+						border: 1px solid #dcdcdc !important;
+						box-shadow: none !important;
+					}
+				}
+			}
+
+			// Search Result
+			.select2-results {
+				ul.select2-results__options {
+					li.select2-results__option {
+						font-size: 14px;
+						padding: 6px 20px;
+
+						&[aria-selected="true"] {
+							background-color: #f0f0f0;
+						}
+					}
+					li.select2-results__option--highlighted {
+						background-color: #5786EC !important;
+					}
+				}
+			}
+		}
+
+	}

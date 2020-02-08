@@ -1,0 +1,194 @@
+/*========================================================
+  0.  CENTER POSITIONING 
+========================================================== */
+
+  @mixin center($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+      left: 50%;
+      transform: translate(-50%, 0);
+    } @else if ($vertical) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+/*========================================================
+  0.  CLEARFIX 
+========================================================== */
+
+  @mixin clearfix {
+      *zoom: 1;
+
+      &:before, &:after {
+          content: ' ';
+          display: table;
+      }
+      &:after {
+          clear: both;
+      }
+  }
+
+
+/*========================================================
+  0.  HIGHLIGHT ITEM 
+========================================================== */
+
+  @mixin highlight-item() {
+    position: relative;
+    border: 1px solid #8fd068;
+    box-shadow: 0 0 0 1px #8fd068;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 48px solid #7bc44f;
+        border-left: 48px solid transparent;
+        z-index: 999999999999;
+    }
+
+    &:after {
+        content: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MDYuODM0IDQwNi44MzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwNi44MzQgNDA2LjgzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjM4NS42MjEsNjIuNTA3IDE0Ni4yMjUsMzAxLjkwMSAyMS4yMTMsMTc2Ljg5MSAwLDE5OC4xMDQgMTQ2LjIyNSwzNDQuMzI3IDQwNi44MzQsODMuNzIgIiBmaWxsPSIjRkZGRkZGIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=");
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 22px;
+        height: 19px;
+        z-index: 9999999999999;
+    }
+}
+
+
+/*========================================================
+  2.  ANIMATION AND TRANSITION MIXINS
+========================================================== */
+
+
+  @mixin animate-this($translate3d: '0, 15px, 0', $rotate: '0deg', $duration: '400ms') {
+
+    /** Default State */
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(unquote($translate3d)) rotate(unquote($rotate));
+    transition: transform unquote($duration) cubic-bezier(0.39, 0.575, 0.565, 1), opacity unquote($duration) cubic-bezier(0.39, 0.575, 0.565, 1), visibility unquote($duration) linear;
+
+    /** Triggered State */
+    &.animate-in {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0, 0, 0) rotate(unquote($rotate));
+    }
+
+  }
+
+  @mixin animate-in($name: 'fade-in', $delay: '0s', $index: '500') {
+    opacity: 0;
+    animation: unquote($name) ease 0.4s forwards;
+    animation-delay: unquote($delay);
+    z-index: unquote($index);
+  }
+
+
+/*========================================================
+  0.  FULL-WIDTH SECTION 
+========================================================== */
+
+  // https://stackoverflow.com/questions/31391459/how-can-i-expand-a-child-div-to-100-screen-width-if-the-container-div-is-smalle
+  @mixin make-full-width {
+    width: 100vw !important;
+    margin-left: calc(-51vw + 50%) !important;
+
+    // @include breakpoint($mobile)  { width: auto !important; margin-left: auto !important;  }
+  }
+
+
+/*========================================================
+ 3.  POSITION MIXIN 
+========================================================== */
+
+  @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+
+/*========================================================
+ 3.  RESPONSIVE TABLE 
+========================================================== */
+
+  @mixin mobile-table {
+
+    margin: 0 0 2em 0;
+    display: block;
+  
+    /* Force table to not be like tables anymore */
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tbody {
+      tr {
+        border-top: 3px solid #000;
+        padding: .5em 0;
+        margin-bottom: 45px;
+      }
+    
+      td {
+        /* Behave  like a "row" */
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding: 43px 0 16px 0 !important;
+        white-space: normal;
+        text-align: left !important;
+      }
+    
+      td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 10px;
+        left: 0;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+      }
+    
+      /* Label the data */
+      td:before {
+        content: attr(data-title);
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: #95989a;
+      }
+    
+      td:last-child {
+        border-bottom: none;
+      }
+    }
+  }

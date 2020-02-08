@@ -1,0 +1,289 @@
+/*========================================================
+  0.  WOOCOMMERCE - CART
+========================================================== */
+
+
+/** == CART NOTIFICATIONS == */
+/** ================================================== */
+
+.woocommerce-notices-wrapper {
+    .woocommerce-message, .woocommerce-error, .woocommerce-info {
+        @extend .flash-notification;
+
+        a {
+            order: 1;
+            margin: 0;
+            border: 0 !important;
+            background: #7dc146 !important;
+            border-radius: 2px !important;
+            font-size: 13px !important;
+            font-weight: 600;
+            text-transform: uppercase !important;
+            color: #FFF !important;
+            padding: 1px 9px !important;
+            height: auto !important;
+            line-height: 1.7 !important;
+            white-space: nowrap;
+            max-height: 25px;
+            float: right;
+            &:before { display: none; visibility: hidden; }
+        }
+    }
+}
+
+
+/*========================================================
+  0.  CART FORM 
+========================================================== */
+
+    body.woocommerce-cart {
+        #compact-body {
+            .page-content {
+                
+                form.woocommerce-cart-form {
+                    table.shop_table {
+                        border: 0;
+                        @include breakpoint($touch) { margin-top: 20px; }
+
+                        thead {
+                            @include breakpoint($touch) {
+                                display: block;
+
+                                tr {
+                                    th.product-price { display: none; }
+                                    th.product-subtotal { display: none; }
+                                }
+                            }
+
+                            tr {
+                                th {
+                                    font-family: $secondary-font-stack;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    text-transform: capitalize;
+                                    letter-spacing: 0;
+                                }
+                                th.product-name { padding-left: 0; }
+                                th.product-thumbnail { display: none; }
+                                th.product-remove { display: none; }
+                                th.product-subtotal { text-align: right; }
+                                th.product-quantity { text-align: right; }
+
+                                @include breakpoint($touch) {
+                                    th.product-thumbnail { width: 90px; }
+                                    th.product-quantity { width: 100%; }
+                                }
+                            }
+                        }
+                        tbody {
+                            @include breakpoint($touch) {
+
+                                tr {
+                                    display: flex;
+                                    td {
+                                        &::before { display: none; }
+                                        background: transparent;
+                                    }
+                                    td.product-name {
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding-left: 10px;
+                                    }
+                                    td.product-quantity { text-align: right; }
+
+                                    @include breakpoint($touch) {
+                                        td.product-thumbnail { width: 33%; }
+                                        td.product-name { width: 67%;}
+                                        td.product-quantity { width: 60%; }
+                                    }
+
+                                }
+                            }
+
+                            tr {
+                                td { padding: 25px 0; }
+                                td.product-remove { display: none; }
+                                td.product-subtotal {
+                                    text-align: right;
+                                    @include breakpoint($touch) { display: none; }
+                                }
+                                td.product-thumbnail {
+                                    display: none;
+                                }
+                                td.product-name {
+                                    a {
+                                        font-size: 18px;
+                                        text-transform: capitalize;
+                                        font-weight: 600;
+                                        border: 0;
+                                        letter-spacing: -0.3px;
+
+                                        @include breakpoint($touch) { font-size: 16px; }
+                                    }
+                                    .variation { display: none; }
+                                    a.remove {
+                                        font-size: 11px;
+                                        font-weight: 400;
+                                        margin-top: 5px;
+
+                                        &:hover {
+                                            background: transparent;
+                                            color: red !important;
+                                        }
+                                    }
+                                    @include breakpoint($touch) { text-align: left !important; }
+                                }
+                                td.product-quantity { text-align: right; }
+                                td.product-price {
+                                    @include breakpoint($touch) { display: none; }
+                                }
+                                td.actions {
+
+                                    @include breakpoint($touch) {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        flex-direction: column;
+                                        padding-right: 0;
+                                    }
+
+                                    button[name="update_cart"] { display: none; }
+
+                                    .button {
+                                        order: 1;
+                                        float: left;
+                                        background: transparent;
+                                        color: #000;
+                                        border: 0;
+                                        border-bottom: 1px solid #000;
+                                        padding: 0;
+                                        border-radius: 0;
+                                        font-size: 15px;
+                                        height: 40px;
+
+                                        &:hover, &:focus { background: transparent !important; color: #000 !important; border-bottom: 1px solid #000 !important; }
+
+                                        @include breakpoint($touch) {
+                                            width: auto;
+                                            order: 1;
+                                            align-self: flex-end;
+
+                                        }
+                                    }
+
+                                    .coupon {
+                                        position: relative;
+                                        float: right;
+                                        width: 50%;
+                                        margin-top: 45px;
+                                        margin-bottom: -30px;
+
+                                        @include breakpoint($touch) {
+                                            order: 2;
+                                            width: 100%;
+                                            margin-top: 30px;
+                                            margin-bottom: -30px;
+                                        }
+
+                                        #coupon_code {
+                                            width: 100%;
+                                            border: 0;
+                                            border-bottom: 1px solid #000;
+                                            border-radius: 0;
+                                            padding: 10px 0;
+                                            box-shadow: none;
+                                        }
+                                        .button {
+                                            position: absolute;
+                                            right: 0;
+                                            top: 5px;
+                                            border: 0;
+                                            font-size: 15px;
+                                            text-align: right;
+
+                                            &:hover, &:focus { background: transparent !important; color: #000 !important; border: 0 !important; }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+/*========================================================
+0.  CART COLLATERALS 
+========================================================== */
+
+    body.woocommerce-cart {
+        #compact-body {
+            .page-content {
+                .cart-collaterals {
+                    margin-top: 45px;
+
+                    .cart_totals {
+                        width: 50%;
+                        @include breakpoint($touch) { width: 100%; }
+
+                        > h2 {
+                            display: none;
+                            font-size: 12px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            color: #95989a;
+                            margin: 10px 12px;
+                        }
+                        table.shop_table {
+                            border: 0;
+                            tbody {
+                                tr {
+                                    th {
+                                        font-family: $secondary-font-stack;
+                                        font-size: 15px;
+                                        font-weight: 500;
+                                        text-transform: capitalize;
+                                        letter-spacing: 0;
+                                        border: 0;
+                                    }
+                                    td {
+                                        padding: 11px 12px;
+                                        text-align: right;
+                                        border: 0;
+
+                                        @include breakpoint($touch) { background: transparent; }
+                                    }
+                                }
+                                tr.cart-subtotal {
+
+                                }
+                                tr.order-total {
+                                    th, td {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                        .wc-proceed-to-checkout {
+                            .checkout-button {
+                                width: 100%;
+                                font-family: $primary-font-stack;
+                                font-size: 14px;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border: 0;
+                                border-radius: 25px;
+                                color: #fff;
+                                cursor: pointer;
+                                -webkit-appearance: initial;
+                                transition: background 0.3s,border 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

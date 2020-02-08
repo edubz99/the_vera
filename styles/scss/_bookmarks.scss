@@ -1,0 +1,58 @@
+/*========================================================
+  22.  BOOKMARKS 
+========================================================== */
+
+.wp-job-manager-bookmarks-form {
+    border: 0 !important;
+    margin: 0 !important;
+    overflow: visible;
+    font-size: 17px;
+
+    > div:not(.bookmark-details) {
+        @extend .flash-notification;
+        background: #f3f3f3;
+        color: #000;
+        padding: 12px 18px !important;
+        margin-bottom: 20px;
+
+        .bookmark-notice {
+            &:not(.bookmarked) { display: none !important; }
+            &.bookmarked {
+                &:before { display: none; }
+                padding: 0;
+            }
+        }
+        .remove-bookmark {
+            padding: 0; visibility: visible;
+            font-size: 12px;
+            font-style: normal;
+            background: #adadad;
+            color: #FFF;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            border-radius: 3px;
+            padding: 1px 5px;
+            margin-top: 2px;
+
+            &:hover { background: #000; }
+        }
+    }
+
+    div.bookmark-details {
+        display: block !important;
+        padding: 0 !important;
+        margin-top: -20px;
+
+        label { transform: translateY(32px) !important; }
+        textarea { max-height: 150px; }
+        input[type="submit"] {
+            background: #000;
+            border-color: #000;
+            padding: 0 45px;
+            &:hover, &:focus {
+                background: #000 !important;
+                border-color: #000 !important;
+            }
+        }
+    }
+}

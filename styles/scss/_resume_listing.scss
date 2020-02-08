@@ -1,0 +1,91 @@
+/*========================================================
+  21.  RESUME LISTING 
+========================================================== */
+
+	/** Manage Resumes */
+	#dashboard-body {
+		p { color: #95989A; font-size: 16px; }
+
+		.button {
+			background: #7dc146; background: var(--tertiary-accent-color);
+			border: 1px solid #7dc146; border: 1px solid var(--tertiary-accent-color);
+			height: 53px;
+			line-height: 53px;
+			padding: 0 60px;
+			border-radius: 5px;
+			text-transform: uppercase;
+			color: #FFF;
+			font-size: 15px;
+			font-weight: 400;
+			letter-spacing: .5px;
+		}
+
+		.resume-submitted {
+			@extend .flash-notification;
+			background: #EAF6FB;
+			color: #28A8D3;
+			margin: -30px 0 45px 0 !important;
+		}
+
+		#resume-manager-candidate-dashboard,
+		#submit-resume-form
+		{ margin-bottom: 40px; }
+
+		table.resume-manager-resumes {
+			thead {
+				tr {
+					th {
+						text-transform: uppercase;
+						font-size: 16px;
+						font-weight: 400;
+						color: #636363;
+					}
+				}
+			}
+			tbody {
+				tr {
+					transition: all linear 300ms;
+
+					td {
+						font-size: 18px;
+						padding: 20px 16px 20px 0;
+						transition: all linear 300ms;
+
+						&.resume-title {
+							font-weight: 600;
+							letter-spacing: -0.2px;
+							
+							small {
+								display: inline-block;
+								font-size: 14px;
+								font-weight: 500;
+								padding: 0px 4px;
+							}
+							ul.candidate-dashboard-actions {
+								visibility: visible;
+								font-size: 13px;
+								margin-top: 10px;
+
+								li {
+									&:not(:last-child):after { content: '\00B7'; }
+									a.candidate-dashboard-action-delete {
+										border: 0 !important;
+										background: #dd1713;
+										border-radius: 2px;
+										font-size: 9px;
+										text-transform: uppercase;
+										color: #FFF;
+										padding: 0 5px;
+									}
+								}
+							}
+						}
+						&.candidate-title, &.candidate-location, &.resume-category, &.date { font-size: 15px; }
+					}
+				}
+			}
+			tfoot {
+				display: none;
+			}
+		}	
+	}

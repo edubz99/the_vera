@@ -1,0 +1,3529 @@
+# Copyright (C) 2019 Faisal Khurshid
+# This file is distributed under the GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Capstone 1.7.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/capstone\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-12-27T20:54:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: capstone\n"
+
+#. Theme Name of the theme
+msgid "Capstone"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://themeforest.net/item/capstone-job-board-for-candidates-employers/22355387"
+msgstr ""
+
+#. Description of the theme
+msgid "A Job Board for Candidates & Employers."
+msgstr ""
+
+#. Author of the theme
+msgid "Faisal Khurshid"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/wpscouts/"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/404.php:7
+#: 404.php:7
+msgid "404"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/404.php:8
+#: 404.php:8
+msgid "The page you are looking for is not available."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/404.php:9
+#: 404.php:9
+msgid "Go Back Home"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:38
+#: admin/merlin-config.php:38
+msgid "Theme Setup"
+msgstr ""
+
+#. translators: 1: Title Tag 2: Theme Name 3: Closing Title Tag
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:41
+#: admin/merlin-config.php:41
+msgid "%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:42
+#: admin/merlin-config.php:42
+msgid "Return to the dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:43
+#: admin/merlin-config.php:43
+msgid "Disable this wizard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:45
+#: admin/merlin-config.php:45
+msgid "Skip"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:46
+#: admin/merlin-config.php:46
+msgid "Next"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:47
+#: admin/merlin-config.php:47
+msgid "Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:48
+#: admin/merlin-config.php:48
+msgid "Cancel"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:49
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:50
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:51
+#: admin/merlin-config.php:49
+#: admin/merlin-config.php:50
+#: admin/merlin-config.php:51
+msgid "Install"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:52
+#: admin/merlin-config.php:52
+msgid "Import"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:53
+#: admin/merlin-config.php:53
+msgid "Activate"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:54
+#: admin/merlin-config.php:54
+msgid "Later"
+msgstr ""
+
+#. translators: Theme Name
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:57
+#: admin/merlin-config.php:57
+msgid "Activate %s"
+msgstr ""
+
+#. translators: Theme Name
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:59
+#: admin/merlin-config.php:59
+msgid "%s is Activated"
+msgstr ""
+
+#. translators: Theme Name
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:61
+#: admin/merlin-config.php:61
+msgid "Enter your license key to enable remote updates and theme support."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:62
+#: admin/merlin-config.php:62
+msgid "License key"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:63
+#: admin/merlin-config.php:63
+msgid "The theme is already registered, so you can go to the next step!"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:64
+#: admin/merlin-config.php:64
+msgid "Your theme is activated! Remote updates and theme support are enabled."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:65
+#: admin/merlin-config.php:65
+msgid "Need help?"
+msgstr ""
+
+#. translators: Theme Name
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:68
+#: admin/merlin-config.php:68
+msgid "Welcome to %s"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:69
+#: admin/merlin-config.php:69
+msgid "Hi. Welcome back"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:70
+#: admin/merlin-config.php:70
+msgid "This wizard will set up your theme, install plugins, and import content. It is optional & should take only a few minutes."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:71
+#: admin/merlin-config.php:71
+msgid "You may have already run this theme setup wizard. If you would like to proceed anyway, click on the \"Start\" button below."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:73
+#: admin/merlin-config.php:73
+msgid "Install Child Theme"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:74
+#: admin/merlin-config.php:74
+msgid "You're good to go!"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:75
+#: admin/merlin-config.php:75
+msgid "Let's build & activate a child theme so you may easily make theme changes."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:76
+#: admin/merlin-config.php:76
+msgid "Your child theme has already been installed and is now activated, if it wasn't already."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:77
+#: admin/merlin-config.php:77
+msgid "Learn about child themes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:78
+#: admin/merlin-config.php:78
+msgid "Awesome. Your child theme has already been installed and is now activated."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:79
+#: admin/merlin-config.php:79
+msgid "Awesome. Your child theme has been created and is now activated."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:81
+#: admin/merlin-config.php:81
+msgid "Install Plugins"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:82
+#: admin/merlin-config.php:82
+msgid "You're up to speed!"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:83
+#: admin/merlin-config.php:83
+msgid "Let's install some essential WordPress plugins to get your site up to speed."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:84
+#: admin/merlin-config.php:84
+msgid "The required WordPress plugins are all installed and up to date. Press \"Next\" to continue the setup wizard."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:85
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:89
+#: admin/merlin-config.php:85
+#: admin/merlin-config.php:89
+msgid "Advanced"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:87
+#: admin/merlin-config.php:87
+msgid "Import Content"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:88
+#: admin/merlin-config.php:88
+msgid "Let's import content to your website, to help you get familiar with the theme."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:91
+#: admin/merlin-config.php:91
+msgid "All done. Have fun!"
+msgstr ""
+
+#. translators: Theme Author
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:94
+#: admin/merlin-config.php:94
+msgid "Your theme has been all set up. Enjoy your new theme by %s."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:95
+#: admin/merlin-config.php:95
+msgid "Extras"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:96
+#: admin/merlin-config.php:96
+msgid "View your website"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:97
+#: admin/merlin-config.php:97
+msgid "Get Theme Support"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:98
+#: admin/merlin-config.php:98
+msgid "Get Customization Quote"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/merlin-config.php:118
+#: admin/merlin-config.php:118
+msgid "A special note for this import."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:63
+#: admin/plugins/functions.php:63
+msgid "Advanced Custom Fields Pro"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:70
+#: admin/plugins/functions.php:70
+msgid "Capstone Pro"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:78
+#: admin/plugins/functions.php:78
+msgid "Kirki"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:84
+#: admin/plugins/functions.php:84
+msgid "WooCommerce"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:89
+#: admin/plugins/functions.php:89
+msgid "Classic Editor"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:94
+#: admin/plugins/functions.php:94
+msgid "WP Job Manager"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:100
+#: admin/plugins/functions.php:100
+msgid "WP Job Manager - Resumes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:106
+#: admin/plugins/functions.php:106
+msgid "WP Job Manager - Company Profiles"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:113
+#: admin/plugins/functions.php:113
+msgid "WP Job Manager - Alerts"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:119
+#: admin/plugins/functions.php:119
+msgid "WP Job Manager - Bookmarks"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:125
+#: admin/plugins/functions.php:125
+msgid "WP Job Manager - Tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:131
+#: admin/plugins/functions.php:131
+msgid "WP Job Manager - Applications"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:137
+#: admin/plugins/functions.php:137
+msgid "WP Job Manager - Application Deadline"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:143
+#: admin/plugins/functions.php:143
+msgid "WP Job Manager - WooCommerce Paid Listings"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:149
+#: admin/plugins/functions.php:149
+msgid "WP Job Manager - Indeed Integration"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:155
+#: admin/plugins/functions.php:155
+msgid "WP Job Manager - ZipRecruiter Integration"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:161
+#: admin/plugins/functions.php:161
+msgid "WP Job Manager - Regions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:167
+#: admin/plugins/functions.php:167
+msgid "Nav Menu Roles"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:173
+#: admin/plugins/functions.php:173
+msgid "Content Control"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:179
+#: admin/plugins/functions.php:179
+msgid "Safe SVG"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:189
+#: admin/plugins/functions.php:189
+msgid "Profile Builder"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/admin/plugins/functions.php:198
+#: admin/plugins/functions.php:198
+msgid "Beaver Page Builder"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/comments.php:25
+#: comments.php:25
+msgid "Post Comments"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/comments.php:48
+#: comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/comments.php:61
+#: comments.php:61
+msgid "Name"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/comments.php:66
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-footer.php:11
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:13
+#: comments.php:66
+#: wp-job-manager-applications/job-application-footer.php:11
+#: wp-job-manager-applications/job-application-header.php:13
+msgid "Email"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/comments.php:71
+#: comments.php:71
+msgid "Website"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-none.php:3
+#: content-none.php:3
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-none.php:7
+#: content-none.php:7
+msgid "Sorry, but nothing matched your search term. Please try again with some different keywords."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-none.php:11
+#: content-none.php:11
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-post.php:37
+#: content-post.php:37
+msgid "ago"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-post.php:47
+#: content-post.php:47
+msgid "Post Author"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-post.php:48
+#: content-post.php:48
+msgid "Number of Comments"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/content-post.php:48
+#: content-post.php:48
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/content-post.php:63
+#: .dist/main-files/theme/capstone/content-post.php:64
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:192
+#: content-post.php:63
+#: content-post.php:64
+#: helpers/misc.inc.php:192
+msgid "Learn More"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/footer.php:9
+#: footer.php:9
+msgid "Made with <i class=\"material-icons\">favorite_border</i> by wpscouts - &copy; All rights reserved"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/footer.php:67
+#: footer.php:67
+msgid "Goto Top"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:98
+#: functions.php:98
+msgid "Primary Navigation"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:99
+#: functions.php:99
+msgid "Secondary Navigation"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:100
+#: functions.php:100
+msgid "Account Navigation"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:101
+#: functions.php:101
+msgid "Primary Navigation - Dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:102
+#: functions.php:102
+msgid "Secondary Navigation - Dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:114
+#: functions.php:114
+msgid "Page Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:116
+#: functions.php:116
+msgid "This widget area will appear in all other pages sidebar (if sidebar enabled for the page) which do not have their dedicated widget area."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:125
+#: functions.php:125
+msgid "Blog Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:127
+#: functions.php:127
+msgid "This widget area will appear in blog master, detail page as well as blog archive pages."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:136
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager.php:74
+#: functions.php:136
+#: integrations/wp-job-manager/class-wp-job-manager.php:74
+msgid "Jobs Master Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:138
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager.php:76
+#: functions.php:138
+#: integrations/wp-job-manager/class-wp-job-manager.php:76
+msgid "To configure this widget's area visibility/order go to \"Appearance -> Customize -> Jobs Settings -> Master Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:147
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager.php:85
+#: functions.php:147
+#: integrations/wp-job-manager/class-wp-job-manager.php:85
+msgid "Job Detail Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:149
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager.php:87
+#: functions.php:149
+#: integrations/wp-job-manager/class-wp-job-manager.php:87
+msgid "To configure this widget's area visibility/order go to \"Appearance -> Customize -> Jobs Settings -> Detail Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:158
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:67
+#: functions.php:158
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:67
+msgid "Resumes Master Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:160
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:69
+#: functions.php:160
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:69
+msgid "To configure this widget's area visibility/order go to \"Appearance -> Customize -> Resumes Settings -> Master Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:169
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:78
+#: functions.php:169
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:78
+msgid "Resume Detail Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:171
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:80
+#: functions.php:171
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes.php:80
+msgid "To configure this widget's area visibility/order go to \"Appearance -> Customize -> Resumes Settings -> Detail Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:180
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:56
+#: functions.php:180
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:56
+msgid "Companies Master Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:182
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:58
+#: functions.php:182
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:58
+msgid "To configure this widget's area visibility/order go to \"Appearance -> Customize -> Companies Settings -> Master Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:191
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:67
+#: functions.php:191
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:67
+msgid "Company Detail Sidebar"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:193
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:69
+#: functions.php:193
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies.php:69
+msgid "To configure this widget's area visibility/order go to \"Appearance -> Customize -> Companies Settings -> Detail Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:233
+#: .dist/main-files/theme/capstone/index.php:33
+#: functions.php:233
+#: index.php:33
+msgid "Load More"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:234
+#: functions.php:234
+msgid "Loading"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:235
+#: functions.php:235
+msgid "Data Loaded"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:236
+#: functions.php:236
+msgid "Manage Applications"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:237
+#: functions.php:237
+msgid "Submit Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:238
+#: functions.php:238
+msgid "Select Package"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:239
+#: functions.php:239
+msgid "Select a package above and click the button."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:240
+#: functions.php:240
+msgid "Add New Job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:241
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-edit.php:22
+#: functions.php:241
+#: wp-job-manager-applications/job-application-edit.php:22
+msgid "Delete"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:242
+#: functions.php:242
+msgid "At"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:243
+#: functions.php:243
+msgid "You've decided not to share your position, but it's OK. We won't ask you again."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:244
+#: functions.php:244
+msgid "The network is down or the positioning service can't be reached."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:245
+#: functions.php:245
+msgid "The attempt timed out before it could get the location data."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:246
+#: functions.php:246
+msgid "Geolocation failed due to unknown error."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/functions.php:247
+#: functions.php:247
+msgid "Geolocation is not supported in your browser."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-compact.php:44
+#: header-compact.php:44
+msgid "Back to site"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:35
+#: header-dashboard.php:35
+msgid "Logout"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:40
+#: header-dashboard.php:40
+msgid "Exit Dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:44
+#: .dist/main-files/theme/capstone/includes/menu-icons.inc.php:30
+#: .dist/main-files/theme/capstone/private-messages/frontend/dashboard-filters.php:23
+#: header-dashboard.php:44
+#: includes/menu-icons.inc.php:30
+#: private-messages/frontend/dashboard-filters.php:23
+msgid "Unread Messages"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:49
+#: .dist/main-files/theme/capstone/includes/blog-search.inc.php:12
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:40
+#: .dist/main-files/theme/capstone/includes/hero-facets.inc.php:26
+#: .dist/main-files/theme/capstone/includes/hero-facets.inc.php:29
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:107
+#: .dist/main-files/theme/capstone/includes/menu-icons.inc.php:4
+#: .dist/main-files/theme/capstone/includes/menu-icons.inc.php:25
+#: .dist/main-files/theme/capstone/includes/menu-icons.inc.php:35
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:69
+#: .dist/main-files/theme/capstone/integrations/facetwp/class-facetwp-submit.php:25
+#: .dist/main-files/theme/capstone/searchform.php:14
+#: header-dashboard.php:49
+#: includes/blog-search.inc.php:12
+#: includes/company-search.inc.php:40
+#: includes/hero-facets.inc.php:26
+#: includes/hero-facets.inc.php:29
+#: includes/job-search.inc.php:107
+#: includes/menu-icons.inc.php:4
+#: includes/menu-icons.inc.php:25
+#: includes/menu-icons.inc.php:35
+#: includes/resume-search.inc.php:69
+#: integrations/facetwp/class-facetwp-submit.php:25
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:67
+#: header-dashboard.php:67
+msgid "Main"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:81
+#: .dist/main-files/theme/capstone/includes/dashboard-menu-mobile.inc.php:17
+#: header-dashboard.php:81
+#: includes/dashboard-menu-mobile.inc.php:17
+msgid "Please assign a menu to this location from wordpress admin panel."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/header-dashboard.php:90
+#: header-dashboard.php:90
+msgid "Others"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:16
+#: helpers/breadcrumbs.inc.php:16
+msgid "Home"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:42
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:28
+#: helpers/breadcrumbs.inc.php:42
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:28
+msgid "Companies"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:191
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:195
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:199
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:206
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:210
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:215
+#: helpers/breadcrumbs.inc.php:191
+#: helpers/breadcrumbs.inc.php:195
+#: helpers/breadcrumbs.inc.php:199
+#: helpers/breadcrumbs.inc.php:206
+#: helpers/breadcrumbs.inc.php:210
+#: helpers/breadcrumbs.inc.php:215
+msgid "Archives"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:226
+#: helpers/breadcrumbs.inc.php:226
+msgid "Author:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:231
+#: helpers/breadcrumbs.inc.php:231
+msgid "Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:236
+#: helpers/breadcrumbs.inc.php:236
+msgid "Search results for:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/breadcrumbs.inc.php:241
+#: helpers/breadcrumbs.inc.php:241
+msgid "Error 404"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/comments.inc.php:8
+#: helpers/comments.inc.php:8
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:13
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:56
+#: helpers/compact.inc.php:13
+#: helpers/compact.inc.php:56
+msgid "Login to your account instead?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:13
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:34
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:56
+#: helpers/compact.inc.php:13
+#: helpers/compact.inc.php:34
+#: helpers/compact.inc.php:56
+msgid "click here"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:34
+#: helpers/compact.inc.php:34
+msgid "Register an account instead?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:37
+#: helpers/compact.inc.php:37
+msgid "Forgot you password?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/compact.inc.php:37
+#: helpers/compact.inc.php:37
+msgid "click here to recover"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/demo-user.inc.php:38
+#: helpers/demo-user.inc.php:38
+msgid "You do not have sufficient permissions to perform this action."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/demo-user.inc.php:40
+#: helpers/demo-user.inc.php:40
+msgid "You do not have sufficient permissions to submit this form."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/job-manager.inc.php:20
+#: helpers/job-manager.inc.php:20
+msgid "Close Date:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/job-manager.inc.php:20
+#: .dist/main-files/theme/capstone/helpers/job-manager.inc.php:22
+#: helpers/job-manager.inc.php:20
+#: helpers/job-manager.inc.php:22
+msgid "M j, Y"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/job-manager.inc.php:22
+#: helpers/job-manager.inc.php:22
+msgid "Closed"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/job-manager.inc.php:22
+#: helpers/job-manager.inc.php:22
+msgid "Closes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:38
+#: helpers/misc.inc.php:38
+msgid "Create Menu"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:91
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-resume.php:35
+#: helpers/misc.inc.php:91
+#: wp-job-manager-resumes/content-resume.php:35
+msgid "%s ago"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:96
+#: helpers/misc.inc.php:96
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:122
+#: helpers/misc.inc.php:122
+msgid "Comment navigation"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:125
+#: helpers/misc.inc.php:125
+msgid "Older Comments"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/misc.inc.php:129
+#: helpers/misc.inc.php:129
+msgid "Newer Comments"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:110
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:160
+#: helpers/wp_updates.inc.php:110
+#: helpers/wp_updates.inc.php:160
+msgid "A <strong>valid purchase code</strong> is required for automatic updates."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:121
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:171
+#: helpers/wp_updates.inc.php:121
+#: helpers/wp_updates.inc.php:171
+msgid "Purchase code not updated. We will keep the existing one."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:124
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:174
+#: helpers/wp_updates.inc.php:124
+#: helpers/wp_updates.inc.php:174
+msgid "Your <strong>purchase code is valid</strong>. Thank you! Enjoy one-click automatic updates."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:131
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:181
+#: helpers/wp_updates.inc.php:131
+#: helpers/wp_updates.inc.php:181
+msgid "Purchase code ( e.g. 9g2b13fa-10aa-2267-883a-9201a94cf9b5 )"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:132
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:182
+#: helpers/wp_updates.inc.php:132
+#: helpers/wp_updates.inc.php:182
+msgid "Enter your purchase code and <strong>hit return/enter</strong>."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:134
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:183
+#: helpers/wp_updates.inc.php:134
+#: helpers/wp_updates.inc.php:183
+msgid "Find out how to <a href=\"https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-\" target=\"_blank\">get your purchase code</a>."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:199
+#: helpers/wp_updates.inc.php:199
+msgid "<a href=\"%s\">Please enter your purchase code</a> to get automatic updates for <b>%s</b>."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:245
+#: helpers/wp_updates.inc.php:245
+msgid "We are sorry but we couldn't connect to the verification server. Please try again later."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:258
+#: helpers/wp_updates.inc.php:258
+msgid "Your purchase's support period has ended. Please extend it to receive automatic updates."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:260
+#: helpers/wp_updates.inc.php:260
+msgid "Could not find a sale with this purchase code. Please double check."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/helpers/wp_updates.inc.php:267
+#: helpers/wp_updates.inc.php:267
+msgid "Please enter a valid purchase code. Make sure to get all the characters."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/application-deadline.inc.php:10
+#: .dist/main-files/theme/capstone/includes/application-deadline.inc.php:45
+#: includes/application-deadline.inc.php:10
+#: includes/application-deadline.inc.php:45
+msgid "Deadline"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/application-deadline.inc.php:11
+#: includes/application-deadline.inc.php:11
+msgid "The job listing has expired."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/application-deadline.inc.php:47
+#: includes/application-deadline.inc.php:47
+msgid "The job application date has passed. It's closed now."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/application-deadline.inc.php:49
+#: includes/application-deadline.inc.php:49
+msgid "The job closes on %s."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/blog-search.inc.php:9
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:56
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:33
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:102
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:76
+#: includes/blog-search.inc.php:9
+#: includes/job-search.inc.php:56
+#: includes/resume-search.inc.php:33
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:102
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:76
+msgid "Keywords"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/blog-search.inc.php:10
+#: .dist/main-files/theme/capstone/includes/menu-search.inc.php:23
+#: includes/blog-search.inc.php:10
+#: includes/menu-search.inc.php:23
+msgid "e.g. Hiring Tips"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/blog-search.inc.php:13
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:45
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:112
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:36
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:63
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:90
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:117
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:144
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:171
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:201
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:228
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:255
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:74
+#: includes/blog-search.inc.php:13
+#: includes/company-search.inc.php:45
+#: includes/job-search.inc.php:112
+#: includes/popup-taxonomies.inc.php:36
+#: includes/popup-taxonomies.inc.php:63
+#: includes/popup-taxonomies.inc.php:90
+#: includes/popup-taxonomies.inc.php:117
+#: includes/popup-taxonomies.inc.php:144
+#: includes/popup-taxonomies.inc.php:171
+#: includes/popup-taxonomies.inc.php:201
+#: includes/popup-taxonomies.inc.php:228
+#: includes/popup-taxonomies.inc.php:255
+#: includes/resume-search.inc.php:74
+msgid "or go to"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/blog-search.inc.php:13
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:45
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:112
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:36
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:63
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:90
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:117
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:144
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:171
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:201
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:228
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:255
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:74
+#: includes/blog-search.inc.php:13
+#: includes/company-search.inc.php:45
+#: includes/job-search.inc.php:112
+#: includes/popup-taxonomies.inc.php:36
+#: includes/popup-taxonomies.inc.php:63
+#: includes/popup-taxonomies.inc.php:90
+#: includes/popup-taxonomies.inc.php:117
+#: includes/popup-taxonomies.inc.php:144
+#: includes/popup-taxonomies.inc.php:171
+#: includes/popup-taxonomies.inc.php:201
+#: includes/popup-taxonomies.inc.php:228
+#: includes/popup-taxonomies.inc.php:255
+#: includes/resume-search.inc.php:74
+msgid "advanced search"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/candidate-profile.inc.php:3
+#: includes/candidate-profile.inc.php:3
+msgid "Contact Card"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/candidate-profile.inc.php:9
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:56
+#: includes/candidate-profile.inc.php:9
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:56
+msgid "Contact Now"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-actions.inc.php:10
+#: includes/company-actions.inc.php:10
+msgid "Contact Company"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-desc.inc.php:4
+#: includes/company-desc.inc.php:4
+msgid "About Company"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-header.inc.php:28
+#: includes/company-header.inc.php:28
+msgid "Open Position"
+msgid_plural "Open Positions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/includes/company-meta.inc.php:32
+#: .dist/main-files/theme/capstone/includes/job-meta.inc.php:32
+#: .dist/main-files/theme/capstone/includes/resume-meta.inc.php:32
+#: includes/company-meta.inc.php:32
+#: includes/job-meta.inc.php:32
+#: includes/resume-meta.inc.php:32
+msgid "Overview"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-meta.inc.php:34
+#: .dist/main-files/theme/capstone/includes/job-meta.inc.php:34
+#: .dist/main-files/theme/capstone/includes/resume-meta.inc.php:34
+#: includes/company-meta.inc.php:34
+#: includes/job-meta.inc.php:34
+#: includes/resume-meta.inc.php:34
+msgid "See all %s fields"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-meta.inc.php:35
+#: .dist/main-files/theme/capstone/includes/job-meta.inc.php:35
+#: .dist/main-files/theme/capstone/includes/resume-meta.inc.php:35
+#: includes/company-meta.inc.php:35
+#: includes/job-meta.inc.php:35
+#: includes/resume-meta.inc.php:35
+msgid "See less fields"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-meta.inc.php:36
+#: .dist/main-files/theme/capstone/includes/job-meta.inc.php:36
+#: .dist/main-files/theme/capstone/includes/resume-meta.inc.php:36
+#: includes/company-meta.inc.php:36
+#: includes/job-meta.inc.php:36
+#: includes/resume-meta.inc.php:36
+msgid "Toggle fields visibility"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-positions.inc.php:19
+#: includes/company-positions.inc.php:19
+msgid "Open Positions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-positions.inc.php:21
+#: includes/company-positions.inc.php:21
+msgid "see all"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-positions.inc.php:45
+#: includes/company-positions.inc.php:45
+msgid "No open position found."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-profile.inc.php:12
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:206
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:111
+#: includes/company-profile.inc.php:12
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:206
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:111
+msgid "Company Profile"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-profile.inc.php:28
+#: includes/company-profile.inc.php:28
+msgid "Visit Profile"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-profile.inc.php:30
+#: .dist/main-files/theme/capstone/includes/company-profile.inc.php:33
+#: includes/company-profile.inc.php:30
+#: includes/company-profile.inc.php:33
+msgid "Watch Video"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:16
+#: includes/company-search.inc.php:16
+msgid "Keyword"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:17
+#: includes/company-search.inc.php:17
+msgid "e.g. Amazon"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:22
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:70
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:41
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:103
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:77
+#: includes/company-search.inc.php:22
+#: includes/job-search.inc.php:70
+#: includes/resume-search.inc.php:41
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:103
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:77
+msgid "Location"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:23
+#: includes/company-search.inc.php:23
+msgid "e.g. Washington"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:25
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:73
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:44
+#: includes/company-search.inc.php:25
+#: includes/job-search.inc.php:73
+#: includes/resume-search.inc.php:44
+msgid "Get Current Location"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:25
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:73
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:44
+#: includes/company-search.inc.php:25
+#: includes/job-search.inc.php:73
+#: includes/resume-search.inc.php:44
+msgid "Search Location"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/company-search.inc.php:31
+#: includes/company-search.inc.php:31
+msgid "Choose Industry"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/cta-button.inc.php:17
+#: .dist/main-files/theme/capstone/includes/cta-button.inc.php:45
+#: .dist/main-files/theme/capstone/includes/cta-button.inc.php:58
+#: .dist/main-files/theme/capstone/includes/related-resumes.inc.php:44
+#: includes/cta-button.inc.php:17
+#: includes/cta-button.inc.php:45
+#: includes/cta-button.inc.php:58
+#: includes/related-resumes.inc.php:44
+msgid "Post a Job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/cta-button.inc.php:33
+#: .dist/main-files/theme/capstone/includes/related-jobs.inc.php:49
+#: includes/cta-button.inc.php:33
+#: includes/related-jobs.inc.php:49
+msgid "Post a Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/cta-button.inc.php:73
+#: includes/cta-button.inc.php:73
+msgid "Dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/dashboard-menu-mobile.inc.php:3
+#: .dist/main-files/theme/capstone/includes/menu-mobile.inc.php:3
+#: includes/dashboard-menu-mobile.inc.php:3
+#: includes/menu-mobile.inc.php:3
+msgid "Main Menu"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/dashboard-menu-mobile.inc.php:21
+#: includes/dashboard-menu-mobile.inc.php:21
+msgid "Other Menu"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/dashboard-menu-mobile.inc.php:37
+#: includes/dashboard-menu-mobile.inc.php:37
+msgid "Back to Main Site"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/dashboard-menu-mobile.inc.php:39
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:35
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:50
+#: .dist/main-files/theme/capstone/includes/menu-mobile.inc.php:21
+#: .dist/main-files/theme/capstone/includes/menu-mobile.inc.php:31
+#: includes/dashboard-menu-mobile.inc.php:39
+#: includes/menu-account.inc.php:35
+#: includes/menu-account.inc.php:50
+#: includes/menu-mobile.inc.php:21
+#: includes/menu-mobile.inc.php:31
+msgid "or"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/dashboard-menu-mobile.inc.php:39
+#: includes/dashboard-menu-mobile.inc.php:39
+msgid "logout of your account"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/filters-toggle.inc.php:3
+#: includes/filters-toggle.inc.php:3
+msgid "More Filters"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/filters-toggle.inc.php:4
+#: includes/filters-toggle.inc.php:4
+msgid "Less Filters"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/hero-facets.inc.php:21
+#: includes/hero-facets.inc.php:21
+msgid "Please assign some facets to this search module under \"Page Hero\" meta panel."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-alert.inc.php:4
+#: includes/job-alert.inc.php:4
+msgid "Jobs Alert"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-alert.inc.php:5
+#: includes/job-alert.inc.php:5
+msgid "You can create alerts based on a defined criteria, you can create Daily, weekly &amp; fortnightly email alerts."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-alert.inc.php:6
+#: includes/job-alert.inc.php:6
+msgid "Create Alert"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-facets.inc.php:20
+#: includes/job-facets.inc.php:20
+msgid "Please assign some facets to this area under \"Appearance -> Customize -> Jobs Settings -> Master Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-filters.inc.php:18
+#: includes/job-filters.inc.php:18
+msgid "Job Type"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-filters.inc.php:29
+#: includes/job-filters.inc.php:29
+msgid "Perks &amp; Privilges"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:7
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:174
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:119
+#: includes/job-search.inc.php:7
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:174
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:119
+msgid "All Regions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:19
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:135
+#: includes/job-search.inc.php:19
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:135
+msgid "All Types"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:29
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:7
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:57
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:41
+#: includes/job-search.inc.php:29
+#: includes/resume-search.inc.php:7
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:57
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:41
+msgid "All Categories"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:57
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:34
+#: includes/job-search.inc.php:57
+#: includes/resume-search.inc.php:34
+msgid "Enter Keywords"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:65
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:162
+#: includes/job-search.inc.php:65
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:162
+msgid "Regions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:71
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:42
+#: includes/job-search.inc.php:71
+#: includes/resume-search.inc.php:42
+msgid "Enter Location"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:82
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:123
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:105
+#: includes/job-search.inc.php:82
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:123
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:105
+msgid "Types"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:90
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:52
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:45
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:104
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:78
+#: includes/job-search.inc.php:90
+#: includes/resume-search.inc.php:52
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:45
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:104
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:78
+msgid "Category"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-search.inc.php:98
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:16
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:181
+#: .dist/main-files/theme/capstone/includes/resume-search.inc.php:60
+#: includes/job-search.inc.php:98
+#: includes/popup-taxonomies.inc.php:16
+#: includes/popup-taxonomies.inc.php:181
+#: includes/resume-search.inc.php:60
+msgid "Choose Category"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-tags.inc.php:14
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:259
+#: includes/job-tags.inc.php:14
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:259
+msgid "Perks & Privilges"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/job-tags.inc.php:15
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:269
+#: includes/job-tags.inc.php:15
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:269
+msgid "This job listing offers following perks and privileges."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:24
+#: includes/menu-account.inc.php:24
+msgid "Hello Guest"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:25
+#: includes/menu-account.inc.php:25
+msgid "You can login or register a new account with us."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:33
+#: includes/menu-account.inc.php:33
+msgid "Sign In"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:35
+#: includes/menu-account.inc.php:35
+msgid "register new account"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:40
+#: includes/menu-account.inc.php:40
+msgid "Hello"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:41
+#: includes/menu-account.inc.php:41
+msgid "You can visit your dashboard by clicking the button below."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:49
+#: includes/menu-account.inc.php:49
+msgid "My Dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-account.inc.php:50
+#: includes/menu-account.inc.php:50
+msgid "logout from account"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-explore.inc.php:8
+#: includes/menu-explore.inc.php:8
+msgid "Browse By"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-mobile.inc.php:22
+#: includes/menu-mobile.inc.php:22
+msgid "go to your dashboard"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-mobile.inc.php:32
+#: includes/menu-mobile.inc.php:32
+msgid "login to your account"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-search.inc.php:4
+#: includes/menu-search.inc.php:4
+msgid "Enter query below and click \"search\" or go for advanced search."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-search.inc.php:8
+#: includes/menu-search.inc.php:8
+msgid "Search Jobs"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-search.inc.php:12
+#: includes/menu-search.inc.php:12
+msgid "Search Resumes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-search.inc.php:16
+#: includes/menu-search.inc.php:16
+msgid "Search Companies"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/menu-search.inc.php:20
+#: includes/menu-search.inc.php:20
+msgid "Search Blog"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:52
+#: includes/page-config.inc.php:52
+msgid "Showing jobs for the term \"%s\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:56
+#: includes/page-config.inc.php:56
+msgid "Showing resumes for the term \"%s\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:58
+#: includes/page-config.inc.php:58
+msgid "Search & Filter"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:64
+#: includes/page-config.inc.php:64
+msgid "Search Results"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:67
+#: includes/page-config.inc.php:67
+msgid "Browsing Category"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:70
+#: includes/page-config.inc.php:70
+msgid "Browsing Tag"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:73
+#: includes/page-config.inc.php:73
+msgid "Browsing Archive"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-config.inc.php:82
+#: includes/page-config.inc.php:82
+msgid "Browsing Author"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-permalink.inc.php:4
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:207
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:112
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:178
+#: includes/page-permalink.inc.php:4
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:207
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:112
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:178
+msgid "Listing URL"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-permalink.inc.php:11
+#: includes/page-permalink.inc.php:11
+msgid "Copied!"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/page-permalink.inc.php:11
+#: includes/page-permalink.inc.php:11
+msgid "Copy"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-add-bookmark.inc.php:3
+#: includes/popup-add-bookmark.inc.php:3
+msgid "Bookmark Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-add-bookmark.inc.php:3
+#: includes/popup-add-bookmark.inc.php:3
+msgid "Bookmark Job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-add-bookmark.inc.php:16
+#: includes/popup-add-bookmark.inc.php:16
+msgid "You must <a href=\"%s\">sign in</a> to bookmark this listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-add-bookmark.inc.php:19
+#: includes/popup-add-bookmark.inc.php:19
+msgid "Please enable the bookmarks plugin to activate this feature."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-apply-job.inc.php:3
+#: includes/popup-apply-job.inc.php:3
+msgid "Apply For job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-contact-candidate.inc.php:2
+#: includes/popup-contact-candidate.inc.php:2
+msgid "Contact Candidate"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:15
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:180
+#: includes/popup-taxonomies.inc.php:15
+#: includes/popup-taxonomies.inc.php:180
+msgid "Browse Categories"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:18
+#: includes/popup-taxonomies.inc.php:18
+msgid "Showing all categories for the jobs."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:34
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:65
+#: includes/popup-taxonomies.inc.php:34
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:65
+msgid "No job category is defined or is assigned a job listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:44
+#: includes/popup-taxonomies.inc.php:44
+msgid "Browse Tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:45
+#: includes/popup-taxonomies.inc.php:45
+msgid "Showing all tags for the jobs."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:61
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:104
+#: includes/popup-taxonomies.inc.php:61
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:104
+msgid "No job tags are defined or is assigned a job listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:71
+#: includes/popup-taxonomies.inc.php:71
+msgid "Browse Types"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:72
+#: includes/popup-taxonomies.inc.php:72
+msgid "Showing all types for the jobs."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:88
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:143
+#: includes/popup-taxonomies.inc.php:88
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:143
+msgid "No type defined or is assigned a job listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:98
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:236
+#: includes/popup-taxonomies.inc.php:98
+#: includes/popup-taxonomies.inc.php:236
+msgid "Browse Regions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:99
+#: includes/popup-taxonomies.inc.php:99
+msgid "Showing all regions for the jobs."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:115
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:182
+#: includes/popup-taxonomies.inc.php:115
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:182
+msgid "No region defined or is assigned a job listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:125
+#: includes/popup-taxonomies.inc.php:125
+msgid "Browse Companies"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:126
+#: includes/popup-taxonomies.inc.php:126
+msgid "Showing all companies for the jobs."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:142
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:48
+#: includes/popup-taxonomies.inc.php:142
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:48
+msgid "No company defined or is assigned a job listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:152
+#: includes/popup-taxonomies.inc.php:152
+msgid "Browse Industries"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:153
+#: includes/popup-taxonomies.inc.php:153
+msgid "Showing all industries for the jobs."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:169
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:87
+#: includes/popup-taxonomies.inc.php:169
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:87
+msgid "No industry defined or is assigned a job listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:183
+#: includes/popup-taxonomies.inc.php:183
+msgid "Showing all categories for the resumes."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:199
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:49
+#: includes/popup-taxonomies.inc.php:199
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:49
+msgid "No resume category defined or is assigned a resume listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:209
+#: includes/popup-taxonomies.inc.php:209
+msgid "Browse Skills"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:210
+#: includes/popup-taxonomies.inc.php:210
+msgid "Showing all skills for the resumes."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:226
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:88
+#: includes/popup-taxonomies.inc.php:226
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:88
+msgid "No resume skill defined or is assigned a resume listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:237
+#: includes/popup-taxonomies.inc.php:237
+msgid "Showing all regions for the resumes."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/popup-taxonomies.inc.php:253
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:127
+#: includes/popup-taxonomies.inc.php:253
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:127
+msgid "No resume region defined or is assigned a resume listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/post-taxonomies.inc.php:4
+#: includes/post-taxonomies.inc.php:4
+msgid "Tags:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/post-taxonomies.inc.php:7
+#: includes/post-taxonomies.inc.php:7
+msgid "Categories:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/post-taxonomies.inc.php:14
+#: .dist/main-files/theme/capstone/index.php:45
+#: .dist/main-files/theme/capstone/page.php:29
+#: includes/post-taxonomies.inc.php:14
+#: index.php:45
+#: page.php:29
+msgid "Pages:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/preloader.inc.php:6
+#: includes/preloader.inc.php:6
+msgid "Site is loading."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/related-jobs.inc.php:20
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:208
+#: includes/related-jobs.inc.php:20
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:208
+msgid "Similiar Jobs"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/related-jobs.inc.php:41
+#: includes/related-jobs.inc.php:41
+msgid "No related job found."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/related-jobs.inc.php:49
+#: includes/related-jobs.inc.php:49
+msgid "Looking for a job?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/related-resumes.inc.php:20
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:179
+#: includes/related-resumes.inc.php:20
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:179
+msgid "Similiar Resumes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/related-resumes.inc.php:36
+#: includes/related-resumes.inc.php:36
+msgid "No related resume found."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/related-resumes.inc.php:44
+#: includes/related-resumes.inc.php:44
+msgid "Looking for candidates?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/resume-desc.inc.php:7
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:46
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:30
+#: includes/resume-desc.inc.php:7
+#: job_manager/job-preview.php:46
+#: wp-job-manager-resumes/content-single-resume.php:30
+msgid "Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/resume-education.inc.php:3
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:36
+#: includes/resume-education.inc.php:3
+#: wp-job-manager-resumes/content-single-resume.php:36
+msgid "Education"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/resume-experience.inc.php:3
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:71
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:72
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:108
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:120
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:84
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:85
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:94
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:55
+#: includes/resume-experience.inc.php:3
+#: integrations/private-messages/class-private-messages-template.php:71
+#: integrations/private-messages/class-private-messages-template.php:72
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:108
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:120
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:84
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:85
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:94
+#: wp-job-manager-resumes/content-single-resume.php:55
+msgid "Experience"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/resume-facets.inc.php:20
+#: includes/resume-facets.inc.php:20
+msgid "Please assign some facets to this area under \"Appearance -> Customize -> Resumes Settings -> Master Page\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/resume-filters.inc.php:23
+#: includes/resume-filters.inc.php:23
+msgid "Skills"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/site-clipboard.inc.php:12
+#: .dist/main-files/theme/capstone/includes/site-clipboard.inc.php:13
+#: includes/site-clipboard.inc.php:12
+#: includes/site-clipboard.inc.php:13
+msgid "Featured News"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/site-clipboard.inc.php:15
+#: includes/site-clipboard.inc.php:15
+msgid "Recent News"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/site-clipboard.inc.php:16
+#: includes/site-clipboard.inc.php:16
+msgid "Other News"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/includes/site-notification.inc.php:5
+#: includes/site-notification.inc.php:5
+msgid "Close Notification"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/index.php:35
+#: index.php:35
+msgid "End of content"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/index.php:36
+#: index.php:36
+msgid "No more pages to load"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/facetwp/class-facetwp-template.php:170
+#: integrations/facetwp/class-facetwp-template.php:170
+msgctxt "%1$d = first, %2$d = last, %3$d = total"
+msgid "Showing the single result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:60
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:61
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:52
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:64
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:65
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:66
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:74
+#: integrations/private-messages/class-private-messages-template.php:60
+#: integrations/private-messages/class-private-messages-template.php:61
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:52
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:64
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:65
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:66
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:74
+msgid "Salary"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:83
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:84
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:80
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:92
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:106
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:107
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:115
+#: integrations/private-messages/class-private-messages-template.php:83
+#: integrations/private-messages/class-private-messages-template.php:84
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:80
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:92
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:106
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:107
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:115
+msgid "Career Level"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:94
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages-template.php:95
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:136
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:148
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:125
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:126
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-template.php:134
+#: integrations/private-messages/class-private-messages-template.php:94
+#: integrations/private-messages/class-private-messages-template.php:95
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:136
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:148
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:125
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:126
+#: integrations/wp-job-manager/class-wp-job-manager-template.php:134
+msgid "Qualification"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/private-messages/class-private-messages.php:29
+#: integrations/private-messages/class-private-messages.php:29
+msgid "Hello there"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/class-woocommerce-checkout.php:32
+#: integrations/woocommerce/class-woocommerce-checkout.php:32
+msgid "Personal Information"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/class-woocommerce-checkout.php:43
+#: integrations/woocommerce/class-woocommerce-checkout.php:43
+msgid "Payment Methods"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/class-woocommerce-checkout.php:60
+#: integrations/woocommerce/class-woocommerce-checkout.php:60
+msgid "Still looking around?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/class-woocommerce-checkout.php:60
+#: integrations/woocommerce/class-woocommerce-checkout.php:60
+msgid "continue shopping"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:13
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:13
+msgid "Theme Settings"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:14
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:14
+msgid "This section configures woocommerce options relevant to capstone theme."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:22
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:22
+msgid "Restore Vanilla \"Products Grid\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:23
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:23
+msgid "Check this to restore to default products grid."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:33
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:33
+msgid "Restore Vanilla \"My Account\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:34
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:34
+msgid "Check this to disable [woocommerce_my_account] shortcode override."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:44
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:44
+msgid "Restore Vanilla \"Checkout Fields\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:45
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:45
+msgid "Check this to restore to default checkout fields."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:55
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:55
+msgid "Enable \"Product\" Permalinks"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/woocommerce/customizer/customizer-woocommerce.php:56
+#: integrations/woocommerce/customizer/customizer-woocommerce.php:56
+msgid "Enable \"product\" permalinks which is disabled by the theme for redundancy reason."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:25
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:25
+msgid "Excerpt"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:28
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:39
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:28
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:39
+msgid "Define a short excerpt which will appear in job listing view."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-fields.php:37
+#: integrations/wp-job-manager/class-wp-job-manager-fields.php:37
+msgid "Job Excerpt"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:101
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:101
+msgid "Excerpt:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:151
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:151
+msgid "?subject=Application for \"%s\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:162
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:162
+msgid "Apply Now"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:187
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:79
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:187
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:79
+msgid "More Actions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:203
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:203
+msgid "Print Job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:208
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:100
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:208
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:100
+msgid "Share via Email"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:213
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:105
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:213
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:105
+msgid "Share via Twitter"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:218
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:110
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:218
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:110
+msgid "Share via Facebook"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:223
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:223
+msgid "Report Job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:223
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:123
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:223
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:123
+msgid "Report"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:234
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:234
+msgid "Location Auto-complete"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:235
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:235
+msgid "Enable Location Auto-complete"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-listing.php:236
+#: integrations/wp-job-manager/class-wp-job-manager-listing.php:236
+msgid "Check this to enable location autocomplete feature."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:68
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:52
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:68
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:52
+msgid "View all categories"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:84
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:84
+msgid "Tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:96
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:96
+msgid "All Tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:107
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:107
+msgid "View all tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:146
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:146
+msgid "View all types"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-menu.php:185
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:130
+#: integrations/wp-job-manager/class-wp-job-manager-menu.php:185
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:130
+msgid "View all regions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:49
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:49
+msgid "Company Name"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:50
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:50
+msgid "Upload Logo"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:56
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:163
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:52
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:99
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:56
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:163
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:52
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:99
+msgid "Preview Listing"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:66
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:66
+msgid "Job Information"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:77
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:77
+msgid "Company Information"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:98
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:99
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:98
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:99
+msgid "Create New Company"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:103
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:104
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:103
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:104
+msgid "Existing Company"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:109
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:109
+msgid "You either have not logged in or you don't have any company assigned."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:160
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:165
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:96
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:101
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:160
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:165
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:96
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:101
+msgid "Choose Package"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:162
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:98
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:162
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:98
+msgid "Listing Details"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:181
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:181
+msgid "Google Maps API Key (alt)"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:182
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:182
+msgid "This API key can be restricted with HTTP referrers. It is used for different clients-side google services e.g. user geolocation (geocode API), location autocomplete (places API)."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:189
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:118
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:189
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:118
+msgid "Package Repurchase"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:190
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:119
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:190
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:119
+msgid "Disable Package Repurchase"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/class-wp-job-manager-submission.php:191
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:120
+#: integrations/wp-job-manager/class-wp-job-manager-submission.php:191
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:120
+msgid "Check this to hide packages which user has already purchased."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:30
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:30
+msgid "Jobs Settings"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:31
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:31
+msgid "This panels configures job archive and single job listing page settings."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:36
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:20
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:20
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:36
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:20
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:20
+msgid "Master Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:37
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:37
+msgid "This section configures jobs master listing page."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:46
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:30
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:46
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:30
+msgid "Enable Maps"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:47
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:47
+msgid "Check this to enable maps on jobs archive page. Also make sure that map is configured properly."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:56
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:56
+msgid "Auto Excerpt"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:57
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:57
+msgid "It'll only be visible if custom excerpt is not defined for the listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:64
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:64
+msgid "Alert Module"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:65
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:205
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:110
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:38
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:176
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:65
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:205
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:110
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:38
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:176
+msgid "Native Widgets"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:69
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:42
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:69
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:42
+msgid "Facets Module"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:72
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:45
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:72
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:45
+msgid "Search Module"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:73
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:46
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:73
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:46
+msgid "Filters Module"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:80
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:195
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:101
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:54
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:166
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:80
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:195
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:101
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:54
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:166
+msgid "Sidebar Order"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:81
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:81
+msgid "Change the order and visibility (at global level) of job archive sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:93
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:67
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:93
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:67
+msgid "Search Module Order"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:94
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:68
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:94
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:68
+msgid "Change the order and visibility (at global level) of \"Search Module\" elements."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:106
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:79
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:106
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:79
+msgid "Category - Popup"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:114
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:114
+msgid "Filters Module Order"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:115
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:88
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:115
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:88
+msgid "Change the order and visibility (at global level) of different filters within \"Filters Module\"."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:123
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:123
+msgid "Job Types"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:124
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:185
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:247
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:124
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:185
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:247
+msgid "Job Tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:133
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:102
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:133
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:102
+msgid "Filters Breakpoint"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:134
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:103
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:134
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:103
+msgid "How many filters to show before \"More Filters\" button."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:150
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:119
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:150
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:119
+msgid "Facets Module Order"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:151
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:151
+msgid "Please enable only jobs related facets below."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:161
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:67
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:131
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:161
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:67
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:131
+msgid "Detail Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:162
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:162
+msgid "This section configures job detail page."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:171
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:77
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:141
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:171
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:77
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:141
+msgid "Content Order"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:172
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:172
+msgid "Change the order and visibility (at global level) of job listing content."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:182
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:182
+msgid "Job Header"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:183
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:183
+msgid "Job Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:184
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:184
+msgid "Jobs Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:186
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:186
+msgid "Job Actions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:196
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:196
+msgid "Change the order and visibility (at global level) of job listing sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:217
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:217
+msgid "Job Meta Limit"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:218
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:122
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:200
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:218
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:122
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:200
+msgid "How many meta values to show before \"see all\" link?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:228
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:228
+msgid "Similiar Jobs Count"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:229
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:229
+msgid "How many (at max) similiar jobs to display in sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:239
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:239
+msgid "Toggle \"Video\" visibility in Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:240
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:240
+msgid "Check (or uncheck) this field to toggle \"video\" field visibility above job description."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:248
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:248
+msgid "This section is only applicable if you have activated \"WP Job Manager - Tags\" add-on."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:257
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:257
+msgid "Tags Title"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:260
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:260
+msgid "Job Tags would be represented with this title on the fron-end."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:267
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:267
+msgid "Tags Descripion"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:270
+#: integrations/wp-job-manager/customizer/customizer-wp-job-manager.php:270
+msgid "This text would be displayed in detail job listing page as a small description."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:2
+#: integrations/wp-job-manager/templates/listing-spotlight.php:2
+msgid "Listing Spotlight"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:29
+#: integrations/wp-job-manager/templates/listing-spotlight.php:29
+msgid "Open Position at %s"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:34
+#: integrations/wp-job-manager/templates/listing-spotlight.php:34
+msgid "opening"
+msgid_plural "openings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:37
+#: integrations/wp-job-manager/templates/listing-spotlight.php:37
+msgid "skill"
+msgid_plural "skills"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:58
+#: integrations/wp-job-manager/templates/listing-spotlight.php:58
+msgid "Save for later"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:60
+#: integrations/wp-job-manager/templates/listing-spotlight.php:60
+msgid "Check this out"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager/templates/listing-spotlight.php:68
+#: integrations/wp-job-manager/templates/listing-spotlight.php:68
+msgid "There is no listing for your mentioned criteria."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-applications/class-wp-job-manager-applications.php:38
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/application-form-login.php:1
+#: integrations/wp-job-manager-applications/class-wp-job-manager-applications.php:38
+#: wp-job-manager-applications/application-form-login.php:1
+msgid "You must <a href=\"%s\">sign in</a> to apply for this position."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-bookmarks/class-wp-job-manager-bookmarks.php:44
+#: integrations/wp-job-manager-bookmarks/class-wp-job-manager-bookmarks.php:44
+msgid "Bookmark It"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:40
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:40
+msgid "All Companies"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:51
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:51
+msgid "View all companies"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:67
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:67
+msgid "Industries"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:79
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:79
+msgid "All Industries"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:90
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-menu.php:90
+msgid "View all industries"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:39
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:40
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:39
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:40
+msgid "Company Size"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:50
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:51
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:50
+#: integrations/wp-job-manager-companies/class-wp-job-manager-companies-template.php:51
+msgid "Foundation Year"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:14
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:14
+msgid "Companies Settings"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:15
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:15
+msgid "This panels configures companies master and detail listing page settings."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:21
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:21
+msgid "This section configures companies master listing page."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:30
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:30
+msgid "Comapny Listings Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:31
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:31
+msgid "This is the page where you are using `[job_manager_companies]` shortcode."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:39
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:39
+msgid "\"Open Positions\" Excerpt"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:40
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:40
+msgid "Display a list of company-specific recent companys?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:44
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:44
+msgid "Enable Excerpt"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:45
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:45
+msgid "Disable Excerpt"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:53
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:53
+msgid "Limit \"Open Positions\""
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:54
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:54
+msgid "How many \"Open Positions\" to display, if enabled?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:68
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:68
+msgid "This section configures company detail page."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:78
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:78
+msgid "Change the order and visibility (at global level) of company listing content."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:88
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:88
+msgid "Company Header"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:89
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:89
+msgid "Company Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:90
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:90
+msgid "Companies Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:91
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:91
+msgid "Company Positions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:92
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:92
+msgid "Company Actions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:102
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:102
+msgid "Change the order and visibility (at global level) of company listing sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:121
+#: integrations/wp-job-manager-companies/customizer/customizer-wp-job-manager-companies.php:121
+msgid "Company Meta Limit"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:91
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:91
+msgid "Master Job Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:92
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:130
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:92
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:130
+msgid "Preview Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:93
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:131
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:93
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:131
+msgid "Preview Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:95
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:95
+msgid "Detail Job Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:96
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:96
+msgid "Quick Job Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:97
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:97
+msgid "Quick Job Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:98
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:98
+msgid "Before Job Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:99
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:108
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:99
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:108
+msgid "Job Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:100
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:109
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:100
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:109
+msgid "Job Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:101
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:101
+msgid "After Job Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:102
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:110
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:102
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:110
+msgid "Before Job Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:103
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:111
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:103
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:111
+msgid "After Job Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:104
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:104
+msgid "Job More Actions Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:105
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:105
+msgid "Job More Actions End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:107
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:107
+msgid "Preview Job Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:115
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:115
+msgid "Detail Company Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:116
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:116
+msgid "Quick Company Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:117
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:117
+msgid "Quick Company Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:118
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:118
+msgid "Before Company Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:119
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:119
+msgid "Company Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:120
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:120
+msgid "Company Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:121
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:121
+msgid "After Company Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:123
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:123
+msgid "Sidebar Company Modules"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:124
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:124
+msgid "Before Company Social Icons"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:125
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:125
+msgid "After Company Social Icons"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:129
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:129
+msgid "Master Resume Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:133
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:133
+msgid "Detail Resume Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:134
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:134
+msgid "Quick Resume Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:135
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:135
+msgid "Quick Resume Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:136
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:136
+msgid "Before Resume Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:137
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:150
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:137
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:150
+msgid "Resume Meta Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:138
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:151
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:138
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:151
+msgid "Resume Meta End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:139
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:139
+msgid "After Resume Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:140
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:152
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:140
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:152
+msgid "Before Resume Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:141
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:153
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:141
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:153
+msgid "After Resume Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:142
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:142
+msgid "Resume More Actions Start"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:143
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:143
+msgid "Resume More Actions End"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:145
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:145
+msgid "Sidebar Resume Modules"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:146
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:146
+msgid "Before Candidate Social Icons"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:147
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:147
+msgid "After Candidate Social Icons"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:149
+#: integrations/wp-job-manager-field-editor/class-wp-job-manager-field-editor.php:149
+msgid "Preview Resume Page"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:95
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:95
+msgid "Print Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:123
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-listing.php:123
+msgid "Report Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:29
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:29
+msgid "Resume Category"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:68
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:68
+msgid "Resume Skills"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:80
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:80
+msgid "All Skills"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:91
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:91
+msgid "View all skills"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:107
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-menu.php:107
+msgid "Resume Regions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:62
+#: integrations/wp-job-manager-resumes/class-wp-job-manager-resumes-submission.php:62
+msgid "Resume Information"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:14
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:14
+msgid "Resumes Settings"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:15
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:15
+msgid "This panels configures resume archive and single resume listing page settings."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:21
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:21
+msgid "This section configures resumes master listing page."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:31
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:31
+msgid "Check this to enable maps on resumes archive page. Also make sure that map is configured properly."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:55
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:55
+msgid "Change the order and visibility (at global level) of resume archive sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:87
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:87
+msgid "Filters Order"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:94
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:94
+msgid "Resume Tags"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:120
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:120
+msgid "Please enable only resumes related facets below."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:132
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:132
+msgid "This section configures resume detail page."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:142
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:142
+msgid "Change the order and visibility (at global level) of resume listing content."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:152
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:152
+msgid "Resume Header"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:153
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:153
+msgid "Resume Meta"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:154
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:154
+msgid "Resumes Description"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:155
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:155
+msgid "Resumes Education"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:156
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:156
+msgid "Resumes Experience"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:157
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:157
+msgid "Resume Actions"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:167
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:167
+msgid "Change the order and visibility (at global level) of resume listing sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:177
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:177
+msgid "Candidate Profile"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:188
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:188
+msgid "Similiar Resumes Count"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:189
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:189
+msgid "How many (at max) similiar resumes to display in sidebar."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:199
+#: integrations/wp-job-manager-resumes/customizer/customizer-wp-job-manager-resumes.php:199
+msgid "Resume Meta Limit"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:21
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:4
+#: job_manager/account-signin.php:21
+#: wp-job-manager-resumes/account-signin.php:4
+msgid "Your account"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:25
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:8
+#: job_manager/account-signin.php:25
+#: wp-job-manager-resumes/account-signin.php:8
+msgid "You are currently signed in as <strong>%s</strong>."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:28
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:11
+#: job_manager/account-signin.php:28
+#: wp-job-manager-resumes/account-signin.php:11
+msgid "Sign out"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:39
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:22
+#: job_manager/account-signin.php:39
+#: wp-job-manager-resumes/account-signin.php:22
+msgid "Have an account?"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:42
+#: job_manager/account-signin.php:42
+msgid "Do you have an account? Login Here."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:45
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:24
+#: job_manager/account-signin.php:45
+#: wp-job-manager-resumes/account-signin.php:24
+msgid "Sign in"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:49
+#: job_manager/account-signin.php:49
+msgid "If you don't have an account you can %screate one below by entering your email address/username."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:49
+#: job_manager/account-signin.php:49
+msgid "optionally"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:51
+#: job_manager/account-signin.php:51
+msgid "Your account details will be confirmed via email."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:56
+#: job_manager/account-signin.php:56
+msgid "You must sign in to create a new listing."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:64
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:40
+#: job_manager/account-signin.php:64
+#: wp-job-manager-resumes/account-signin.php:40
+msgid "Account Information"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/account-signin.php:69
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/application-form.php:13
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:45
+#: job_manager/account-signin.php:69
+#: wp-job-manager-applications/application-form.php:13
+#: wp-job-manager-resumes/account-signin.php:45
+msgid "(optional)"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:31
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:12
+#: job_manager/job-preview.php:31
+#: wp-job-manager-resumes/content-single-resume.php:12
+msgid "Meta Info"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:35
+#: job_manager/job-preview.php:35
+msgid "Job Type:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:38
+#: job_manager/job-preview.php:38
+msgid "Company:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:39
+#: job_manager/job-preview.php:39
+msgid "Tagline:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:55
+#: job_manager/job-preview.php:55
+msgid "Submit Listing"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/job_manager/job-preview.php:56
+#: job_manager/job-preview.php:56
+msgid "Edit listing"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/private-messages/frontend/dashboard-filters.php:21
+#: private-messages/frontend/dashboard-filters.php:21
+msgid "All Messages"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/private-messages/frontend/dashboard-filters.php:22
+#: private-messages/frontend/dashboard-filters.php:22
+msgid "Starred Messages"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/private-messages/frontend/dashboard-messages-overview.php:8
+#: private-messages/frontend/dashboard-messages-overview.php:8
+msgid "by"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/private-messages/frontend/dashboard-messages.php:20
+#: private-messages/frontend/dashboard-messages.php:20
+msgid "No Messages"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/private-messages/frontend/dashboard-messages.php:26
+#: private-messages/frontend/dashboard-messages.php:26
+msgid "New Message"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/searchform.php:12
+#: searchform.php:12
+msgid "News, updates, and stories search through them using form below."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/searchform.php:15
+#: searchform.php:15
+msgid "Go"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/single-company.php:46
+#: .dist/main-files/theme/capstone/taxonomy-job_listing_company.php:52
+#: single-company.php:46
+#: taxonomy-job_listing_company.php:52
+msgid "See all companies"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/single-job_listing.php:52
+#: single-job_listing.php:52
+msgid "See all jobs"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/single-resume.php:60
+#: single-resume.php:60
+msgid "See all resumes"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Compact template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Dashboard template"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:7
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:7
+#: wc-paid-listings/package-selection.php:7
+#: wc-paid-listings/resume-package-selection.php:7
+msgid "Your Packages:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:23
+#: wc-paid-listings/package-selection.php:23
+msgid "%1$s job posted out of %2$d"
+msgid_plural "%1$s jobs posted out of %2$d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:25
+#: wc-paid-listings/package-selection.php:25
+msgid "%s job posted"
+msgid_plural "%s jobs posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:29
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:61
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:29
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:63
+#: wc-paid-listings/package-selection.php:29
+#: wc-paid-listings/package-selection.php:61
+#: wc-paid-listings/resume-package-selection.php:29
+#: wc-paid-listings/resume-package-selection.php:63
+msgid "listed for %s day"
+msgid_plural "listed for %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:38
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:38
+#: wc-paid-listings/package-selection.php:38
+#: wc-paid-listings/resume-package-selection.php:38
+msgid "Purchase Package:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:60
+#: wc-paid-listings/package-selection.php:60
+msgid "%1$s for %2$s job"
+msgid_plural "%1$s for %2$s jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:60
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:60
+#: wc-paid-listings/package-selection.php:60
+#: wc-paid-listings/resume-package-selection.php:60
+msgid "unlimited"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/package-selection.php:71
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:75
+#: wc-paid-listings/package-selection.php:71
+#: wc-paid-listings/resume-package-selection.php:75
+msgid "No packages found"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:23
+#: wc-paid-listings/resume-package-selection.php:23
+msgid "%1$s resume posted out of %2$d"
+msgid_plural "%1$s resumes posted out of %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:25
+#: wc-paid-listings/resume-package-selection.php:25
+msgid "%s resume posted"
+msgid_plural "%s resumes posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wc-paid-listings/resume-package-selection.php:60
+#: wc-paid-listings/resume-package-selection.php:60
+msgid "%1$s to post %2$d resume"
+msgid_plural "%1$s to post %2$s resumes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/application-form.php:24
+#: wp-job-manager-applications/application-form.php:24
+msgid "Send application"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/application-submitted.php:2
+#: wp-job-manager-applications/application-submitted.php:2
+msgid "Your job application has been submitted successfully"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/applied-notice.php:2
+#: wp-job-manager-applications/applied-notice.php:2
+msgid "You have already applied for this job."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-edit.php:4
+#: wp-job-manager-applications/job-application-edit.php:4
+msgid "Application status"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-edit.php:15
+#: wp-job-manager-applications/job-application-edit.php:15
+msgid "Rating (out of 5)"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-edit.php:23
+#: wp-job-manager-applications/job-application-edit.php:23
+msgid "Save changes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-footer.php:7
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:26
+#: wp-job-manager-applications/job-application-footer.php:7
+#: wp-job-manager-applications/job-application-header.php:26
+msgid "Edit"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-footer.php:8
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:10
+#: wp-job-manager-applications/job-application-footer.php:8
+#: wp-job-manager-applications/job-application-header.php:10
+msgid "Notes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-footer.php:11
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:13
+#: wp-job-manager-applications/job-application-footer.php:11
+#: wp-job-manager-applications/job-application-header.php:13
+msgid "Your job application for %s"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-footer.php:11
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:13
+#: wp-job-manager-applications/job-application-footer.php:11
+#: wp-job-manager-applications/job-application-header.php:13
+msgid "Hello %s"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-footer.php:24
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:25
+#: wp-job-manager-applications/job-application-footer.php:24
+#: wp-job-manager-applications/job-application-header.php:25
+msgid "Details"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:18
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-application-header.php:23
+#: wp-job-manager-applications/job-application-header.php:18
+#: wp-job-manager-applications/job-application-header.php:23
+msgid "Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:2
+#: wp-job-manager-applications/job-applications.php:2
+msgid "Download CSV"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:3
+#: wp-job-manager-applications/job-applications.php:3
+msgid "The job applications for \"%s\" are listed below."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:8
+#: wp-job-manager-applications/job-applications.php:8
+msgid "Filter by status"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:16
+#: wp-job-manager-applications/job-applications.php:16
+msgid "Newest first"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:17
+#: wp-job-manager-applications/job-applications.php:17
+msgid "Sort by name"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:18
+#: wp-job-manager-applications/job-applications.php:18
+msgid "Sort by rating"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:31
+#: wp-job-manager-applications/job-applications.php:31
+msgid "Title"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:32
+#: wp-job-manager-applications/job-applications.php:32
+msgid "Date Posted"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:33
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/past-applications.php:5
+#: wp-job-manager-applications/job-applications.php:33
+#: wp-job-manager-applications/past-applications.php:5
+msgid "Status"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:34
+#: wp-job-manager-applications/job-applications.php:34
+msgid "Rating"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:46
+#: wp-job-manager-applications/job-applications.php:46
+msgid "Application Details"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:50
+#: wp-job-manager-applications/job-applications.php:50
+msgid "Edit Application"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/job-applications.php:54
+#: wp-job-manager-applications/job-applications.php:54
+msgid "Application Notes"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/past-applications-none.php:1
+#: wp-job-manager-applications/past-applications-none.php:1
+msgid "You haven't made any applications yet!"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/past-applications.php:3
+#: wp-job-manager-applications/past-applications.php:3
+msgid "Job"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/past-applications.php:4
+#: wp-job-manager-applications/past-applications.php:4
+msgid "Date Applied"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-applications/past-applications.php:6
+#: wp-job-manager-applications/past-applications.php:6
+msgid "Application Message"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:28
+#: wp-job-manager-resumes/account-signin.php:28
+msgid "If you don&rsquo;t have an account you can create one below by entering your email address. Your account details will be confirmed via email."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/account-signin.php:32
+#: wp-job-manager-resumes/account-signin.php:32
+msgid "You must sign in to submit a resume."
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-resume-file.php:9
+#: wp-job-manager-resumes/content-resume-file.php:9
+msgid "Download Resume"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:15
+#: wp-job-manager-resumes/content-single-resume.php:15
+msgid "Location:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:16
+#: wp-job-manager-resumes/content-single-resume.php:16
+msgid "Email:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:18
+#: wp-job-manager-resumes/content-single-resume.php:18
+msgid "Category:"
+msgstr ""
+
+#: .dist/main-files/theme/capstone/wp-job-manager-resumes/content-single-resume.php:21
+#: wp-job-manager-resumes/content-single-resume.php:21
+msgid "Skills:"
+msgstr ""
+
+#: wp-job-manager-resumes/access-denied-contact-details.php:19
+msgid "You are not allowed to view the contact details."
+msgstr ""

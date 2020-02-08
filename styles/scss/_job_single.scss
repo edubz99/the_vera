@@ -1,0 +1,113 @@
+/*========================================================
+  15.  JOB SINGLE
+========================================================== */
+
+/** == SIDEBAR == */
+/** ================================================== */
+
+	body.single-job_listing {
+		.page-sidebar {
+
+			/** Company Profile */
+			.profile-module {}
+
+			/** Page Permalink **/
+			.permalink-module {}
+
+			/** Related Entries */
+			.related-entries-module {}
+
+			/** Native Widgets */
+			.native-widgets {}
+
+		}
+
+	}
+
+	
+/** == MAIN CONTENT == */
+/** ================================================== */
+
+	body.single-job_listing {
+		.page-content {
+			
+			/** Job Details */
+			.entry-details {
+
+				// Job Header
+				.entry-header {}
+
+				// Meta Fields
+				.entry-meta {}
+				.entry-meta--before {}
+				.entry-meta--after {
+					.job-manager-applications-applied-notice { display: none; }
+				}
+
+				// Job Description
+				.entry-description {}
+
+				// Job Tags
+				.entry-tags {}
+
+				// Job Actions
+				.entry-actions {}
+
+			}
+
+		}
+
+		/** Application Deadline **/
+		#site-header {
+			&.headroom--pinned {
+				&.headroom--not-top {
+					~ #application-deadline {
+						top: 92px !important;
+						@include breakpoint($mobile) { top: 85px !important; }
+					}
+				}
+			}
+			&:not(.headroom--unpinned) {
+				&.headroom--not-top {
+					~ #application-deadline {
+						top: 92px !important;
+						@include breakpoint($mobile) { top: 85px !important; }
+					}
+				}
+			}
+		}
+		#application-deadline {
+			@include make-full-width();
+			display: flex;
+			flex-basis: 100%;
+			justify-content: center;
+			align-items: center;
+			background: #7DC146;
+			height: 40px;
+			font-family: $primary-font-stack;
+			z-index: 800;
+
+			position: sticky;
+			top: 0;
+
+			transition: all ease-in-out 300ms;
+
+			@include breakpoint($touch) { height: auto; padding: 10px; }
+
+			&.expiring { background: #F39C13; }
+			&.expired { background: #E74C3C; }
+
+			.icon {
+				display: flex;
+				align-items: center;
+				margin-right: 10px;
+				img { width: 20px; height: auto; }
+			}
+			.text {
+				font-size: 16px;
+				color: #FFF;
+				font-weight: 400;
+			}
+		}
+
+	}

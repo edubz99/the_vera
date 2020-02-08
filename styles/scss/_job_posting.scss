@@ -1,0 +1,259 @@
+/*========================================================
+  0.  JOB POSTING - PREVIEW
+========================================================== */
+
+	#submit-job-form {}
+
+/*========================================================
+  0.  JOB POSTING - PREVIEW
+========================================================== */
+
+	#job_preview {
+		// Entry Header
+		.entry-header {
+			display: flex;
+			justify-content: space-between;
+			
+			.left {
+				.title {
+					font-size: 36px;
+					font-weight: 600;
+					letter-spacing: -0.3px;
+					margin-bottom: 0;
+					@include breakpoint($mobile) { line-height: 1.2 }
+				}
+				.location {
+					color: #A2A2A2;
+				}
+			}
+			.right {
+				display: flex;
+
+				ul.listing-links {
+					list-style: none;
+					margin: 0; padding: 0;
+					display: flex;
+					align-items: center;
+
+					li {
+						font-size: 20px;
+						color: #95989A;
+						margin: 0 0 0 17px;
+
+						a:hover {
+							color: #434343;
+						}
+					}
+				}
+			}
+
+		}
+
+		// Entry Meta
+		.entry-meta {
+			background: #F7F7F7;
+			border-radius: 5px;
+			margin: 40px 0;
+			padding: 36px 50px 36px 45px;
+
+			@include breakpoint($mobile) { padding: 32px 30px 30px 39px; }
+
+			.title {
+				font-family: $primary-font-stack;
+				font-size: 16px;
+				font-weight: 400;
+				color: #707070;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				margin-top: 0;
+			}
+			ul.meta-fields {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				li {
+					margin-bottom: 16px;
+					width: 50%;
+					&:last-child { margin-bottom: 0; }
+					&.close-date { text-align: right; }
+					&.tagline { width: 100%; }
+
+					@include breakpoint($mobile) { width: 100%; text-align: left !important; margin-bottom: 15px; }
+
+					label, span:not(.value), strong, .jmfe-custom-field-label {
+						display: inline-block;
+						font-family: $primary-font-stack;
+						font-size: 16px;
+						font-weight: 600;
+						color: #000;
+						margin-right: 25px;
+
+						@include breakpoint($mobile) { margin-right: 15px; }
+					}
+
+					.icon { display: none; }
+				}
+			}
+		}
+
+		// Entry Content
+		.entry-content {
+			margin-bottom: 60px;
+
+			h1, h2, h3, h4, h5, h6,
+			.jmfe-custom-field-label
+			{
+				display: block;
+				font-family: $primary-font-stack;
+				font-size: 16px;
+				font-weight: 400;
+				margin: 40px 0 10px 0;
+				text-transform: uppercase;
+				color: #95989a;
+				letter-spacing: 0.4px;
+
+				&:first-of-type { margin-top: 0; }
+			}
+			img {
+				margin-bottom: 10px;
+			}
+			p { font-size: 16px; line-height: 1.7; }
+			ul {
+				list-style: disc;
+				margin: 0 0 40px 20px;
+				padding: 0;
+				li {
+					margin: 0;
+					line-height: 1.9;
+					font-size: 16px;
+					color: #545454;
+				}
+			}
+
+			.job_tags { display: none; }
+
+			.jmfe-custom-field-wrap { margin-bottom: 25px; }
+		}
+
+		// Entry Footer
+		.entry-footer {
+			.button {
+				width: auto;
+				
+				&.job-manager-button-edit-listing {
+					background: transparent;
+					border: 0;
+					display: inline-block;
+					font-family: $primary-font-stack;
+					padding: 0 45px;
+					height: 53px;
+					line-height: 53px;
+					text-transform: uppercase;
+					color: #969696;
+					font-size: 16px;
+					font-weight: 400;
+					letter-spacing: .5px;
+					text-align: center;
+					cursor: pointer;
+					white-space: nowrap;
+					transition: 300ms ease-in all;
+
+					&:hover, &:focus, &:active {
+						color: #000 !important;
+						background: transparent !important;
+						border: 0 !important;
+					}
+
+					@include breakpoint($mobile) {
+						width: 100%;
+						padding: 0 60px;
+						border-radius: 5px;
+						border: 2px solid #5786ec;
+						background: transparent;
+						color: #5786ec;
+						margin-top: 13px;
+					}
+
+				}
+			}
+		}
+	}
+
+
+/*========================================================
+  0.  JOB POSTING - INSERT LINK POPUP
+========================================================== */
+
+	div.wp-link-input input { height: auto; }
+
+	#wp-link-wrap {
+		height: auto !important;
+
+		#wp-link {
+			position: static;
+			outline: none;
+
+			#wp-link-close {
+				outline: none;
+				&:before {
+					font-family: "Flaticon";
+					content: "\f101";
+					font-size: 18px;
+				}
+			}
+			#link-selector {
+				position: static;
+				padding: 0;
+			}
+			#link-options {
+				> div {
+					transform: translateY(-15px);
+
+					label {
+						span {
+							width: 100%;
+							transform: translateY(40px);
+							padding-left: 16px;
+							color: #000;
+							text-align: left;
+						}
+						input[type="text"] {
+							padding: 48px 15px 26px 19px;
+							height: 56px;
+						}
+					}
+				}
+				.wp-link-text-field {
+					transform: translateY(-23px);
+				}
+				.link-target {
+					label {
+						> span { display: none; }
+					}
+				}
+				input[type="text"] { width: 100%; }
+			}
+			#most-recent-results, #search-results, #search-panel, #wplink-link-existing-content { display: none !important; }
+			.submitbox {
+				position: static;
+				display: flex;
+				border: 0;
+				padding: 0;
+
+				#wp-link-update {
+					order: 1;
+					.button {
+						background: #000 !important;
+						border-color: #000 !important;
+
+						&:hover, &:focus {
+							background: #000 !important;
+							border-color: #000  !important;
+						}
+					}
+				}
+				#wp-link-cancel { order: 2; margin-left: 15px; }
+			}
+		}
+	}

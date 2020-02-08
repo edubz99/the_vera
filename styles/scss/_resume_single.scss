@@ -1,0 +1,157 @@
+/*========================================================
+  19.  RESUME SINGLE
+========================================================== */
+
+/** == SIDEBAR == */
+/** ================================================== */
+
+	body.single-resume {
+		.page-sidebar {
+
+			/** Candidate Profile */
+			.profile-module {}
+
+			/** Page Permalink **/
+			.permalink-module {}
+
+			/** Related Entries */
+			.related-entries-module {}
+
+			/** Native Widgets */
+			.native-widgets {}
+
+		}
+	}
+
+
+
+/** == MAIN CONTENT == */
+/** ================================================== */
+
+	body.single-resume {
+		.page-content {
+
+			/** Resume Details */
+			.entry-details {
+
+				> .jmfe-custom-field-wrap {
+					p { margin-bottom: 25px; }
+					h1, h2, h3, h4, h5, h6,
+					.jmfe-custom-field-label
+					{
+						display: block;
+						font-family: $primary-font-stack;
+						font-size: 16px;
+						font-weight: 400;
+						margin: 0 0 20px 0;
+						text-transform: uppercase;
+						color: #95989a;
+						letter-spacing: 0.4px;
+                    }
+				}
+				
+				// Resume Header
+				.entry-header {}
+
+				// Resume Meta
+				.entry-meta {}
+				.entry-meta--before {}
+				.entry-meta--after {}
+
+				// Resume Description
+				.entry-description {
+					.jmfe-custom-field-wrap {
+						p { margin-bottom: 25px; }
+					}
+				}
+
+				// Resume Education + Experience
+				.resume-education,
+				.resume-experience
+				{
+                    .section-title {
+						font-family: $primary-font-stack;
+						text-transform: uppercase;
+						font-size: 16px;
+						font-weight: 400;
+						letter-spacing: 1px;
+						color: #95989a;
+						margin: 0 0 30px 0;
+					}
+
+					dl.candidate-education,
+					dl.candidate-experience
+					{
+						position: relative;
+						list-style: disc;
+						margin: 0 0 60px 0;
+						padding: 0;
+
+						&:before {
+							position: absolute;
+							content: '';
+							width: 1px; height: 100%;
+							border-left: 1px solid #DBDBDB;
+							border-radius: 100%;
+							left: 12px; top: 0;
+						}
+
+						dt {
+							position: relative;
+							margin-bottom: 20px;
+							padding-left: 50px;
+							
+							&:before {
+								position: absolute;
+								content: '';
+								width: 25px; height: 25px;
+								border: 1px solid #DBDBDB;
+								background: #FFF;
+								border-radius: 100%;
+								left: 0; top: 15px;
+							}
+
+							.title {
+								font-family: $primary-font-stack;
+								font-size: 19px;
+								font-weight: 600;
+								margin-bottom: 0;
+
+								span {
+									display: inline-block;
+									margin-right: 15px;
+								}
+
+								.date {
+									background: #FFE3BF;
+									color: #FF5D20;
+									border-radius: 3px;
+									padding: 2px 5px;
+									text-transform: uppercase;
+									font-size: 11px;
+								}
+							}
+							.qualification,
+							.designation
+							{
+								font-family: $primary-font-stack;
+								font-size: 15.5px;
+								font-weight: 400;
+								text-transform: capitalize;
+								color: #959595;
+							}
+						}
+						dd {
+							margin-bottom: 45px;
+							padding-left: 50px;
+						}
+					}
+				}
+
+				// Resume Actions
+				.entry-actions { margin-bottom: 25px; }
+
+			}
+
+		}
+	}

@@ -1,0 +1,26 @@
+/*========================================================
+  37.  MAPS 
+========================================================== */
+
+
+/** == BASE STYLING == */
+/** ================================================== */
+
+    #map-wrapper {
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #DFDFDF;
+        height: 460px;
+
+        @include breakpoint($full-hd) { height: 550px; }
+    }
+
+    .marker {
+        display: block;
+        border: 2px solid #FFF;
+        border-radius: 100%;
+        cursor: pointer;
+        padding: 0;
+        background-size: cover;
+        box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.77);
+    }

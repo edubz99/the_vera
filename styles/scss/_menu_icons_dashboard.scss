@@ -1,0 +1,92 @@
+
+/** == MOBILE MENU POPUP == */
+/** ================================================== */
+
+  #mobile-menu-module {
+    width: 100%;
+    top: 110px;
+    height: calc(100vh - 140px);
+
+    .container {
+
+        // Title
+        .title {
+            margin: 0 !important;
+        }
+
+        // Menu List
+        .mobile-menu-container {
+            ul.mobile-menu {
+                list-style: none;
+                padding-left: 0; margin-left: 0;
+
+                li {
+                    display: flex;
+
+                    a {
+                        &.add-new {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 22px !important;
+							font-weight: 300;
+                            background: #FFF;
+                            border: 1px solid #d4d4d4;
+                            color: #000 !important;
+                            width: 25px;
+							height: 25px;
+							border-radius: 100%;
+							margin-left: auto;
+							transition: all ease-in 300ms;
+							&:hover, &:focus {
+								background: #000 !important;
+								border: 1px solid #000 !important;
+								color: #FFF !important;
+							}
+                        }
+                    }
+                }
+            }
+        }
+
+        // CTA Container
+      .mobile-cta-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        .button {
+            background: #242424;
+            border-color: #242424;
+            font-size: 15px;
+
+            &:hover, &:focus {
+                background: #242424 !important;
+                border-color: #242424 !important;
+            }
+        }
+
+        p.caption {
+            display: inline-block;
+            font-size: 13px !important;
+            font-weight: 400;
+            text-transform: initial;
+            color: #B2B2B2;
+            padding: 6px 14px 0px 0;
+            margin: 0;
+
+            a {
+                display: inline !important;
+                color: #2F70FF !important;
+                font-size: inherit !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                text-transform: initial !important;
+            }
+        }
+      }
+
+    }
+  }
+

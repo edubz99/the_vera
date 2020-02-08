@@ -1,0 +1,38 @@
+#setting-error-tgmpa,
+#setting-error-capstone
+{
+  display: block;
+}
+
+.inside.acf-fields.acf-cf.menu-location .acf-field {
+  width:  50%;
+  float: left;
+}
+.acf-fields > .acf-field {
+  clear: none;
+  border-top: 0;
+}
+
+/** ACF Image Radio Field */
+.acf-image-select label input {
+    display: none;
+}
+.acf-image-select label p {
+  margin: 0;
+  text-align: center;
+}
+.acf-image-select label img {
+  background: #fff;
+  border: 1px solid #ccc;
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 2px;
+}
+.acf-image-select label:hover img,
+.acf-image-select label.selected img
+{
+  border-color: #464646;
+  opacity: 1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}

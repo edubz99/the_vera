@@ -1,0 +1,26 @@
+/*========================================================
+  33.  ERROR 404 
+========================================================== */
+
+    body.error404 {
+        .page-content {
+            text-align: center;
+      
+            .error-code {
+              font-size: 215px;
+              font-weight: 500;
+              color: #F77533;
+              color: var(--primary-accent-color);
+              line-height: 1;
+              @include breakpoint($mobile) { font-size: 148px !important; }
+            }
+            .error-status {
+                font-family: $primary-font-stack;
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 40px;
+                color: #1E1E1E;
+                @include breakpoint($mobile) { font-size: 20px !important; }
+            }
+        }
+    }

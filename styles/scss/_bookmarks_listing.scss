@@ -1,0 +1,69 @@
+/*========================================================
+  23.  BOOKMARKS LISTING 
+========================================================== */
+    
+    /** Manage Bookmars */
+	#dashboard-body {
+		p { color: #95989A; font-size: 16px; }
+
+		table.job-manager-bookmarks {
+			thead {
+				tr {
+					th {
+						text-transform: uppercase;
+						font-size: 16px;
+						font-weight: 400;
+						color: #636363;
+						padding: .5em 1em .5em 0;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						font-size: 18px;
+						padding: 20px 16px 20px 0;
+						transition: all linear 300ms;
+
+						&:first-child { font-weight: 600; }
+
+						.company_logo, .candidate_photo { display: none; }
+
+						.job-manager-applications-applied-notice {
+							font-size: 14px;
+							font-weight: 400;
+							padding: 1px 4px;
+							color: #999;
+							text-transform: lowercase;
+
+							&:before { content: '('; }
+							&:after { content: '('; }
+						}
+
+						ul.job-manager-bookmark-actions {
+							visibility: visible;
+							font-size: 13px;
+							display: inline-block;
+							margin-left: 10px;
+							
+							li {
+								a.job-manager-bookmark-action-delete {
+									border: 0 !important;
+									background: #dd1713;
+									border-radius: 2px;
+									font-size: 9px;
+									text-transform: uppercase;
+									color: #FFF;
+									padding: 0 5px;
+								}								
+							}
+						}
+
+						p {
+							@include breakpoint($touch) { color: #000 !important; }
+						}
+					}
+				}
+			}
+		}	
+	}

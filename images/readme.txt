@@ -1,0 +1,1 @@
+Images placed here will automatically be optimized using 'imagemin' gulp extension and copied to the root './images/' folder with same hierarchy.

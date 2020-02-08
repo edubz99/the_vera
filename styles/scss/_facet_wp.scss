@@ -1,0 +1,370 @@
+
+// fselect, hierarchy, autocomplete, slider, date range, number range, star rating
+
+    .facetwp-controls {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .facetwp-counts {
+            font-size: 16px;
+            color: #b8b8b8;
+        }
+        .facetwp-reset {
+            border: 0 !important;
+            background: #dd1713;
+            border-radius: 2px;
+            font-size: 9px;
+            text-transform: uppercase;
+            color: #FFF;
+            padding: 0 5px;
+            align-self: center;
+        }
+        .facetwp-selections {
+            width: 100%;
+            margin-top: 10px;
+
+            ul {
+                margin: 10px 0 0 0;
+                padding: 0;
+                li {
+                    margin-right: 10px;
+                    line-height: 1;
+                    background: #e4e2f9;
+                    color: #6b62db;
+                    padding: 10px 14px;
+                    font-size: 15px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+
+/*========================================================
+  35.  FACET WP - GENERAL 
+========================================================== */
+
+    .facetwp-facet {
+        margin-bottom: 0 !important;
+
+        // Proxmitiy Filter
+        &.facetwp-type-proximity {
+            .location-wrap {
+                width: 100%;
+
+                .locate-me { top: 65%; }
+            }
+            .facetwp-radius {
+                background-color: #f1f1f1;
+                background-size: 8px;
+                background-position: calc(100% - 8px) 50%;
+                opacity: 0.8;
+                border: 0;
+                border-radius: 5px;
+                padding: 0 7px;
+                height: 20px; width: 80px;
+                position: absolute;
+                top: 8px; right: 11px;
+                font-size: 15px;
+
+                &:focus { border: 0 !important; outline: 0 !important; box-shadow: none !important; }
+            }
+        }
+
+        // Dropdown Filter
+        &.facetwp-type-dropdown {
+
+        }
+
+        // Checkbox Filter
+        &.facetwp-type-checkboxes {
+            .facetwp-checkbox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 30px;
+                margin-bottom: 7px;
+                background: url('../../images/checkbox-unchecked.png') 0 3px no-repeat;
+
+                &.checked {
+                    background-image: url('../../images/checkbox-checked.png');
+                }
+                
+                .facetwp-counter {
+                    color: #c1c1c1;
+                    border-radius: 3px;
+                    padding: 0px 5px;
+                    font-size: 16px;
+                    line-height: 1.2;
+                }
+            }
+            .facetwp-toggle {
+                font-size: 16px;
+                color: #0070C9; color: var(--secondary-accent-color);
+            }
+        }
+
+        // Radio Filter
+        &.facetwp-type-radio {
+            .facetwp-radio {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 30px;
+                margin-bottom: 7px;
+                background: url('../../images/radio-unchecked.png') 0 3px no-repeat;
+
+                &.checked {
+                    background-image: url('../../images/radio-checked.png');
+                }
+                
+                .facetwp-counter {
+                    color: #c1c1c1;
+                    border-radius: 3px;
+                    padding: 0px 5px;
+                    font-size: 16px;
+                    line-height: 1.2;
+                }
+            }
+            .facetwp-toggle {
+                font-size: 16px;
+                color: #0070C9; color: var(--secondary-accent-color);
+            }
+        }
+
+        // Date Range Filter
+        &.facetwp-type-date_range {
+            display: flex;
+            .facetwp-date-min { margin-right: 20px; }
+            .facetwp-date-max { }
+        }
+
+        // Number Range Filter
+        &.facetwp-type-number_range {
+            display: flex;
+            .facetwp-number-min { margin-right: 15px; }
+            .facetwp-number-max { margin-right: 20px; }
+            .facetwp-submit { padding: 0 30px !important; }
+        }
+
+        // Date Range Filter
+        &.facetwp-type-autocomplete {
+            display: flex;
+            .facetwp-autocomplete { margin-right: 20px !important; }
+            .facetwp-autocomplete-update { padding: 0 30px !important; }
+        }
+
+        // Slider Filter
+        &.facetwp-type-slider {
+            display: flex;
+            flex-wrap: wrap;
+            .facetwp-slider-wrap {
+                flex: 100%;
+                margin-top: 10px;
+                .facetwp-slider {
+                    height: 8px;
+                    border: 1px solid #dcdcdc;
+                    .noUi-base {
+                        .noUi-connects {
+                            .noUi-connect {
+                                background: #7bc44f;
+                            }
+                        }
+                        .noUi-origin {
+                            .noUi-handle {
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 100%;
+                                top: -9px;
+                                border: 1px solid #c1c1c1;
+                            }
+                        }
+                    }
+                }
+            }
+            .facetwp-slider-label {}
+            .facetwp-slider-label ~ div {
+                margin-left: 10px;
+                line-height: 1.4;
+
+                .facetwp-slider-reset {
+                    border: 0 !important;
+                    background: #dd1713 !important;
+                    border-radius: 2px !important;
+                    font-size: 9px !important;
+                    text-transform: uppercase !important;
+                    color: #FFF !important;
+                    padding: 0 5px !important;
+                    align-self: center !important;
+                    height: auto !important;
+                    line-height: initial !important;
+                    box-shadow: none !important;
+    
+                    &:hover { background: #dd1713 !important; }
+                }
+            }
+        }
+
+        // Fselect Filter
+        &.facetwp-type-fselect {
+            .fs-wrap {
+                width: 100%;
+                .fs-label-wrap {
+                    height: 56px;
+                    border-radius: 5px;
+
+                    .fs-label {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 6px 25px 6px 20px;
+                    }
+                    .fs-arrow { right: 15px; }
+                }
+                .fs-dropdown {
+                    width: 318px;
+                    .fs-search {
+                        input { height: auto; }
+                    }
+                }
+            }
+            .facetwp-dropdown {
+                &.hidden { display: none; }
+            }
+        }
+
+    }
+
+/*========================================================
+  35.  FACET WP - SPECIAL 
+========================================================== */
+
+    // Special Fields
+    .facet-search, .facet-proximity, .facet-dropdown {
+        position: relative;
+        background: #FFF;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        height: 93px;
+        padding: 16px 25px;
+        margin-bottom: 20px;
+
+        .facet-label {
+            font-family: $primary-font-stack;
+            margin: 0;
+            display: block;
+            font-size: 15.5px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            
+            @include breakpoint($mobile) { font-size: 16px; }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .facetwp-facet {            
+            .facetwp-search-wrap { display: block; }
+
+            input, select {
+				border: 0;
+                padding: 0;
+                width: 100%;
+				height: 40px;
+
+				&:focus { border: 0 !important; outline: 0 !important; box-shadow: none !important; }
+			}
+            .facetwp-btn {
+                position: absolute;
+                top: auto; right: 0; bottom: 7px;
+            }
+        }
+    }
+
+/*========================================================
+  35.  FACET WP - PAGER 
+========================================================== */
+
+    .facetwp-pager {
+        display: flex;
+        justify-content: flex-end;
+        .facetwp-pager-label { margin-right: auto; }
+        .facetwp-page {
+            padding: 2px 10px;
+
+            &.active {
+                background: #efefef;
+                border-radius: 3px;
+                font-weight: 600;
+            }
+        }
+    }
+
+/*========================================================
+  35.  FACET WP - NOT SPECIAL 
+========================================================== */
+
+    .facet-wrap:not(.facet-search):not(.facet-proximity):not(.facet-dropdown) {
+        margin: 33px 0 22px 0;
+        padding-bottom: 45px;
+        border-bottom: 1px solid #e1e1e1;
+
+        .facet-label {
+            font-family: $primary-font-stack;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #95989a;
+            letter-spacing: 1px;
+            margin-top: 0;
+        }
+    }
+
+
+
+    .hero-facets {
+        display: flex;
+        flex-wrap: wrap !important;
+        width: 100%;
+
+        .facetwp-type-search, .facetwp-type-proximity, .facetwp-type-dropdown {
+            display: none;
+        }
+        .big-field-wrap {
+            .facetwp-type-search, .facetwp-type-proximity, .facetwp-type-dropdown {
+                display: block;
+            }
+        }
+
+        .first, .last { order: 0; }
+        .first {
+            border-bottom: 0;
+            border-radius: 5px 5px 0 0;
+        }
+        .big-field-wrap:not(.first):not(.last) {
+            border-bottom: 0;
+            border-radius: 0;
+        }
+        .last {
+            border-bottom: 0;
+            border-radius: 0 0 5px 5px;
+        }
+        .no-facets {
+            background: #f7f7f7;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 45px 0;
+            max-width: 100%;
+            overflow: auto;
+            padding: 1.75em;
+            white-space: pre;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .facet-wrap { width: 100%; margin-bottom: 0; }
+        .fwp-submit { width: 100%; margin-top: 20px; }
+    }

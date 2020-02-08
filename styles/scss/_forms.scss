@@ -1,0 +1,322 @@
+/*========================================================
+  13.  FORMS 
+========================================================== */
+
+/*---------------------------------------------------------
+ General (_forms.scss)
+-------------------------------------------------------- */
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"]:not(#media-search-input),
+	input[type="tel"],
+	input[type="number"],
+	select:not(.attachment-filters),
+	textarea {
+		font-family: $primary-font-stack;
+		display: block;
+		width: 100%;
+		height: 56px;
+		background: #fff;
+		color: #898989;
+		border: 1px solid #D2D2D2;
+		border-radius: 5px;
+		margin: 0;
+		vertical-align: baseline;
+		padding: 1.2rem 2rem;
+		font-size: 1.6rem;
+		letter-spacing: 0;
+	}
+
+	textarea {
+		line-height: 1.5;
+		padding: 1.4rem 2rem;
+		height: 220px;
+	}
+
+	select:not(.attachment-filters) {
+		-webkit-appearance: none; 
+		background-image: url('../../images/caret-down.svg');
+		background-size: 10px;
+		background-position: calc(100% - 15px) 50%;
+		background-repeat: no-repeat;
+		cursor: pointer;
+
+		&::-ms-expand {
+			display: none; // hide arrow in IE
+		}
+
+		option {
+			font-size: 15px;
+			padding-left: 0;
+		}
+	}
+
+	input[type="text"]:focus:not([name="search_keywords_dummy"]):not([name="search_location_dummy"]),
+	input[type="email"]:focus,
+	input[type="url"]:focus,
+	input[type="password"]:focus,
+	input[type="search"]:not(#media-search-input):focus,
+	input[type="tel"]:focus,
+	input[type="number"]:focus,
+	select:focus,
+	textarea:focus
+	{
+		outline: medium none;
+		border: 1px solid #9A94E8;
+		box-shadow: 0px 0px 0px 1px #9A94E8;
+	}
+
+
+/*---------------------------------------------------------
+ Buttons (_forms.scss)
+-------------------------------------------------------- */
+
+	#site-container	button:not([role="presentation"], [aria-controls="mep_0"], [class^='ql-'], [class*=' ql-'], .flickity-button, [class^='mapboxgl'], [class^='geocoder'], #job_description-tmce, #job_description-html, .ed_button),
+	.button-default,
+	.woocommerce .button.button:not(.button-hero):not(.media-button):not(.insert-media):not(.ed_button):not(.copy-permalink),
+	.woocommerce #submit,
+	input[type="button"]:not(.button-hero):not(.media-button):not(.insert-media):not(.ed_button):not(.wp_job_manager_send_application_button),
+	input[type="reset"],
+	input[type="submit"]
+	{
+		display: inline-block;
+		font-family: $primary-font-stack;
+		background: #7dc146; background: var(--tertiary-accent-color);
+		padding: 0 60px;
+		border: 1px solid #7dc146; border: 1px solid var(--tertiary-accent-color);
+		height: 53px;
+		line-height: 53px;
+		border-radius: 5px;
+		text-transform: uppercase;
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		text-align: center;
+		cursor: pointer;
+		white-space: nowrap;
+		transition: 300ms ease-in all;
+		@include breakpoint($mobile) { width: 100% !important; padding: 0; margin-left: 0 !important; }
+	}
+
+	#site-container	button:not([role="presentation"], [aria-controls="mep_0"], [class^='ql-'], [class*=' ql-'], .flickity-button ,[class^='mapboxgl'], [class^='geocoder'], #job_description-tmce, #job_description-html, .ed_button):hover,
+	#site-container	button:not([role="presentation"], [aria-controls="mep_0"], [class^='ql-'], [class*=' ql-'], .flickity-button, [class^='mapboxgl'], [class^='geocoder'], #job_description-tmce, #job_description-html, .ed_button):focus,
+	.button-default:hover, .button-default:focus,
+	.woocommerce .button.button:not(.button-hero):not(.media-button):not(.insert-media):not(.ed_button):not(.copy-permalink):not(.wp_job_manager_send_application_button):hover,
+	.woocommerce .button.button:not(.button-hero):not(.media-button):not(.insert-media):not(.ed_button):not(.copy-permalink):not(.wp_job_manager_send_application_button):focus,
+	input[type="button"]:not(.button-hero):not(.media-button):not(.insert-media):not(.ed_button):hover,
+	input[type="button"]:focus,
+	input[type="reset"]:hover,
+	input[type="reset"]:focus,
+	input[type="submit"]:hover, input[type="submit"]:focus {
+	  color: #fff !important;
+	  background-color: darken( #7dc146, 7% )  !important; background-color: var(--tertiary-accent-color)  !important;
+	  border-color: darken( #7dc146, 7% )  !important; border-color: var(--tertiary-accent-color)  !important;
+	  outline: 0;
+	}
+
+	form {
+		p {
+			@include breakpoint($mobile) { width: 100% !important; }
+		}
+	}
+
+	input[type="button"], input[type="submit"] {
+		&.disabled, &[disabled="disabled"] {
+			padding: 0 60px !important;
+			color: #FFF !important;
+		}
+	}
+
+
+/*---------------------------------------------------------
+ Labels (_forms.scss)
+-------------------------------------------------------- */
+
+	label {
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: none;
+		width: 100%;
+		color: #000;
+		letter-spacing: 0.5px !important;
+		display: inline-block;
+
+		span {
+			display: inline-block;
+			margin-left: 5px;
+			color: red;
+		}
+	}
+
+
+/*---------------------------------------------------------
+ Placeholders (_forms.scss)
+-------------------------------------------------------- */
+
+	::placeholder {
+		font-family: $primary-font-stack;
+		font-size: 1.6rem;
+		color: #AFAFAF;
+		opacity: 0.9;
+	}
+
+
+/*---------------------------------------------------------
+ Validation (_forms.scss)
+-------------------------------------------------------- */
+
+	input.error, textarea.error {
+	  border: 1px solid #fa4d5a !important;
+	}
+
+	@media only screen and (max-width: 40em) {
+	  input.error, textarea.error {
+	    border: 1px solid #fa4d5a !important;
+	  }
+	}
+
+	label.error {
+	  display: none !important;
+	}
+
+	@media only screen and (max-width: 40em) {
+	  form [required] {
+	    background-position: 94% 20px !important;
+	  }
+	}
+
+
+/*---------------------------------------------------------
+ Contact Form 7 (_forms.scss)
+-------------------------------------------------------- */
+
+	.wpcf7-form {
+		padding-right: 60px;
+		@include breakpoint($mobile) { padding-right: 0; }
+	}
+
+	.wpcf7-form-control-wrap {
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+
+	input.wpcf7-not-valid, textarea.wpcf7-not-valid {
+		border: 1px solid rgba(255, 0, 0, 0.5) !important;
+	}
+	.wpcf7-not-valid-tip {
+		display: none !important;
+	}
+
+	.wpcf7-form .wpcf7-response-output {
+		background: #D23737;
+	    color: #fff;
+	    font-size: 16px;
+	    padding: 15px 25px;
+	    border: 0;
+	    margin: 45px 0 15px 0;
+	}
+
+
+/*---------------------------------------------------------
+ Gravity Form (_forms.scss)
+-------------------------------------------------------- */
+
+	form {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li { margin-bottom: 30px; }
+		}
+	}
+
+	.validation_error { margin-bottom: 30px; }
+	.validation_message { display: none; }
+
+
+/*---------------------------------------------------------
+ Styled Form (_forms.scss)
+-------------------------------------------------------- */
+
+	form.modern-form {
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="number"],
+		select,
+		textarea {
+			height: 72px;
+			padding: 3.2rem 2rem 1rem 2rem !important;
+		}
+
+		textarea { height: 150px; }
+
+		select {
+			background-position: calc(100% - 15px) 40px;
+		}
+
+		label:not([for="company_logo"], [for="candidate_photo"], [for="application_attachment"]) {
+			position: relative;
+			font-family: $quaternary-font-stack;
+			text-transform: none;
+			line-height: 1;
+			margin: 0;
+			padding: 0 20px;
+			cursor: pointer;
+			z-index: 500;
+			letter-spacing: 0.2px !important;
+			transform: translateY(28px);
+		}
+	
+	}
+
+/*---------------------------------------------------------
+ Radio Buttons (_forms.scss)
+-------------------------------------------------------- */
+
+	.icheckbox_square-blue,
+	.iradio_square-blue
+	{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		cursor: pointer;
+		border-radius: 100%;
+		background: #FFF;
+		border: 1px solid #d9d9d9;
+		width: 20px; height: 20px;
+
+		.iCheck-helper {
+				opacity: 1 !important;
+				width: 64% !important;
+				height: 64% !important;
+				border-radius: 100%;
+				top: 50% !important; left: 50% !important;
+				transform: translateX(-50%) translateY(-50%) !important;
+		}
+
+		&.checked {
+				.iCheck-helper {
+						background: var(--secondary-accent-color) !important;
+				}
+		}
+		&.hover {
+				border-color: var(--secondary-accent-color);
+		}
+		&.hover.checked {
+				.iCheck-helper {}
+		}
+	}
+
+	.icheckbox_square-blue {
+		border-radius: 3px;
+		.iCheck-helper { border-radius: 1px; } 
+	}

@@ -1,0 +1,118 @@
+/*========================================================
+  32.  COMPACT TEMPLATE 
+========================================================== */
+
+    .login-instead,
+    .register-instead {
+      display: none;
+    }
+
+    #compact-container {
+        display: flex;
+        @include breakpoint($touch) {
+          flex-wrap: wrap;
+          background-image: var(--top-left-background);
+          background-repeat: no-repeat;
+        }
+        
+        #compact-sidebar {
+            position: fixed;
+            position: sticky;
+            top: 0; left: 0; bottom: 0;
+            width: 430px;
+            height: 100vh;
+            border-right: 1px solid #E8E8E9;
+
+            background: url('../../images/job-bg-pattern.png') center center repeat;
+            background-image: var(--compact-sidebar-background);
+            
+            @include breakpoint($touch) { width: 100%; height: auto; position: relative; background: none; border: 0; }
+            @include breakpoint($tablet) { margin: 0 60px; }
+            @include breakpoint($full-hd) { width: 470px; }
+
+            #dashboard-logo {
+              padding: 60px;
+              @include breakpoint($touch) { padding: 50px 35px 20px 35px; }
+            }
+            .page-header {
+                padding: 30px 30px 0 60px;
+                @include breakpoint($touch) { padding: 30px 35px 20px 35px !important; }
+            }
+                    
+            #back-to-site {
+              position: absolute;
+              left: 50px;
+              bottom: 50px;
+              font-size: 14px;
+              color: #373737;
+              text-decoration: none;
+              span { font-size: 16px; }
+                &:hover { color: #fa6800 !important; }
+                @include breakpoint($touch) { display: none; }
+            }
+        }
+        #compact-body {
+            position: relative;
+            flex: 1;
+            padding: 90px 100px 90px 100px;
+            max-width: 920px;
+            @include breakpoint($touch) { width: 100%; padding: 45px 30px; }
+            @include breakpoint($tablet) { margin: 0 60px; }
+            @include breakpoint($full-hd) { padding: 210px 120px; max-width: 1140px; }
+
+            @include breakpoint($no-touch) { 
+              @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                /* IE10+ CSS styles go here */
+                margin-left: 430px;
+              }
+            }
+
+            // Page Content
+            .page-content {
+
+                .login-instead,
+                .register-instead
+                {
+                  display: block;
+                  position: absolute;
+                  right: 100px;
+                  top: 50px;
+                  font-size: 16px;
+                  color: #373737;
+                    text-decoration: none;
+                    @include breakpoint($touch) { position: static; }
+                  a {
+                      color: #027BFC; color: var(--secondary-accent-color);
+                      &:hover { color: #fa6800 !important; }
+                    }
+                }
+                .recovery-instead {
+                  margin-top: 20px;
+                  
+                    a {
+                        color: #027BFC; color: var(--secondary-accent-color);
+                        &:hover { color: #fa6800 !important; }
+                      }
+                }
+
+                .intro {
+                    color: #929292;
+                    @include breakpoint($touch) { font-size: 17px; }
+
+                }
+
+                .alert {
+                    @extend .flash-notification;
+                }
+            }
+        }
+    }
+
+    body.auth-registration-page,
+    body.auth-login-page,
+    body.auth-pass-recovery-page
+    {
+        #compact-body {
+            @include breakpoint($no-touch) { padding-top: 200px !important; }
+        }
+    }

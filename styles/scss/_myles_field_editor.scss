@@ -1,0 +1,268 @@
+/*========================================================
+  0.  MYLES - FIELD EDITOR
+========================================================== */
+
+
+/** == FIELDS == */
+/** ================================================== */
+
+    /** Phone Field */
+    .form-fields {
+        [class^="fieldset"] {
+            .field {
+                .intl-tel-input {
+                    width: 100% !important;
+    
+                    input[type="tel"] { padding-left: 60px !important; }
+                    .flag-dropdown {
+                        padding-top: 25px;
+                        padding-left: 12px;
+    
+                        &:hover {
+                            .selected-flag {
+                                background: transparent;
+                            }
+                        }
+    
+                        ul.country-list {
+                            z-index: 800;
+                            max-width: 355px;
+                            left: 0;
+                            overflow-x: hidden;
+    
+                            li { font-size: 14px; }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    /** Radio Buttons */
+    .form-fields {
+        .iradio_field {
+
+            > label {
+                transform: translateY(15px);
+                padding: 0;
+            }
+            .field {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 5px;
+                margin-bottom: 20px;
+
+                label {
+                    [class^="iradio_square"] { margin-right: 10px; }
+                    padding-left: 0;
+                    width: auto !important;
+                    margin-bottom: 10px;
+                }
+                .description {
+                    position: fixed;
+                    padding: 46px 0 0 2px;
+                    @include breakpoint($mobile) { padding-top: 40px; }
+                }
+            }
+        }
+    }
+
+    /** Check Boxes */
+    .form-fields {
+        .icheck_field {
+            @include breakpoint($mobile) { margin-bottom: 10px; }
+
+            > label { transform: translateY(20px); padding: 0 0 0 35px; }
+            .field { margin-top: -6px; }
+            .description {
+                display: block;
+                position: fixed;
+                padding: 0;
+            }
+        }
+    }
+
+    /** Check Boxes - Multi */
+    .form-fields {
+        .icheck_field.multi {
+            > label { padding: 0; }
+            .field {
+                margin-top: 6px; margin-bottom: 10px;
+                .jmfe-checklist-label {
+                    width: auto !important;
+                    padding: 3px 20px 4px 0;
+                    > div { margin-right: 10px; }
+                }
+            }
+        }
+    }
+
+
+
+    /** Date/Time Picker Field */
+    .form-fields {
+        .date_time_field {
+            @include breakpoint($mobile) { margin-bottom: 10px; }
+
+            > label {
+                @include breakpoint($mobile) {
+                    padding: 0;
+                    transform: translateY(-6px);
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    /** Field Upload */
+    .form-fields {
+        .upload_field {
+            > label { transform: translateY(15px); padding: 0; }
+            .field {
+                margin-top: 35px;
+                .description { display: block; }
+            }
+        }
+    }
+
+    /** WP Editor Field */
+    .form-fields {
+        .wp_editor_field {
+            width: 100% !important;
+
+            > label {
+                transform: translateY(0);
+                margin: 20px 0;
+                padding: 0;
+            }
+        }
+    }
+
+    /** HTML Fields */
+    .form-fields {
+        .fieldset-job_html_field {
+            > label { transform: translateY(15px); padding: 0; }
+            .field { margin-top: 30px; }
+        }
+    }
+
+    /** Term Checklist Field */
+    .form-fields {
+        .term_checklist_field {
+            margin-top: 15px;
+            margin-bottom: 30px;
+            border: 1px solid #d2d2d2 !important;
+            border-radius: 5px;
+            > label {
+                transform: translateY(15px) !important;
+                padding-left: 20px;
+            }
+            .field {
+                ul.job-manager-term-checklist {
+                    margin: 40px 0 20px 0;
+                    list-style: none outside;
+                    max-height: 200px;
+                    overflow: auto;
+                    li {
+                        margin-bottom: 10px;
+                        label {
+                            display: block;
+                            transform: translateY(0);
+                            [class^="icheckbox_square"] {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .description {
+                    position: fixed;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+
+    /** Range Slider */
+    $track-w: 15em;
+    $track-h: .25em;
+    $thumb-d: 1.5em;
+    
+    @mixin track() {
+        box-sizing: border-box;
+        border: none;
+        width: $track-w; height: $track-h;
+        background: #ccc;
+    }
+    @mixin thumb() {
+        box-sizing: border-box;
+        border: none;
+        width: $thumb-d; height: $thumb-d;
+        border-radius: 50%;
+        background: var(--secondary-accent-color);
+    }
+
+    .form-fields {
+        .range_field {
+            > label { transform: translateY(15px); padding: 0; }
+
+            .field {
+                margin-top: 42px;
+                // transform: rotate(90deg);
+                // transform-origin: 100px 100px;
+
+                .jmfe-input-range-wrapper {
+                    float: left;
+                    position: relative;
+                    margin: -18px 0 18px -8px;
+                    padding: 0;
+                    height: auto; width: 100%;
+    
+                    [type='range'] {
+                        &, &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                        }
+                        position: absolute;
+                        top: 50%; left: 10px;
+                        margin: 0;
+                        padding: 0;
+                        width: $track-w; height: $thumb-d;
+                        // transform: translate(-50%, -50%);
+                        background: transparent;
+                        font: 1em/1 arial, sans-serif;
+                        
+                        &::-webkit-slider-runnable-track {
+                            @include track
+                        }
+                        &::-moz-range-track { @include track }
+                        &::-ms-track { @include track }
+                        
+                        &::-webkit-slider-thumb {
+                            margin-top: .5*($track-h - $thumb-d);
+                            @include thumb
+                        }
+                        &::-moz-range-thumb { @include thumb }
+                        &::-ms-thumb {
+                            margin-top: 0;
+                            @include thumb
+                        }
+                        
+                        &::-ms-tooltip { display: none }
+                    }
+
+                    output {
+                        float: right;
+                        border-radius: 5px;
+                        background: #e6e6e6;
+                        padding: 0 11px;
+                        transform: translateY(8px);
+                    }
+                }
+                .description {
+                    transform: translateY(-14px);
+                }
+            }
+        }
+    }
+

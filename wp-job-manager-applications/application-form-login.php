@@ -1,0 +1,1 @@
+<p><?php echo apply_filters( 'job_manager_job_applications_login_required_message', sprintf( wp_kses_post(__( 'You must <a href="%s">sign in</a> to apply for this position.', 'capstone' )), esc_url( wp_login_url( get_permalink() ) ) ) ); ?></p>

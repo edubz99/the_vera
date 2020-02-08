@@ -1,0 +1,26 @@
+/*========================================================
+  0.  TYPOGRAPHY 
+========================================================== */
+
+  $primary-font-stack:    'Open Sans', sans-serif;
+  $secondary-font-stack:  'Roboto', sans-serif;
+  $tertiary-font-stack:   'Titillium Web', sans-serif;
+  $quaternary-font-stack:  'Lato', sans-serif;
+
+
+/*========================================================
+  0.  RESPONSIVE BREAKPOINTS 
+========================================================== */
+
+  // Mostly Used (Starting Limit : Ending Limit)
+  $mobile: 0 640px;
+  $tablet: 641px 1200px;
+  $laptop:  1201px 1919px;
+  $full-hd: 1920px;
+
+  // Broadly Used
+  $touch: 0 1200px;
+  $no-touch: 1201px;
+  $no-mobile: 641px;
+
+  $retina:  1441px;

@@ -1,0 +1,120 @@
+/*========================================================
+  17.  JOB LISTING 
+========================================================== */
+    
+    /** Manage Jobs */
+	#dashboard-body {
+		p { color: #95989A; font-size: 16px; }
+
+		.button {
+			background: #7dc146; background: var(--tertiary-accent-color);
+			border: 1px solid #7dc146; border: 1px solid var(--tertiary-accent-color);
+			height: 53px;
+			line-height: 53px;
+			padding: 0 60px;
+			border-radius: 5px;
+			text-transform: uppercase;
+			color: #FFF;
+			font-size: 15px;
+			font-weight: 400;
+			letter-spacing: .5px;
+
+			@include breakpoint($touch) { width: 100%; }
+		}
+
+		.job-manager-message {
+			@extend .flash-notification;
+			background: #EAF6FB;
+			color: #28A8D3;
+			margin: -30px 0 45px 0 !important;
+		}
+		.job-manager-error {
+			@extend .flash-notification;
+			background: #FBEAEA;
+			color: #D32828;
+			margin: -30px 0 45px 0 !important;
+		}
+
+		#job-manager-job-dashboard,
+		#submit-resume-form
+		{ margin-bottom: 40px; }
+
+		table.job-manager-jobs {
+			thead {
+				tr {
+					th {
+						text-transform: uppercase;
+						font-size: 16px;
+						font-weight: 400;
+						color: #636363;
+					}
+				}
+			}
+			tbody {
+				tr {
+					transition: all linear 300ms;
+
+					td {
+						font-size: 16px;
+						padding: 20px 16px 20px 0;
+						transition: all linear 300ms;
+
+						&.job_title {
+							font-size: 18px;
+							font-weight: 600;
+
+							.job-manager-applications-applied-notice {
+								&:before { content: '('; width: auto; height: auto; margin: 0 1px 0 2px; }
+								&:after { content: ')'; margin-left: 1px; font-weight: 400; }
+								font-family: $primary-font-stack !important;
+								font-size: 15px;
+								font-weight: 400;
+								color: #95989A;
+								text-transform: lowercase;
+							}
+							small {
+								font-size: 14px;
+								font-weight: 400;
+								padding: 1px 4px;
+							}
+							ul.job-dashboard-actions {
+								visibility: visible;
+								font-size: 13px;
+								margin-top: 10px;
+								
+								li {
+									&:not(:last-child):after { content: '\00B7'; }
+									a.job-dashboard-action-delete {
+										border: 0 !important;
+										background: #dd1713;
+										border-radius: 2px;
+										font-size: 9px;
+										text-transform: uppercase;
+										color: #FFF;
+										padding: 0 5px;
+									}
+								}
+							}
+						}
+						&.filled, &.date, &.expires, &.closing_date, &.applications { font-size: 15px; }
+						&.applications {
+							a {
+								display: inline-block;
+								background: #f2f2f2;
+								color: #000;
+								border-radius: 2px;
+								width: 28px;
+								height: 30px;
+								line-height: 30px;
+								@include breakpoint($touch) { text-align: center; }
+								&:hover {
+									background: #000;
+									color: #FFF;
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
+	}

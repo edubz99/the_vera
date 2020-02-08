@@ -1,0 +1,495 @@
+/*========================================================
+  18.  RESUMES LISTING 
+========================================================== */
+
+/** Resume Filters - Orginal */
+.resume_filters {
+	background: transparent;
+	margin-bottom: 20px;
+
+	.search_resumes {
+		display: none;
+	}
+
+	// hide search fields, handled via JS
+	.showing_resumes {
+		background: transparent;
+		border: 0;
+		padding: 0;
+
+		span {
+			display: inline-block;
+			font-size: 16px;
+			color: #B8B8B8;
+
+			&:first-letter {
+				text-transform: capitalize
+			}
+		}
+
+		.rss_link {
+			display: none;
+		}
+
+		.reset {
+			border: 0 !important;
+			background: #DD1713;
+			border-radius: 2px;
+			font-size: 9px;
+			text-transform: uppercase;
+			color: #FFF;
+			padding: 0 5px;
+		}
+	}
+}
+
+
+/** Resume Listings */
+ul.resumes {
+	border: 0;
+
+	li.resume.resume {
+		border: 1px solid #E1E1E1;
+		border-radius: 5px;
+		background: #FFF !important;
+		margin-bottom: 20px;
+		transition: all ease-in 300ms;
+
+		&:hover,
+		&:focus {
+			background: #FFF;
+			border: 1px solid #a8a4db;
+			box-shadow: 0px 0px 0px 1px #a8a4db;
+		}
+
+		&.listing-bookmarked,
+		&.resume_featured {
+			@include highlight-item();
+
+			a {
+				background: transparent;
+			}
+
+			&:hover {
+				border: 1px solid #8FD068;
+				box-shadow: 0px 0px 0px 1px #8FD068;
+			}
+
+			.candidate-column {
+				h3:before {
+					display: none;
+				}
+			}
+		}
+
+		a {
+			border: 0 !important;
+			padding: 25px 30px 25px 25px;
+			display: flex;
+			justify-content: center;
+
+			@include breakpoint($touch) {
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				padding: 20px 25px 20px 25px;
+			}
+
+			&:hover {
+				background: transparent;
+			}
+		}
+
+		.candidate_photo {
+			float: none;
+			position: static;
+			width: 66px !important;
+			height: 66px !important;
+			border-radius: 2px;
+			box-shadow: 0px 0px 0px 1px #ededed;
+
+			@include breakpoint($touch) {
+				visibility: visible;
+			}
+		}
+
+		.candidate-column {
+			padding: 0 0 0 10px;
+
+			@include breakpoint($touch) {
+				width: 100%;
+				padding: 15px 0 15px 0;
+				margin-bottom: 10px;
+				border-bottom: 1px solid #E1E1E1;
+			}
+
+			h3 {
+				font-family: $primary-font-stack;
+				font-size: 18px;
+				font-weight: 600;
+			}
+
+			.candidate-title {
+				font-size: 16px;
+
+				strong {
+					color: #9E9E9E;
+					font-weight: 500;
+				}
+
+				.tagline {
+					letter-spacing: -0.4px;
+					margin: 0;
+
+					&:before {
+						content: '·';
+						padding-right: 8px;
+						padding-left: 4px;
+					}
+				}
+			}
+		}
+
+		.candidate-location-column {
+
+			.candidate-location {
+				width: 100%;
+				font-size: 16px;
+				color: #adadad;
+				overflow-wrap: break-word;
+			}
+
+			@include breakpoint($touch) {
+				width: auto;
+				max-width: 50%;
+				text-align: left;
+				position: absolute !important;
+				top: 20px;
+				right: 25px;
+			}
+
+			&:before {
+				font-family: "Flaticon";
+				content: $fi-location-pointer;
+			}
+		}
+
+		.resume-meta {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			align-items: flex-start;
+
+			@include breakpoint($touch) {
+				width: 100%;
+				flex-wrap: nowrap;
+				text-align: left;
+			}
+
+			.resume-category {
+				order: -1;
+				width: 100%;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 1.6;
+				text-transform: uppercase;
+				color: #90da36;
+
+				&:before {
+					display: none;
+				}
+
+				@include breakpoint($touch) {
+					width: auto;
+				}
+			}
+
+			date {
+				width: 100%;
+				font-size: 16px;
+				line-height: 1.6;
+				letter-spacing: -0.3px;
+
+				@include breakpoint($touch) {
+					flex: 1;
+					margin-left: 20px;
+				}
+			}
+		}
+
+		&:nth-child(1n+1) {
+			.resume-meta .resume-category {
+				color: #90da36;
+			}
+		}
+
+		&:nth-child(2n+2) {
+			.resume-meta .resume-category {
+				color: #48B4B5;
+			}
+		}
+
+		&:nth-child(3n+3) {
+			.resume-meta .resume-category {
+				color: #e05288;
+			}
+		}
+
+		&:nth-child(4n+4) {
+			.resume-meta .resume-category {
+				color: #f08d3c;
+			}
+		}
+	}
+
+	ul.meta-fields {
+		flex: 1;
+		background: #F1F1F1;
+		border-radius: 3px;
+		padding: 12px 25px 14px 25px;
+		margin: 0 30px 25px 25px;
+		font-family: $primary-font-stack;
+		font-size: 15px;
+		color: #3B3B3B;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@include breakpoint($mobile) {
+			padding: 15px 25px 16px 25px;
+		}
+
+		>li {
+			width: 48%;
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin: 7px 0;
+
+			@include breakpoint($touch) {
+				width: 100%;
+			}
+
+			&[data-full-width] {
+				width: 100%;
+			}
+
+			label,
+			.jmfe-custom-field-label {
+				font-family: $primary-font-stack;
+				font-size: 12px;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: #95989A;
+				width: auto;
+			}
+
+			.jmfe-custom-field {
+				padding: 0;
+				background: transparent;
+			}
+		}
+	}
+
+	li.no_resumes_found {
+		border: 0 !important;
+		border-radius: 5px;
+		background: #EAF6FB;
+		font-size: 16px;
+		color: #28A8D3;
+		padding: 25px;
+	}
+}
+
+/** Resumes Load More **/
+.load_more_resumes {
+	background: #B5B5B5 url("../../images/button-glass.png") repeat-x;
+	border-radius: 5px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 400 !important;
+
+	&:hover,
+	&:focus {
+		border: 0 !important;
+		background: #B5B5B5 !important;
+	}
+}
+
+/** Resume Search */
+.resume-search-fields {
+	margin: 0 0 45px 0;
+	padding-bottom: 45px;
+	border-bottom: 1px solid #E1E1E1;
+
+	.sortable {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px;
+	}
+
+	.form-control {
+		position: relative;
+		background: #FFF;
+		border: 1px solid #d9d9d9;
+		border-radius: 5px;
+		height: 93px;
+		padding: 16px 25px;
+		margin-bottom: 20px;
+
+		&:focus {
+			border: 2px solid #9A94E8;
+		}
+
+		label {
+			margin: 0;
+			display: block;
+			font-size: 15.5px;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+
+			@include breakpoint($mobile) {
+				font-size: 16px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		input {
+			border: 0;
+			padding: 0;
+			height: 40px;
+
+			&:focus {
+				border: 0 !important;
+				outline: 0 !important;
+				box-shadow: none !important;
+			}
+		}
+
+		select {
+			transform: translateY(-5px);
+			padding: 0;
+			border: 0;
+			z-index: 1;
+			height: 50px;
+			background-position: 100% 50%;
+
+			&:focus {
+				border: 0 !important;
+				outline: 0 !important;
+				box-shadow: none !important;
+			}
+		}
+	}
+
+	.get-location {
+		position: absolute;
+		bottom: 13px;
+		right: 21px;
+		border: 0 !important;
+		opacity: 0.35;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			width: 28px;
+			height: 28px;
+		}
+
+		@include breakpoint($touch) {
+
+			&[data-balloon]:before,
+			&[data-balloon]:after {
+				display: none;
+			}
+		}
+	}
+
+	#search_category_dummy {
+		a.link {
+			font-size: 16px;
+			color: #0070C9;
+			color: var(--secondary-accent-color);
+			border: 0 !important;
+
+			span {
+				font-size: 20px;
+			}
+		}
+
+		span.name {
+			font-size: 16px;
+		}
+	}
+
+	input[type="submit"] {
+		background: #7DC146;
+		background: var(--tertiary-accent-color);
+		border: 1px solid #7DC146;
+		border: 1px solid var(--tertiary-accent-color);
+		height: 60px;
+		width: 100%;
+		padding: 0;
+		border-radius: 5px;
+		text-transform: uppercase;
+		color: #FFF;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+	}
+
+	.form-caption {
+		display: none;
+	}
+}
+
+/** Resume Filters */
+#resumes-filters-module {
+	display: flex;
+	flex-direction: column;
+
+	/** General Styles */
+	.resume_filter {
+		margin: 0 0 45px 0;
+		padding-bottom: 45px;
+		border-bottom: 1px solid #E1E1E1;
+
+		.title {
+			font-family: $primary-font-stack;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: #95989A;
+			letter-spacing: 1px;
+			margin-top: 0;
+		}
+
+		/** Resume Skills */
+		.resume_skills {
+			a {
+				display: inline-block;
+				background: #f5f5f5;
+				border-radius: 3px;
+				padding: 6px 16px;
+				margin: 0 8px 12px 0;
+				font-size: 15.4px !important;
+
+				&:hover,
+				&.active {
+					background: #7DC146;
+					background: var(--tertiary-accent-color);
+					color: #FFF;
+				}
+			}
+		}
+
+	}
+}

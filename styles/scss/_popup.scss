@@ -1,0 +1,270 @@
+/*========================================================
+  28.  POPUP STYLING 
+========================================================== */
+
+/** == MAGNIFIC POPUP == */
+/** ================================================== */
+
+  .mfp-bg {
+    background: #FFF;
+    opacity: 0.9;
+  }
+
+  .white-popup-block, #wp-link-wrap {
+    background: #FFF;
+    padding: 30px 48px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    border: 1px solid #D9DADA;
+    border-radius: 5px;
+    position: relative;
+
+    @include breakpoint($mobile) { max-width: 90%; padding: 30px 35px; }
+    @include breakpoint($tablet) { max-width: 620px; }
+
+    .mfp-close, #wp-link-close {
+      display: inline-block;
+      font-size: 20px;
+      color: #000;
+      top: 26px !important;
+      right: 30px;
+      padding: 0;
+      opacity: 1;
+      cursor: pointer;
+
+      > * { pointer-events: none; }
+
+      @include breakpoint($mobile) { top: 13px !important; right: 13px; font-size: 18px; }
+    }
+
+    .title, #link-modal-title {
+      font-family: $secondary-font-stack;
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+
+    .text-link {
+      color: var(--secondary-accent-color);
+    }
+
+  }
+
+  .mfp-iframe-scaler {
+    .mfp-close {
+      color: #000;
+      opacity: 1;
+    }
+  }
+
+
+/** == TAXONOMIES POPUP == */
+/** ================================================== */
+
+  .taxonomies-popup {
+    position: relative;
+    max-width: 800px;
+    padding: 35px 52px;
+
+    // Taxonomies Header
+    .taxonomies-header {
+      border-bottom: 2px solid #000;
+      padding-bottom: 18px;
+
+      .title {
+        margin-bottom: 0;
+        font-size: 28px;
+        font-weight: 600;
+        .choose { display: none; }
+      }
+      .subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1;
+        color: #929292;
+      }
+    }
+
+    &.choose-only {
+      .title {
+        .browse { display: none; }
+        .choose { display: block; }
+      }
+    }
+
+    //Taxonomies Terms
+    ul.taxonomy-terms {
+      position: relative;
+      list-style: none;
+      columns: 2;
+      column-gap: 60px;
+      margin: 25px 0 40px 0;
+      padding: 0 0 30px 0;
+      border-bottom: 1px solid #E9E9E9;
+      @include breakpoint($mobile) { column-count: 1; }
+
+      @include breakpoint($no-mobile) {
+        &:before {
+          position: absolute;
+          top: 0; bottom: 30px; left: 50%;
+          content: '';
+          width: 1px;
+          background: #E9E9E9;
+        }
+      }
+
+      &.no-terms {
+        column-count: 1;
+        &:before { width: 0; }
+      }
+
+      li {
+        line-height: 1.8;
+        @include breakpoint($touch) { line-height: 1.8; }
+
+        a {
+          display: flex;
+          font-size: 17px;
+          &:hover {
+            color: #FA6800 !important;
+            color: var(--primary-accent-color) !important;
+          }
+          span { color: #B2B2B2; margin-left: auto; }
+        }
+      }
+      li.more-link {
+        white-space: nowrap;
+        white-space: pre;
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        letter-spacing: 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #909090;
+
+        a {
+          font-size: inherit;
+          color: #5786ec;
+          color: var(--secondary-accent-color, #5786ec);
+          display: inline-block;
+          text-transform: lowercase;
+
+          em {
+            font-size: 16px;
+            font-style: normal;
+            line-height: 0.4;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+/** == SEARCH MODULE POPUP == */
+/** ================================================== */
+
+  #search-module {
+    list-style: none;
+
+    hr {
+      width: auto;
+      padding: 0 14px !important;
+      margin: 15px 35px !important;
+      height: 2px !important;
+      background: #000;
+    }
+
+    .job-search-fields {
+      margin-top: -23px;
+      border: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      .sortable { margin-bottom: 0; }
+
+      p.caption {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: lowercase;
+        color: #B2B2B2;
+        padding: 6px 14px 0px 0;
+        margin: 0;
+
+        a {
+          display: inline !important;
+          color: #2F70FF;
+          font-size: inherit;
+          padding: 0 !important;
+          margin: 0 !important;
+          text-transform: initial;
+        }
+      }
+
+      .choose-category { display: none; }
+      .submit-field { margin-bottom: 0; }
+
+      .button {
+        display: block !important;
+        width: 100%;
+        background: #242424;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 18px 35px 2px 35px;
+        color: #FFF;
+        padding: 14px 20px;
+        border: 0;
+        margin-left: 0; margin-right: 0;
+        &:hover { color: #FFF !important; background: #242424 !important; }
+      }
+    }
+
+  }
+
+
+/** == RESUME CONTACT POPUP == */
+/** ================================================== */
+
+  #contact-candidate {
+    .resume_contact {
+      padding: 0;
+      margin: 0;
+
+      .resume_contact_button { display: none; }
+      .resume_contact_details {
+        width: 100%;
+        display: block !important;
+        float: none;
+        border: 0;
+        padding: 0;
+
+        &:before, &:after { display: none; }
+
+        a {
+          color: var(--secondary-accent-color);
+          &:hover {
+            color: var(--primary-accent-color);
+          }
+        }
+      }
+    }
+  }
+
+  .ui.popup {
+    p { font-size: 13px; }
+
+    a {
+      color: var(--secondary-accent-color);
+      &:hover {
+        color: var(--primary-accent-color);
+      }
+    }
+  }

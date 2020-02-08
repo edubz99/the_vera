@@ -1,0 +1,343 @@
+/*========================================================
+  14.  COMPANIES LISTING 
+========================================================== */
+
+
+/** == COMPANY LISTINGS == */
+/** ================================================== */
+
+    ul.company_listings {
+        border: 0;
+        margin: 20px 0 0 0; padding: 0;
+        list-style: none;
+
+		li.company_listing.company_listing {
+			border: 1px solid #E1E1E1;
+			border-radius: 5px;
+			background: #FFF !important;
+			margin-bottom: 20px;
+			box-shadow: 0 2px 0 #f3f3f3;
+			transition: all ease-in 300ms;
+
+			&:hover, &:focus {
+				background: #FFF;
+				border: 1px solid #a8a4db;
+				box-shadow: 0px 0px 0px 1px #a8a4db;
+			}
+
+			a {
+                border: 0 !important;
+                outline: none;
+				padding: 25px 30px 25px 25px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				@include breakpoint($touch) { flex-wrap: wrap; justify-content: flex-start; padding: 20px 25px 20px 25px; }
+
+				&:hover {
+					background: transparent;
+				}
+			}
+
+			.logo {
+				background: #FFF;
+				border: 1px solid #efefef;
+				border-radius: 2px;
+				display: flex;
+				justify-content: center; align-items: center;
+				width: 65px !important; height: 65px !important;
+				margin-right: 15px;
+				.company_logo {
+					float: none;
+					position: static;
+					width: 100%; height: auto;
+					border-radius: 2px;
+					margin: 0 !important;
+					@include breakpoint($touch) { visibility: visible; }
+				}
+			}
+			.company {
+				width: 60%;
+				padding: 0 0 0 10px;
+				@include breakpoint($touch) { width: 100%; padding: 15px 0 15px 0; margin-bottom: 10px; border-bottom: 1px solid #E1E1E1; }
+
+				h3 {
+					display: flex;
+					font-family: $primary-font-stack;
+					font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+				}
+				.company-desc {
+					font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: -0.4px;
+                    color: #9E9E9E;
+				}
+			}
+			ul.company-meta {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 23%;
+                margin-left: auto;
+				padding-right: 5px;
+				
+				@include breakpoint($touch) {
+					width: 100%;
+					text-align: left;
+					padding: 0;
+					flex-direction: row;
+					align-items: flex-start;
+					flex-wrap: wrap;
+				}
+
+				li.open-positions {
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #5BBC2E;
+				}
+				li.location {
+					font-size: 16px;
+					letter-spacing: -0.3px;
+                    line-height: 1.5;
+                    color: #9E9E9E;
+
+					@include breakpoint($touch) { padding-left: 15px; }
+				}
+			}
+        }
+        li.no_company_listings_found {
+			border: 0 !important;
+			border-radius: 5px;
+			background: #EAF6FB;
+			font-size: 16px;
+			color: #28A8D3;
+			padding: 16px;
+		}
+		.company-positions {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+            width: auto;
+			padding: 19px 20px 15px 28px;
+			margin: 0 20px 20px 20px;
+			background: #F5F5F5;
+			border-radius: 3px;
+
+            @include breakpoint($mobile) { padding: 15px 25px 16px 25px; }
+
+                > .title {
+                    font-family: $primary-font-stack;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: #95989A;
+                    margin: 0 0 10px 0;
+                }
+
+                .see-all {
+                    font-size: 14px;
+                    color: var(--secondary-accent-color);
+                    background-image: transparent !important;
+                    line-height: 1;
+
+                    &:hover {
+                        color: var(--primary-accent-color) !important;
+                        background-image: transparent !important;
+                        background-size: 0 !important;
+                    }
+                }
+    
+                ul {
+                    width: 100%;
+                    list-style: none;
+                    margin: 0; padding: 0;
+					display: flex;
+					flex-wrap: wrap;
+                    justify-content: space-between;
+    
+                    li {
+                        position: relative;
+						width: 48%;
+						margin-bottom: 15px;
+
+						@include breakpoint($touch) { width: 100%; }
+
+                        &:nth-child(2) {
+                            &::before {
+                                position: absolute;
+                                left: -30px; top: 7px; bottom: 5px;
+                                content: '';
+                                height: 100%;
+                                width: 1px;
+								background: #D0D0D0;
+
+								@include breakpoint($touch) { width: 0; }
+                            }
+						}
+						
+						&:last-child {
+							@include breakpoint($touch) { margin-bottom: 0; }
+						}
+
+                        .entry-header {
+							display: flex;
+							flex-wrap: wrap;
+							align-items: center;
+							
+							.title {
+								font-family: $primary-font-stack;
+								font-size: 16px;
+								font-weight: 600;
+								margin: 0 10px 0 0;
+
+								a {
+									display: inline;
+									padding: 0;
+									background-image: linear-gradient(#f76020, #f76020);
+									background-size: 0% 1px;
+									background-position: 0 calc(100% + -1px);
+									background-repeat: no-repeat;
+									transition: all 150ms linear;
+									&:hover {
+										background-size: 100% 1px;
+									}
+								}
+
+							}
+
+                            .types {
+                                display: flex;
+                                align-items: center;
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #AEAEAE;
+
+                                a {
+                                    padding: 0;
+                                }
+                            }
+                        }
+                        .entry-footer {
+                            display: flex;
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: #9E9E9E;
+
+                            .location {}
+                            .categories {
+								display: flex;
+								a {
+									display: none;
+									padding: 0;
+
+									&:first-of-type { display: block; }
+								}
+
+								&:before {
+									content: '—';
+									padding-right: 10px;
+									padding-left: 6px;
+								}
+							}
+                        }
+                    }
+                }
+    
+            
+		}
+    }
+    
+
+/** == COMPANY SEARCH == */
+/** ================================================== */
+
+	/** Job Search */
+	.company-search-fields {
+		margin: 0 0 45px 0;
+		padding-bottom: 45px;
+		border-bottom: 1px solid #E1E1E1;
+
+		.sortable {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 25px;
+		}
+
+
+		.form-control {
+			position: relative;
+			background: #FFF;
+			border: 1px solid #d9d9d9;
+			border-radius: 5px;
+			height: 93px;
+			padding: 16px 25px;
+			margin-bottom: 20px;
+
+			label {
+				margin: 0;
+				display: block;
+				font-size: 15.5px;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				
+				@include breakpoint($mobile) { font-size: 16px; }
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			input {
+				border: 0;
+				padding: 0;
+				height: 40px;
+
+				&:focus { border: 0 !important; outline: 0 !important; box-shadow: none !important; }
+			}
+		}
+
+		.get-location {
+			position: absolute;
+			bottom: 13px;
+			right: 21px;
+			border: 0 !important;
+			opacity: 0.35;
+
+			&:hover { opacity: 1; }
+			img { width: 28px; height: 28px; }
+			
+			@include breakpoint($touch) {
+				&[data-balloon]:before, &[data-balloon]:after { display: none; }
+			}
+		}
+		#search_category_dummy {
+			a.link {
+				font-size: 16px;
+				color: #0070C9; color: var(--secondary-accent-color);
+				border: 0 !important;
+				span { font-size: 20px; }
+			}
+			span.name { font-size: 16px; }
+		}
+
+		input[type="submit"] {
+			background: #7DC146; background: var(--tertiary-accent-color);
+			border: 1px solid #7DC146; border: 1px solid var(--tertiary-accent-color);
+			height: 60px;
+			width: 100%;
+			padding: 0;
+			border-radius: 5px;
+			text-transform: uppercase;
+			color: #FFF;
+			font-size: 18px;
+			letter-spacing: 0.5px;
+			cursor: pointer !important;
+		}
+
+		.form-caption { display: none; }
+	}

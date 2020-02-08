@@ -1,0 +1,141 @@
+/*---------------------------------------------------------
+ 2. DEFAULTS
+-------------------------------------------------------- */
+
+/*---------------------------------------------------------
+ 2.1  Captions (_defaults.less)
+-------------------------------------------------------- */
+
+  .wp-caption {
+    margin-bottom: 1.6em;
+    max-width: 100%;
+
+    a { border: 0 !important; }
+  }
+
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0;
+  }
+
+  .wp-caption-text {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
+
+/*---------------------------------------------------------
+ 2.2  Alignments (_defaults.less)
+-------------------------------------------------------- */
+
+  .alignleft {
+    display: inline;
+    float: left;
+  }
+
+  .alignright {
+    display: inline;
+    float: right;
+  }
+
+  .aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  blockquote.alignleft,
+  .wp-caption.alignleft,
+  img.alignleft {
+    margin: 0.4em 1.6em 1.6em 0;
+  }
+
+  blockquote.alignright,
+  .wp-caption.alignright,
+  img.alignright {
+    margin: 0.4em 0 1.6em 1.6em;
+  }
+
+  blockquote.aligncenter,
+  .wp-caption.aligncenter,
+  img.aligncenter {
+    clear: both;
+    margin-top: 0.4em;
+    margin-bottom: 1.6em;
+  }
+
+  .wp-caption.alignleft,
+  .wp-caption.alignright,
+  .wp-caption.aligncenter {
+    margin-bottom: 1.2em;
+  }
+
+/*---------------------------------------------------------
+ 2.3  Misc (_defaults.less)
+-------------------------------------------------------- */
+
+  .sticky { border: 0; }
+  .gallery-caption { border: 0; }
+  .bypostauthor { border: 0; }
+
+/*---------------------------------------------------------
+ 2.4  Block Cover (_defaults.less)
+-------------------------------------------------------- */
+  
+  .wp-block-cover {
+    &.alignleft {
+      margin-right: 20px;
+    }
+  }
+
+/*---------------------------------------------------------
+ 2.5  Block Button (_defaults.less)
+-------------------------------------------------------- */
+
+  .wp-block-button {
+    .wp-block-button__link {
+      display: inline-block;
+      font-family: $primary-font-stack;
+      background: #7dc146; background: var(--tertiary-accent-color);
+      padding: 13px 60px;
+      margin-right: 20px;
+      border: 1px solid #7dc146; border: 1px solid var(--tertiary-accent-color);
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: 300ms ease-in all;
+      @include breakpoint($mobile) { width: 100% !important; padding: 0; margin-left: 0 !important; }
+    }
+
+    &.is-style-outline {
+      .wp-block-button__link {
+        background: transparent;
+        border: 2px solid #7dc146;
+        color: #7dc146;
+      }
+    }
+
+    &.is-style-squared {
+      .wp-block-button__link {
+        border-radius: 0;
+      }
+    }
+  }
+
+/*---------------------------------------------------------
+ 2.6  Block Gallery (_defaults.less)
+-------------------------------------------------------- */
+  
+.wp-block-gallery {
+  &.alignleft {
+    margin-right: 20px;
+  }
+}

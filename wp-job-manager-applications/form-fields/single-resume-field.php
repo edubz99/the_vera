@@ -1,0 +1,2 @@
+<input type="hidden" class="input-text" name="<?php echo esc_attr( isset( $field['name'] ) ? esc_attr($field['name']) : esc_att($key) ); ?>" id="<?php echo esc_attr( $key ); ?>" value="<?php echo isset( $field['value'] ) ? esc_attr( $field['value'] ) : ''; ?>" />
+<?php if ( ! empty( $field['description'] ) ) : ?><?php echo wp_kses_post($field['description']); ?><?php endif; ?>

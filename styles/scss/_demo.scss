@@ -1,0 +1,203 @@
+/*========================================================
+  00.  DEMO 
+========================================================== */
+
+/** == LOGIN POPUP == */
+/** ================================================== */
+
+    #registration-notice,
+    #login-notice
+    {
+        background: #FFF url('../../images/lock-icon.svg') no-repeat 100% 110%;
+        background-size: 150px auto;
+        padding: 35px 52px;
+
+        @include breakpoint($mobile) { padding: 35px 45px; }
+
+        // Popup Header
+        .popup-header {
+            border-bottom: 2px solid #000;
+            padding-bottom: 18px;
+      
+            .title {
+              margin-bottom: 0;
+              font-size: 28px;
+              font-weight: 600;
+              .choose { display: none; }
+            }
+            .subtitle {
+              font-size: 17px;
+              font-weight: 300;
+              line-height: 1.3;
+              color: #929292;
+            }
+        }
+
+        // Popup Body
+        .popup-body {
+            padding-top: 15px;
+            font-size: 16px;
+
+            .desc {
+                padding-right: 90px;
+                @include breakpoint($touch) { padding-right: 0; }
+            }
+
+            .buttons {
+                margin-top: 10px;
+                margin-bottom: 15px;
+                
+                @include breakpoint($mobile) { text-align: center; }
+
+                .button {
+                    border-radius: 3px;
+                    border: 2px solid #ccc;
+                    text-transform: inherit;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0;
+                    max-height: auto;
+                    height: auto;
+                    line-height: 1;
+                    padding: 15px 30px;
+
+                    @include breakpoint($mobile) { width: 100%; }
+
+                    &.employer {
+                        border-color: #7DC146;
+                        background: #7DC146;
+                        color: #FFF;
+                    }
+                    &.candidate {
+                        border-color: #2F70FF;
+                        background: #FFF;
+                        color: #2F70FF;
+
+                        &:hover {
+                            border-color: #2F70FF !important;
+                            background: #FFF !important;
+                            color: #2F70FF !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Popup Clipboard
+        .popup-clipboard { display: none; }
+    }
+
+
+/** == DEMO NOTIFICATION == */
+/** ================================================== */
+
+.demo-notice {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #027BFC;
+    padding: 11px 0;
+    z-index: 9999999;
+
+    @include animate-this($translate3d: '0, 30px, 0'); // CSS-3 animation is triggered via JS
+
+    .close {
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        width: 15px; height: auto;
+
+        @include breakpoint($touch) { top: 15px; right: 10px; }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        // Text
+        .text {
+            display: flex;
+            align-items: center;
+
+            @include breakpoint($touch)  {
+                align-items: flex-start;
+                margin-bottom: 15px;
+            }
+
+            .title {
+                font-family: $primary-font-stack;
+                font-size: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #FFF;
+                margin: 0 13px 0 0;
+            }
+            .desc {
+                font-family: $primary-font-stack;
+                font-size: 15px;
+                color: #FFF;
+            }
+        }
+
+        // Buttons
+        .buttons {
+            p {
+                font-family: $primary-font-stack;
+                font-size: 15px;
+                color: #DBDBDB;
+            }
+
+            .button {
+                font-family: $primary-font-stack;
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: capitalize;
+                border-radius: 5px;
+                padding: 1px 20px;
+                margin: 0 2px;
+                letter-spacing: 0;
+                line-height: 1.6;
+                height: 30px;
+
+                &.employer {
+                    background: #7DC146; background: var(--tertiary-accent-color);
+                    color: #FFF;
+                    box-shadow: -2px 2px 0px #408d02; box-shadow: -2px 2px 0px var(--tertiary-accent-color);
+                }
+                &.candidate { background: #FFF; color: #000; box-shadow: -2px 2px 0px #0060c6; }
+            }
+        }
+
+        // Clipboard
+        .clipboard { display: none; }
+
+    }
+
+}
+
+.shake-it {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+

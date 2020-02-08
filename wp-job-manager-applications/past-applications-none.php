@@ -1,0 +1,1 @@
+<?php esc_html_e( 'You haven\'t made any applications yet!', 'capstone' ); ?>

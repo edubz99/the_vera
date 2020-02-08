@@ -1,0 +1,722 @@
+/*========================================================
+  9.  BODY 
+========================================================== */
+
+	// If Hero Module Enabled
+	body:not(.page-template-template-dashboard):not(.page-template-template-compact) {
+
+		&.has-hero {
+			#site-body {
+				#site-bgs .top-bgs { display: none; }
+				#inner-body { padding-top: 0 !important; }
+			}
+		}
+
+	}
+
+	body {
+		#site-body {
+			position: relative;
+			min-height: 100vh;
+
+			// Site Backgrounds
+			#site-bgs {
+				@include position(absolute, 0, 0, 0, 0);
+
+				.top-bgs {
+					.top-left-bg { @include position(absolute, 0, null, null, 0); }
+					.top-right-bg { @include position(absolute, 0, 0, null, null); }
+				}
+				.bottom-bgs {
+					.bottom-left-bg { @include position(absolute, null, null, -75px, 0); }
+					.bottom-right-bg { @include position(absolute, null, 0, -75px, null); }
+				}
+			}
+			#map-wrapper ~ #site-bgs { top: 450px !important; }
+
+
+			// Inner Body
+			#inner-body {
+				position: relative;
+	
+				.page-content {
+					position: relative;
+					img { max-width: 100%; height: auto; }
+					iframe { max-width: 100%; }
+					a.text-link {
+						color: #027bfc; color: var(--secondary-accent-color);
+						padding: 0;
+						text-decoration: none;
+						border-bottom: 1px solid #efefef;
+						background-image: linear-gradient(#f76020, #f76020);
+						background-image: linear-gradient(var(--primary-accent-color), var(--primary-accent-color));
+						background-size: 0% 1px;
+						background-position: 0 calc(100% + 0px);
+						background-repeat: no-repeat;
+						transition: all 150ms linear;
+						&:hover {
+							border: 0;
+							background-size: 100% 1px;
+							border-color: transparent;
+						}
+					}
+				}
+				
+				&.has-sidebar {
+					padding-top: 25px;
+					
+					.page-header {
+						margin-bottom: 30px;
+						padding-bottom: 0 !important;
+					}
+
+					.page-content {
+						padding-top: 15px;
+					}
+					.page-sidebar {
+						padding-top: 10px; // 15px
+
+						.sidebar-modules {
+							display: flex;
+							flex-direction: column;
+
+							// Native Widgets Module
+							#widgets-module {
+				
+								.widget {
+									width: 100%;
+									margin: 0 0 45px 0;
+									padding-bottom: 45px;
+									border-bottom: 1px solid #E1E1E1;
+
+									&:last-of-type { margin-bottom: 0; }
+						
+									// Title
+									.widget-title {
+										font-family: $primary-font-stack;
+										text-transform: uppercase;
+										font-size: 16px;
+										font-weight: 400;
+										letter-spacing: 1px;
+										color: #95989A;
+										margin: 0 0 30px 0;
+									}
+								}
+							}
+
+							.no-facets {
+								background: #f1f1f1;
+								border-radius: 3px;
+								padding: 15px 20px;
+								font-size: 15px;
+								color: #3b3b3b;
+								border: 2px dashed #ccc;
+							}
+
+						}
+					}
+				}
+				&.has-standard {
+					.page-header {
+						margin-bottom: 30px;
+						padding-bottom: 30px !important;
+	
+						&:after {
+							content: '';
+							position: absolute;
+							left: 10px;
+							bottom: 0;
+							width: 35px;
+							height: 1px;
+							background: #dedede;
+						}
+					}
+				}
+			}
+		}
+
+		&.has-hero {
+			#inner-body {
+				margin-top: 45px !important;
+			}
+		}
+	}
+
+	// Split (sidebar & content) With Border
+	body:not(.blog):not(.archive):not(.search-results):not(.search-no-results):not(.single-post):not(.job-listing-page):not(.resume-listing-page):not(.product-listing-page):not(.post-type-archive-product):not(.remove-sidebar-content-border):not(.company-listing-page),
+	body.single-company
+	{
+
+		#site-body {
+			#inner-body {
+				&.has-sidebar {
+		
+					// when "Right Sidebar" is active
+					&.right-sidebar {
+						.page-content {
+							padding-right: 60px;
+							@include breakpoint($touch) { padding-right: 0; }
+						}
+						.page-sidebar {
+							margin-top: -30px; margin-bottom: -75px;
+							padding-top: 60px;
+							border-left: 1px solid #EDEEEF;
+							@include breakpoint($touch) { border: 0; margin-top: 0; }
+						}
+					}
+
+					// when "Left Sidebar" is active
+					&:not(.right-sidebar) {
+						.page-sidebar {
+							margin-top: -25px; margin-bottom: -75px;
+							padding-top: 45px;
+							border-right: 1px solid #EDEEEF;
+							@include breakpoint($touch) { border: 0; margin-top: 0; }
+						}
+						.page-content {
+							padding-left: 60px;
+							@include breakpoint($touch) { padding-left: 0; }
+						}
+					}
+
+				}
+				
+				&.has-not-sidebar {
+					padding-top: 90px;
+	
+					&.has-full-width {
+						.page-header { padding-bottom: 45px !important; }
+						.page-content { padding: 10px 0 10px 10px !important; }
+					}
+				}
+		
+				@include breakpoint($mobile) {
+					&.has-sidebar 	{ padding-top: 30px; }
+					&.has-not-sidebar { padding-top: 30px; }
+				}
+		
+				&.has-sidebar {
+					.page-content { padding-top: 25px; }
+				}
+			}
+		}
+	}
+
+	// If Singular Job or Resume Page
+	body.single-job_listing,
+	body.single-resume,
+	body.single-company
+	{
+		#site-body {
+			#inner-body {
+				&.has-sidebar 	{
+					padding-top: 30px;
+				}
+		
+				@include breakpoint($mobile) {
+					&.has-sidebar 	{ padding-top: 30px; }
+				}
+			}
+		}
+	}
+
+
+/** == MISC ELEMENTS == */
+/** ================================================== */
+
+	.button {
+		display: inline-block;
+		background: #000;
+		border-radius: 36px;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: #FFF;
+		padding: 15px 45px;
+		max-height: 53px;
+	}
+
+
+	.load-more {
+		margin-top: 60px;
+		width: 100%;
+		height: 65px;
+		background: #B5B5B5 url('../../images/button-glass.png') repeat-x;
+		border-radius: 5px;
+		a {
+			display: block;
+			color: #FFF;
+			font-size: 18px;
+			text-align: center;
+			line-height: 65px;
+		}
+	}
+	.page-load-status {
+		text-align: center;
+		margin-top: 30px;
+		p {
+			display: none;
+			font-size: 16px;
+			color: #95989a;
+		}
+	}
+
+
+/** == PRELOADER == */
+/** ================================================== */
+
+$circle-radius: 5px;
+	$circle-one: #9f9f9f;
+	$circle-two: #5d5d5d;
+	$circle-three: #000;
+
+	.preloader {
+		background: #FFF;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0; right: 0; bottom: 0; left: 0;
+		z-index: 1000;
+		color: #fff;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.loader-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+
+		> div {
+			border-radius: 100%;
+			display: inline-block;
+			animation: preloader-animation 1s infinite ease-in-out both;
+			margin: 0 2px;
+			width: $circle-radius;
+			height: $circle-radius;
+		}
+
+		.dot-1 {
+			animation-delay: -0.20s;
+			background-color: $circle-one;
+			background: linear-gradient(tint($circle-one, -100%), tint($circle-one, 20%));
+		}
+
+		.dot-2 {
+			animation-delay: -0.10s;
+			background-color: $circle-two;
+			background: linear-gradient(tint($circle-two, -10%), tint($circle-two, 30%));
+		}
+
+		.dot-3 {
+			animation-delay: 0;
+			background-color: $circle-three;
+			background: linear-gradient(tint($circle-three, -10%), tint($circle-three, 30%));
+		}
+
+	}
+
+	/** Animation Definition */
+	@keyframes preloader-animation {
+		0%, 80%, 100% { 
+			opacity: 0;
+		}
+		40% { 
+			opacity: 1;
+		}
+	}
+
+	/** Customizer Setting */
+	.site-preloader-disabled {
+		.preloader {
+			display: none !important;
+		}
+	}
+
+
+/** == SITE CTA == */
+/** ================================================== */
+
+	.site-cta {
+		@include breakpoint($mobile) { display: none; }
+		margin-bottom: -110px;
+		transform: translateY(-50%);
+
+		.container {
+			.inner {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #FFF;
+				border: 1px solid #eaeaea;
+				border-radius: 8px;
+				@include col-offset(1.8); @include col(8.2); 
+				padding: 30px 40px;
+
+				@include breakpoint($tablet) { flex-wrap: wrap; width: 100%; flex-basis: 100%; max-width: 100%; margin: 0 15px; }
+
+				@include breakpoint($mobile) { flex-wrap: wrap; border-radius: 0; padding: 30px 20px; }
+	
+				.cta-text	{
+					margin: 0;
+					@include col(8);
+					@include breakpoint($tablet) { @include col(7); }
+	
+					.title {
+						font-family: $secondary-font-stack;
+						font-size: 30px;
+						font-weight: 500;
+						color: #3ABEEF;
+						margin: 0;
+						letter-spacing: -0.5px;
+					}
+					.subtitle {
+						font-family: $secondary-font-stack;
+						font-size: 27px;
+						font-weight: 400;
+						color: #000 !important;
+						letter-spacing: -0.5px;
+					}
+	
+				}
+	
+				.cta-button {
+					@include col(4);
+					@include breakpoint($tablet) { @include col(5); }
+				}
+			}
+		}
+	}
+
+
+/** == PAGE CONTROLS == */
+/** ================================================== */
+
+	#page-controls {
+		position: fixed;
+		right: 7%;
+		bottom: 10%;
+		z-index: 1000;
+
+		display: flex;
+		flex-direction: column;
+
+		@include breakpoint($tablet)  { right: 3%; }
+		@include breakpoint($laptop)  { right: 1.8%; }
+		@include breakpoint($full-hd) { right: 7%; }
+		@include animate-this(); // CSS-3 animation is triggered via JS
+
+		.page-control {
+			&.notification {
+				margin-bottom: 13px;
+				img { width: 26px; height: auto; }
+			}
+			&.go-to-top {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img { width: 23px; height: auto; }
+			}
+			&.envato-cta {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 6px 15px;
+				background: #0072BC;
+				color: #FFF;
+				font-size: 13px;
+				text-transform: uppercase;
+				border-radius: 5px;
+
+				img { padding-left: 3px; }
+			}
+		}
+	}
+
+
+/** == SOCIAL SHARE == */
+/** ================================================== */
+
+	#social-share {
+		position: fixed;
+		left: 7%;
+		bottom: 125px;
+		z-index: 1000;
+		transform-origin: 0;
+		@include animate-this($rotate: '-90deg'); // CSS-3 animation is triggered via JS
+
+		@include breakpoint($mobile)  	  { display: none; }
+		@include breakpoint($tablet)  	  { left: 3%; }
+		@include breakpoint($laptop)  	  { bottom: 30%; left: 2%; }
+		@include breakpoint($full-hd)     { bottom: 30%; left: 6%; }
+
+		.label {
+			margin-right: 5px;
+			font-size: 15px;
+			opacity: .2;
+		}
+
+		.share-link {
+			display: inline-block;
+
+			a {
+				font-size: 18px;
+				color: var(--text-color, #000);
+
+				/* Hover */
+				&.facebook:hover {
+					color: #3b5998;
+				}
+				&.twitter:hover {
+					color: #55acee;
+				}
+				&.linkedin:hover {
+					color: #dd5143;
+				}				
+
+				/* Dots */
+				& small {
+					font-size: 100%;
+				}
+				&.facebook small {
+					color: #3b5998;
+				}
+				&.twitter small {
+					color: #55acee;
+				}
+				&.linkedin small {
+					color: #dd5143;
+				}
+
+			}
+
+			&:not(:last-child):not(:first-child):after {
+				margin-right: 5px;
+				content: " — ";
+			}
+
+		}
+	}
+
+
+
+/** == SITE NOTIFICATION == */
+/** ================================================== */
+
+	.site-notice {
+		position: fixed;
+		top: 30px;
+		right: 30px;
+
+		width: 420px;
+		border-radius: 4px;
+
+		background: #F4F2A5 url('../../images/noty-bg.png') repeat center center;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+
+		z-index: 1100;
+
+		@include animate-this($translate3d: '0, -30px, 0'); // CSS-3 animation is triggered via JS
+		@include breakpoint($mobile) { width: 85%; right: 27px; }
+
+		.close {
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			width: 15px; height: auto;
+		}
+
+		.inner-wrap {
+			padding: 30px 40px;
+
+			.title {
+				font-family: $primary-font-stack;
+				margin: 0 0 20px 0;
+				font-size: 16px;
+				font-weight: 600;
+				letter-spacing: 0.3px;
+				text-transform: uppercase;
+				color: #000;
+			}
+			.content {
+				color: #000;
+				line-height: 2;
+
+				a { text-decoration: underline; color: inherit; }
+				p:last-of-type { margin-bottom: 0 !important; }
+			}
+		}
+	}
+
+
+
+/** == BALOON TOOLTIP == */
+/** ================================================== */
+
+[data-balloon] {
+	&::after {
+		font-family: $primary-font-stack !important;
+		font-size: 14px !important;
+		text-transform: none !important;
+		letter-spacing: 0;
+	}
+}
+
+
+/** == HAMBURGER ICON == */
+/** ================================================== */
+
+.hamburger-icon {
+    display: inline-block;
+    width: 29px;
+    height: 21px;
+    position: relative;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #000;
+      border-radius: 5px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2), &:nth-child(3) {
+        top: 9px;
+      }
+      &:nth-child(4) {
+        top: 18px;
+      }
+
+    }
+
+    &.open {
+      span {
+        &:nth-child(1) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+        &:nth-child(4) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+        }
+      }
+    }
+
+  }
+
+
+/** == NO-SCROLL EFFECT == */
+/** ================================================== */
+
+	body.noscroll {
+		position: relative;
+		// overflow: hidden;
+
+		&:before {
+			content: '';
+			@include position(absolute, 0, 0, 0, 0);
+			background: rgba($color: #FFF, $alpha: 0.9);
+
+			opacity: 0;
+			animation: fade-in ease 0.3s forwards;
+			z-index: 700;
+		}
+
+		@include breakpoint($mobile) {
+			#wpadminbar { top: -46px; }
+		}
+	}
+
+	body:not(.noscroll) {
+		&:before {
+			content: '';
+			@include position(absolute, 0, 0, 0, 0);
+			background: rgba($color: #FFF, $alpha: 0.9);
+			opacity: 1;
+			animation: fade-out ease 0.3s forwards;
+		}
+	}
+
+
+/** == DATE PICKER == */
+/** ================================================== */
+
+		.ui-datepicker {
+			z-index: 1000 !important;
+
+			.ui-datepicker-header {
+				background: #D5D5D5;
+
+				.ui-corner-all {}
+			}
+			table.ui-datepicker-calendar {
+				margin: 0 0 6px 0;
+				thead {
+					tr {
+						th {
+							padding: .7em .3em;
+							text-align: center;
+							font-weight: 600;
+							color: #000;
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							border: 0 !important;
+							padding: 1px;
+
+							a {
+								padding: 0.5em 0.4em;
+								background: #EFEFEF;
+								border-radius: 2px;
+								border: 1px solid #D3D3D3 !important;
+
+								&.ui-state-active {
+									background: #D5D5D5;
+									border: 1px solid #AAAAAA !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+/** == CORE UI MODAL == */
+/** ================================================== */
+
+	.wp-core-ui {
+		#media-attachment-date-filters {
+			width: auto !important;
+		}
+	}
+

@@ -1,0 +1,260 @@
+/*========================================================
+  36.  RESTRICT CONTENT PRO 
+========================================================== */
+
+
+/** == BASE STYLING == */
+/** ================================================== */
+
+    .rcp_header {
+        position: relative;
+        font-family: $primary-font-stack;
+        font-weight: 700;
+        font-size: 16px;
+        color: #a7a7a7;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+
+        &:after {
+            position: absolute;
+            top: 50%; transform: translateY(-50%);
+            content: '';
+            height: 1px; width: 100%;;
+            background: #DFDFDF;
+            margin-left: 10px;
+        }
+    }
+
+    .rcp_success {
+        @extend .flash-notification;
+        background: #eaf6fb !important;
+        color: #28a8d3 !important;
+        margin-bottom: 30px !important;
+    }
+
+
+/** == FORM STYLING == */
+/** ================================================== */
+
+    .rcp_form {
+        padding: 0 !important;
+
+        fieldset {
+            [role="group"] {
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+    
+                > legend {
+                    @extend .rcp_header;
+                    margin-bottom: 10px;
+                }
+    
+                > p {
+                    width: 48%;
+                    padding: 0;
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+
+        // Registration Form
+        &#rcp_registration_form {
+            .rcp_login_link { margin-top: 20px; }
+
+            // User Fields
+            .rcp_user_fieldset {}
+
+            // Subscription Options
+            .rcp_subscription_fieldset {
+                margin-top: 10px;
+
+                .rcp_subscription_message {
+                    @extend .rcp_header;
+                    margin-bottom: 25px;
+                }
+
+                ul#rcp_subscription_levels {
+                    margin-top: 10px;
+
+                    li.rcp_subscription_level {
+                        display: flex;
+                        align-items: center;
+
+                        input[type="radio"] { margin-top: 0; }
+                        label {
+                            transform: translateY(0);
+                            padding: 0;
+                            font-size: 17px;
+                            letter-spacing: 0;
+
+                            .rcp_level_duration {
+                                background: #000;
+                                color: #FFF;
+                                padding: 3px 5px;
+                                border-radius: 4px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Subscription Total
+            .rcp_registration_total {
+                margin-top: 10px;
+
+                table.rcp_registration_total_details {
+                    text-align: left;
+                    background: #F7F7F7;
+                    width: 100%;
+
+                    thead {
+                        tr {
+                            th {
+                                padding: 8px 15px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding: 5px 15px;
+                            }
+                        }
+                    }
+                    tfoot {
+                        tr {
+                            border-top: 1px solid #a7a7a7;
+
+                            th, td {
+                                padding: 8px 15px;
+                            }
+                            th {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Payment Gateways
+            .rcp_gateway_fields {
+                margin-top: 35px;
+
+                .rcp_gateways_fieldset {
+                    legend {
+                        @extend .rcp_header;
+                        overflow: hidden;
+                        margin-bottom: 20px;
+                    }
+                    #rcp_payment_gateways {
+                        label { transform: translateY(0); padding-left: 0; }
+                    }
+                }
+            }
+            // Payment Gateways - Stripe
+            .rcp_gateway_stripe_fields {
+                .rcp_card_fieldset {
+                    #rcp_card_number_wrap { width: 48%; order: 1; }
+                    #rcp_card_name_wrap { width: 48%; order: 2; }
+                    #rcp_card_cvc_wrap { width: 18%; order: 3; }
+                    #rcp_card_zip_wrap { width: 26%; order: 4; }
+                    #rcp_card_exp_wrap {
+                        width: 48%;
+                        order: 5;
+                        
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        label { width: 100%; }
+                        .rcp_expiry_separator { display: none; }
+
+                        select.rcp_card_exp_month {
+                            width: 60%;
+                            border-right: 0;
+                            border-radius: 5px 0 0 5px;
+                        }
+                        select.rcp_card_exp_year {
+                            width: 40%;
+                            border-left: 0;
+                            border-radius: 0 5px 5px 0;
+                        }
+                    }
+                }
+            }
+
+            // Renew Field
+            #rcp_auto_renew_wrap {
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+
+                input[type="checkbox"] { margin-top: 0; }
+                label { transform: translateY(0); padding: 0; }
+            }
+
+            // Form Actions
+            #rcp_submit_wrap {
+                margin-top: 30px;
+                input[type="submit"] { width: 100%; }
+            }
+        }
+
+        // Manage Profile
+        &#rcp_profile_editor_form {
+            fieldset {
+                margin-bottom: 20px;
+
+                > legend { @extend .rcp_header; margin-bottom: 10px; }
+            }
+        }
+    }
+
+/** == TABLE == */
+/** ================================================== */
+
+    table.rcp-table {
+        thead {}
+        tbody {
+            tr {
+                td[data-th="Subscription"] {
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 20px 16px 20px 0;
+                }
+                td[data-th="Actions"] {
+                    a {
+                        border: 0 !important;
+                        background: #027bfc;
+                        border-radius: 2px;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        color: #FFF;
+                        letter-spacing: 0.3px;
+                        padding: 0 5px;
+                    }
+                }
+                td:not([data-th="Subscription"]) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &#rcp-payment-history {
+            tbody {
+                tr {
+                    td[data-th="Actions"] {
+                        a { background: #000; }
+                    }
+                }
+            }
+        }
+    }

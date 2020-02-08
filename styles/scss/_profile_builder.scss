@@ -1,0 +1,354 @@
+/*========================================================
+  27.  PROFILE BUILDER FORMS 
+========================================================== */
+    
+    /** Manage Profiles */
+	#wppb_form_success_message {
+		@extend .flash-notification;
+	}
+
+	form#select_user_to_edit_form { display: none; }
+
+	/** Profile Builder - Forms */
+	.wppb-user-forms  {
+		max-width: 100%;
+		
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			max-width: 100% !important;
+			margin-left: 0;
+			margin-right: 0;
+
+			li.wppb-form-field.wppb-form-field {
+				width: 48%;
+				padding-bottom: 0;
+				margin-bottom: 10px;
+
+				&:after {
+					content: "";
+					clear: both;
+					display: block;
+				}
+
+				label {
+					width: 100%;
+					transform: translateY(31px) !important;
+					position: relative;
+					line-height: 1;
+					padding: 0 20px;
+					cursor: pointer;
+					z-index: 500;
+					letter-spacing: 0.2px !important;
+				}
+				input:not([type="submit"]), select, textarea {
+					width: 100%;
+					height: 72px;
+					padding: 3.2rem 2rem 1rem 2rem !important;
+				}
+				textarea {
+					height: 150px;
+				}
+
+				select {
+					background-position: calc(100% - 15px) 40px;
+					padding-left: 15px !important;
+				}
+
+				.wppb-form-error { font-size: 14px; color: #D32828; font-style: normal; }
+
+				@include breakpoint($mobile) { @include col(12); padding: 0 !important; }
+
+				h4 {
+					position: relative;
+					font-family: $primary-font-stack;
+					font-weight: 700;
+					font-size: 16px;
+					color: #a7a7a7;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					overflow-x: hidden;
+					margin-bottom: 0;
+	
+					&:after {
+						position: absolute;
+						top: 50%; transform: translateY(-50%);
+						content: '';
+						height: 1px; width: 100%;;
+						background: #DFDFDF;
+						margin-left: 10px;
+					}
+				}
+
+				.wppb-description-delimiter {
+					font-size: 14px;
+					color: #95989A;
+					margin-top: 10px;
+					margin-left: 0;
+				}
+
+				&.wppb-default-name-heading,
+				&.wppb-default-contact-info-heading,
+				&.wppb-default-about-yourself-heading,
+				&.wppb-default-biographical-info
+				{ width: 100%; max-width: 100% !important; flex-basis: 100% !important; }
+
+				// Heading Fields
+				&.wppb-default-name-heading,
+				&.wppb-default-contact-info-heading,
+				&.wppb-default-about-yourself-heading
+				{ margin-bottom: 0px !important; }
+
+				// Capcha Field
+				&.wppb-recaptcha {
+					.recaptcha_response_field { display: none; }
+				}
+
+				&.wppb-gdpr-checkbox,
+				&.wppb-send-credentials-checkbox
+				{
+					width: 100%;
+					margin-top: 10px;
+
+					input { width: auto; margin-right: 10px; }
+					label { padding-left: 0; transform: translateY(0) !important; }
+				}
+
+				&.wppb-default-password {
+					position: relative;
+
+					#pass-strength-result {
+						position: absolute;
+						top: 25px; right: 10px;
+						margin: 0;
+						float: none;
+						width: auto; height: auto;
+						padding: 1px 10px;
+						border-radius: 5px;
+					}
+				}
+
+				// Checkbox + Radio Buttons
+				.icheckbox_square-blue,
+				.iradio_square-blue
+				{
+					margin: -4px 10px 0 0;
+				}
+
+			}
+		}
+
+		p.form-submit { margin-top: 25px; width: 100%; }
+
+		/** Edit Form */
+		&#wppb-edit-user {
+			margin-bottom: 40px;
+			
+			.wppb-select-user-role {
+				display: none;
+			}
+		}
+
+		/** Registration Form */
+		&#wppb-register-user {}
+
+		/** Login Form */
+		#loginform {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			p.login-username, p.login-password {
+				width: 100%;
+				padding-bottom: 0;
+				margin-bottom: 10px;
+				overflow: visible;
+
+				label { width: 100%; transform: translateY(31px) !important; }
+				input, select, textarea { width: 100%; }
+			}
+			p.login-remember {
+				display: flex;
+				align-items: center;
+				label { padding-left: 0; transform: translateY(13px); }
+
+				// Checkbox + Radio Buttons
+				.icheckbox_square-blue,
+				.iradio_square-blue
+				{
+					margin: -4px 10px 0 0;
+				}
+			}
+			p.login-submit { margin-top: 20px; }
+		}
+
+		/** Password Recovery Form */
+		&#wppb-recover-password {
+			ul {
+				li.wppb-form-field.wppb-form-field { width: 100%; }
+			}
+		}
+
+	}
+
+
+/** == PROFILE BUILDER - NOTIFICATONS == */
+/** ================================================== */
+
+	/** Profile Builder - Error */
+	.wppb-error.wppb-error {
+		@extend .flash-notification;
+		display: flex;
+		background: #FBEAEA;
+		color: #D32828 !important;
+		strong { color: #D32828; font-weight: 600; }
+
+		a {
+			order: 1;
+			margin: 0 0 0 auto;
+			border: 0;
+			background: #D32828;
+			border-radius: 2px;
+			font-size: 13px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #FFF !important;
+			padding: 1px 9px;
+			height: auto;
+			line-height: 1.7;
+			white-space: nowrap;
+			max-height: 25px;
+			&:before { display: none; visibility: hidden; }
+
+			&:hover {
+				color: #FFF !important;
+				background: #D32828;
+				text-decoration: none;
+			}
+			
+			@include breakpoint($touch) { margin: 15px 0 5px 0; }
+		}
+
+	}
+
+	/** Profile Builder - Warning */
+	#wppb_general_top_error_message,
+	.wppb-warning.wppb-warning
+	{
+		@extend .flash-notification;
+		background: #FBEAEA;
+		color: #D32828 !important;
+	}
+
+	/** Profile Builder - Alert */
+	.wppb-alert {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+		@extend .flash-notification;
+
+		@include breakpoint($mobile) {
+			.buttons { margin: 20px 0 10px 0; }
+		}
+
+		.buttons {
+			margin-left: auto;
+			a:first-of-type {
+				position: relative;
+				border-radius: 2px 0 0 2px !important;
+				border-right: 1px solid #ccc !important;
+				padding-right: 18px !important;
+
+				&:after {
+					position: absolute;
+					top: -4px; right: -15px;
+					content: 'or';
+					font-size: 11px;
+					text-align: center;
+					background: #FFF;
+					color: #3F3F3F;
+					border-radius: 100%;
+					width: 27px; height: 27px;
+					line-height: 27px;
+				}
+			}
+			a:last-of-type {
+				border-radius: 0 2px 2px 0 !important;
+				padding-left: 18px !important;
+			}
+		}
+
+		a {
+			order: 1;
+			margin: 0 0 0 auto;
+			border: 0 !important;
+			background: #7dc146 !important;
+			border-radius: 2px !important;
+			font-size: 13px !important;
+			font-weight: 600;
+			text-transform: uppercase !important;
+			color: #FFF !important;
+			padding: 1px 9px !important;
+			height: auto !important;
+			line-height: 1.7 !important;
+			white-space: nowrap;
+			max-height: 25px;
+			&:before { display: none; visibility: hidden; }
+		}
+
+	}
+
+/** == PROFILE BUILDER - SOCIAL CONNECT == */
+/** ================================================== */
+
+	.wppb-sc-buttons-container {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		a:last-of-type { margin-right: 0; }
+
+		/** Heading **/
+		.wppb-sc-heading-before-reg-buttons {
+			width: 100%;;
+			margin: 20px 0;
+
+			h3 {
+				position: relative;
+				font-family: $primary-font-stack;
+				font-weight: 700;
+				font-size: 16px;
+				color: #a7a7a7;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				overflow-x: hidden;
+				margin-bottom: 0;
+
+				&:after {
+					position: absolute;
+					top: 50%; transform: translateY(-50%);
+					content: '';
+					height: 1px; width: 100%;;
+					background: #DFDFDF;
+					margin-left: 10px;
+				}
+			}
+		}
+
+		/** Social Buttons - Icons **/
+		.wppb-sc-button {
+			flex: 0.32;
+			text-align: center;
+		}
+
+		/** Social Buttons - Text **/
+		.wppb-sc-buttons-text-div {
+			flex: 0.48;
+			margin-bottom: 10px;
+			@include breakpoint($mobile) { flex: 1; }
+
+			a { width: 100%; }
+		}
+	}

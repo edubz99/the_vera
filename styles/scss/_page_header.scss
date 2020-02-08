@@ -1,0 +1,227 @@
+/*========================================================
+  8.  PAGE HEADER 
+========================================================== */
+
+	.page-header {
+		padding-bottom: 90px !important;
+
+		body.job-listing-page &,
+		body.resume-listing-page &,
+		body.company-listing-page &
+		{
+			padding-bottom: 0 !important;
+		}
+
+		body.archive.category &,
+		body.archive.tag &,
+		body.archive.date &,
+		body.archive.author &,
+		body.search &
+		{
+			position: relative;
+			margin: 0 45px 0 0;
+			padding-bottom: 40px !important;
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 35px;
+				height: 1px;
+				background: #d1d1d1;
+			}
+
+			.page-title {
+				.primary {
+					@include breakpoint($mobile) { font-size: 38px; }
+				}
+				.secondary {
+					@include breakpoint($mobile) { font-size: 22px; }
+				}
+			}
+		}
+
+		/** General Styling */
+		.page-title {
+			display: flex;
+			flex-direction: column;
+
+			.primary	{
+				font-family: $secondary-font-stack;
+				font-size: 44px;
+				font-weight: 600;
+				line-height: 1.2;
+				padding-right: 30px;
+				letter-spacing: -0.5px;
+				padding-right: 50px;
+				margin: 0 0 10px 0;
+				
+				@include breakpoint($full-hd) { padding-right: 70px; }
+			}
+			.secondary {
+				font-family: $secondary-font-stack;
+				font-size: 24px;
+				font-weight: 300;
+				color: #929292;
+				padding-right: 20px;
+			}
+		}
+
+		/** Sidebar Header */
+		.page-sidebar & {
+			padding-top: 15px;
+			@include breakpoint($mobile){ padding-bottom: 20px !important; }
+		}
+
+		/** No Sidebar Header */
+		.has-not-sidebar & {
+			@include breakpoint($mobile){ padding-bottom: 20px !important; }
+		}
+
+	}
+
+
+/** == PAGE HEADER - BLOG ARCHIVE == */
+/** ================================================== */
+
+	.page-header-blog-archive {
+		width: 100%;
+		padding: 0 10px;
+		margin-top: 10px;
+		@include breakpoint($mobile) { margin-bottom: 30px; }
+
+		.inner {
+			background: url('../../images/job-bg-pattern.png') center center repeat;
+			border: 1px solid #E8E8E9;
+			width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 55px 0;
+			@include breakpoint($mobile) { padding: 50px 0; }
+
+			.page-title {
+				.caption {
+					font-size: 16px;
+					text-transform: uppercase;
+					letter-spacing: 0.5px;
+					border-bottom: 1px solid #000;
+					margin: 0;
+					@include breakpoint($mobile) { font-size: 15px; }
+				}
+				.name {
+					margin: 0;
+					letter-spacing: 0;
+					@include breakpoint($mobile) { font-size: 4rem; }
+				}
+			}
+		}
+	}
+
+
+/** == SUBMISSION FLOW == */
+/** ================================================== */
+
+	.submission-flow {
+		counter-reset: section;
+		margin-bottom: 60px;
+
+		@include breakpoint($mobile) { margin-bottom: 30px; }
+		@include breakpoint($full-hd) { left: 120px; }
+
+		ul {
+			display: flex;
+			list-style: none;
+			padding: 0;
+
+			@include breakpoint($mobile) {
+				justify-content: flex-start;
+			}
+
+			li {
+				display: flex;
+				align-items: center;
+				font-size: 17px;
+				color: #BFBFBF;
+				@include breakpoint($mobile) { margin-bottom: 15px; }
+
+				&::before {
+					counter-increment: section;
+					content: counter(section);
+					display: inline-block;
+					width: 27px;
+					height: 27px;
+					line-height: 27px;
+					text-align: center;
+					background: #D0D0D0;
+					color: #FFF;
+					margin-right: 10px;
+					border-radius: 100%;
+				}
+				
+				&::after {
+					content: '';
+					width: 30px;
+					height: 1px;
+					background: #ccc;
+					margin: 0 20px;
+
+					@include breakpoint($mobile) { display: none; }
+				}
+
+				.label {
+					@include breakpoint($mobile) { display: none; }
+				}
+
+				&.active {
+					color: #000;
+					&:before { background: #434343; }
+
+					.label {
+						@include breakpoint($mobile) {
+							display: block;
+							margin-right: 10px;
+						}
+					}
+				}
+
+
+				&:last-child {
+					&:after { display: none; }
+				}
+			}
+		}
+	}
+
+
+/** == PAGE BREADCRUMBS == */
+/** ================================================== */
+	
+	ul.page-breadcrumbs {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 20px 0;
+		padding: 0;
+
+		li {
+			font-size: 16px;
+			color: #AAA;
+
+			&.item-home {}
+			&.item-current {
+				strong { font-weight: 400; color: inherit; }
+			}
+			&.separator { margin: 0 6px; }
+
+			a { color: #027BFC; color: var(--secondary-accent-color); }
+		}
+	}
+
+	body.single {
+		ul.page-breadcrumbs {
+			margin: 0 0 30px 0;
+		}
+	}

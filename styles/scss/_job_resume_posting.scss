@@ -1,0 +1,448 @@
+/*========================================================
+  16.  JOB + RESUME POSTING 
+========================================================== */
+
+    #submit-job-form,
+    #submit-resume-form
+    {
+		@include clearfix();
+
+		/** Account Notification */
+		.fieldset-logged_in { display: none; }
+		.account-notification {
+			display: flex;
+			width: 100%;
+			background: #EAF6FB;
+			border-radius: 5px;
+			border: 0;
+			padding: 18px 33px;
+			margin-bottom: 60px;
+			color: #28A8D3;
+			font-size: 16px;
+
+			@include breakpoint($mobile) { flex-wrap: wrap; }
+
+            fieldset {
+				display: block;
+                width: 100%;
+				padding: 0; margin: 0;
+				border: 0;
+
+                label { display: none; }
+
+                .field {
+					display: flex;
+					align-items: center;
+                    width: 100%;
+                    color: inherit;
+					margin: 0;
+
+					@include breakpoint($mobile) { flex-wrap: wrap; }
+
+					p { color: #28A8D3; margin: 0; } 
+					
+                    strong { font-weight: 400; padding: 0 4px; }
+                    
+                    .button {
+                        order: 1;
+                        margin: 0 0 0 auto;
+                        border: 0 !important;
+                        background: #7dc146 !important;
+                        border-radius: 2px !important;
+                        font-size: 13px !important;
+                        font-weight: 600;
+                        text-transform: uppercase !important;
+                        color: #FFF !important;
+                        padding: 1px 9px !important;
+                        height: auto !important;
+                        line-height: 1.7 !important;
+                        white-space: nowrap;
+                        max-height: 25px;
+    
+                        &:before { display: none; visibility: hidden; }
+        
+                        @include breakpoint($mobile) { margin: 25px auto 11px 0; width: 100%; padding: 10px 9px !important; max-height: 45px; font-size: 15px !important; }
+                    }
+    
+                }
+            }
+		}
+
+		/** General Info Fields */
+		.account-info-fields,
+		.job-info-fields,
+        .company-info-fields,
+        .resume-info-fields
+		{
+			position: relative;
+
+			.title,
+			.jmfe-header-field
+			{
+				display: block !important;
+				position: relative;
+				width: 100% !important;
+				font-family: $primary-font-stack;
+				font-weight: 700;
+				font-size: 16px;
+				color: #a7a7a7;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				overflow-x: hidden;
+				margin-bottom: 20px;
+
+				&:after {
+					position: absolute;
+					top: 50%; transform: translateY(-50%);
+					content: '';
+					height: 1px; width: 100%;;
+					background: #DFDFDF;
+					margin-left: 10px;
+				}
+			}
+
+			.form-fields {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 0;
+
+				/** Regular Fields */
+				[class^='fieldset-'], [class*=' fieldset-'] {
+					width: 48%;
+					display: flex;
+					flex-direction: column;
+					padding: 0;
+					margin-bottom: 15px;
+					border: 0;
+
+					@include breakpoint($mobile) { width: 100%; padding: 0; }
+
+					label {
+						width: 100%;
+						small {
+							opacity: 0.35;
+							font-size: 0.7em;
+						}
+					}
+					.field {
+						width: 100%;
+						.description {
+							font-size: 14px;
+							color: #95989A;
+							margin-top: 10px;
+						}
+					}
+
+					&.hidden { transform: scale(.01); position: absolute; }
+				}
+
+				/** Full-Width Fields - Job */
+				.fieldset-job_tags, .fieldset-job_excerpt { width: 100%; }
+				.fieldset-job_description {
+					width: 100%;
+					margin-top: 15px;
+					label { transform: translateY(0); margin-bottom: 10px; padding-left: 0; }
+				}
+				.fieldset-job_region #job_region { display: none !important; }
+                .fieldset-company_term { display: none; }
+                
+                /** Full-Width Fields - Resume */
+                .fieldset-candidate_video,
+                .fieldset-links,
+                .fieldset-candidate_education,
+                .fieldset-candidate_experience
+                { width: 100%; }
+
+                .fieldset-resume_content {
+                    width: 100%;
+                    margin-top: 15px;
+                    label { transform: translateY(0); margin-bottom: 10px; padding-left: 0; }
+				}
+
+				/** Company Term Field */
+				.fieldset-company_term {
+					position: relative;
+
+					label {
+						small { display: none; }
+					}
+					.description {
+						.status {
+							position: absolute;
+							top: 23px; right: 15px;
+							display: inline-block;
+							font-size: 14px;
+							text-transform: capitalize;
+							padding: 1px 5px;
+							border-radius: 3px;
+							margin-top: 5px;
+							color: #FFF;
+	
+							&.success { background: #40A303;  }
+						}
+					}
+				}
+
+				/** Company Selection */
+				#company-selection {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					margin: 15px 0;
+
+					.fieldset {
+						width: 48%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						border: 1px solid #D9D9D9;
+						border-radius: 5px;
+						height: 150px;
+						outline: none;
+
+						&.active {
+							border: 2px solid #9A94E8;
+						}
+						&:hover:not(.active) {
+							border-color: #b0b0b0;
+						}
+
+						.icon {
+							width: 60px;
+							height: auto;
+						}
+						.text {
+							text-align: center;
+						}
+
+						&.new-company {
+							.icon {
+								img { width: 53px; height: auto; }
+							}
+						}
+					}
+				}
+
+				/** No Terms Message */
+				.no-terms-message {
+					@extend .flash-notification;
+					width: 100%;
+					margin-top: 10px;
+
+					&.hidden { display: none; }
+				}
+                
+			}
+
+			&.existing .fieldset-company_term { display: block; }
+		}
+
+		/** Account Info Fields **/
+		.account-info-fields {
+			margin-bottom: 45px;
+
+			[class^='fieldset-'], [class*=' fieldset-'] { margin-bottom: 10px !important; }
+
+			.fieldset-create_account_email { width: 100% !important; }
+			.fieldset-create_account_username ~ .fieldset-create_account_email { width: 48% !important; }
+		
+			.account-notification {
+				padding: 0;
+				background: transparent;
+				margin-bottom: 0;
+
+				label { display: block; }
+			}
+		}
+
+		/** Company Info Fields */
+        .company-info-fields,
+        .resume-info-fields
+        {
+			margin-top: 45px;
+			@include breakpoint($mobile) { margin-top: 30px; }
+
+			.fieldset-company_tagline, .fieldset-company_description { width: 100% !important; }
+			
+			/** Upload Field(s) */
+            .fieldset-company_logo,
+            .fieldset-candidate_photo,
+            .fieldset-resume_file
+            {
+				width: 100% !important;
+				margin-top: 20px;
+
+				.field {
+					margin-top: 10px;
+					
+					input{ display: none; }
+					img { width: 100px; height: auto; }
+					.job-manager-remove-uploaded-file {
+						display: inline;
+						font-size: 12px;
+						font-style: normal;
+						background: #000;
+						color: #FFF;
+						text-transform: uppercase;
+						letter-spacing: 0.4px;
+						border-radius: 3px;
+						padding: 0px 3px;
+					}
+					.description { margin-top: 0 !important; }
+				}
+				label {
+					transform: translateY(0);
+					text-transform: capitalize;
+					letter-spacing: 0 !important;
+					border: 2px dashed #d9d9d9;
+					text-align: center;
+					padding: 30px !important;
+					background: #f9f9f9;
+					cursor: pointer;
+					transition: all ease-in 400ms;
+
+					&:hover { background: #efedff; border: 2px dashed #9a94e8; }
+				}
+			}
+		}
+
+		/** Submit Button */
+		input[type="submit"] {
+			margin-top: 20px;
+			@include breakpoint($mobile) { width: 100%; }
+
+			&.disabled {
+				padding: 0 60px !important;
+				color: #FFF !important;
+			}
+		}
+		input[name="save_draft"] {
+			background: transparent;
+			border: 0;
+			display: inline-block;
+			font-family: $primary-font-stack;
+			padding: 0 45px;
+			height: 53px;
+			line-height: 53px;
+			text-transform: uppercase;
+			color: #969696;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: .5px;
+			text-align: center;
+			cursor: pointer;
+			white-space: nowrap;
+			transition: 300ms ease-in all;
+
+			&:hover, &:focus, &:active {
+				color: #000 !important;
+				background: transparent !important;
+				border: 0 !important;
+			}
+
+			@include breakpoint($mobile) {
+				width: 100%;
+				padding: 0 60px;
+				border-radius: 5px;
+				border: 2px solid #5786ec;
+				background: transparent;
+				color: #5786ec;
+				margin-top: 13px;
+			}
+		}
+
+ 		// hide extra 'company information' heading
+		.job-info-fields ~ h2 {
+			display: none;
+		}
+	}
+
+	/** WP Editor Field */
+	.wp-editor-container {
+		.quicktags-toolbar {
+			.button {
+				font-size: 13px;
+				font-weight: 400;
+				text-transform: none;
+				letter-spacing: 0;
+				line-height: 26px;
+				padding: 0 10px 1px 10px;
+				color: #515151;
+				border: 1px solid #CCC;
+				background: #f7f7f7;
+				box-shadow: 0 1px 0 #ccc;
+
+				@include breakpoint($mobile) { width: 24% !important; }
+
+				&:hover, &:focus {
+					color: #515151 !important;
+					background: #DAD8DA !important;
+					border-color: #999999 !important;
+				}
+			}
+		}	
+	}
+
+
+	/** Dashboard Adjustment */
+	body.page-template-template-dashboard {
+        #submit-job-form,
+        #submit-resume-form
+        {
+			.account-notification { display: none; }
+		}
+	}
+
+	// Error Notifiation
+	#submit-job-form > p:first-of-type,
+	.job-manager-error
+	{
+		@extend .flash-notification;
+		@include clearfix();
+
+		background: #FBEAEA;
+		color: #D32828;
+		clear: both;
+		strong { color: #D32828; font-weight: 400; }
+	}
+	.job-manager-message {
+		@extend .flash-notification;
+		background: #EAF6FB;
+		color: #28A8D3;
+	}
+	#submit-job-form > p:first-of-type {
+		margin-bottom: 30px;
+		width: 100%;
+
+		strong {
+			display: flex;
+			a {
+				order: 1;
+				margin: 0 0 0 auto;
+				border: 0 !important;
+				background: #d64545 !important;
+				border-radius: 2px !important;
+				font-size: 13px !important;
+				font-weight: 600;
+				text-transform: uppercase !important;
+				color: #FFF !important;
+				padding: 1px 9px !important;
+				height: auto !important;
+				line-height: 1.7 !important;
+				white-space: nowrap;
+				max-height: 25px;
+
+				&:before { display: none; visibility: hidden; }
+
+				@include breakpoint($mobile) { margin-left: 0; margin-top: 25px; width: 100%; }
+
+			}
+		}
+	}
+
+
+	.ui-autocomplete {
+		z-index: 1200;
+	}

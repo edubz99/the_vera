@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:		 Capstone - A Job Board for Candidates & Employers.
+Version:		 1.0
+Author: 		 Faisal Khurshid
+Author URI:      http://wpscouts.net/
+-------------------------------------------------------------------*/
+
+
+// Third Party Libraries.
+@import 'lib/flexbox-grid/main';
+@import 'lib/flaticon/flaticon';
+@import 'vendors';
+
+// Custom Variables and Mixins.
+@import 'preboot';
+@import 'mixins';
+
+// Custom Styling.
+@import 'global';
+@import 'grid';
+@import 'defaults';
+@import 'base';
+@import 'site_header';
+@import 'sidebar';
+@import 'page_hero';
+@import 'page_header';
+@import 'body';
+@import 'footer';
+@import 'blog';
+@import 'comments';
+@import 'forms';
+@import 'single_job_resume_company';
+@import 'jobs';
+@import 'job_single';
+@import 'job_posting';
+@import 'job_listing';
+@import 'resumes';
+@import 'resume_single';
+@import 'resume_posting';
+@import 'resume_listing';
+@import 'job_resume_posting';
+@import 'companies';
+@import 'company_single';
+@import 'bookmarks';
+@import 'bookmarks_listing';
+@import 'applications';
+@import 'alerts_posting';
+@import 'alerts_listing';
+@import 'profile_builder';
+@import 'popup';
+@import 'beaver';
+@import 'dashboard';
+@import 'compact';
+@import 'error_404';
+@import 'media_elements';
+@import 'facet_wp';
+@import 'restrict_content_pro';
+@import 'woocommerce_packages';
+@import 'woocommerce_cart';
+@import 'woocommerce_checkout';
+@import 'animations';
+@import 'maps';
+@import 'woocommerce_packages';
+@import 'woocommerce_checkout';
+@import 'woocommerce_cart';
+@import 'woocommerce_order_received';
+@import 'private_messages';
+@import 'myles_field_editor';
+@import 'myles_packages';
+@import 'demo';
+
+// Print Stylesheet.
+@media print {
+    @import 'print';
+}

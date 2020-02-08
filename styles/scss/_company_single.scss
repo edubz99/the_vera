@@ -1,0 +1,157 @@
+/*========================================================
+  15.  COMPANY SINGLE
+========================================================== */
+
+/** == SIDEBAR == */
+/** ================================================== */
+
+	body.single-company {
+		.page-sidebar {
+
+			/** Company Profile */
+			.profile-module {}
+
+			/** Page Permalink **/
+			.permalink-module {}
+
+			/** Native Widgets */
+			.native-widgets {}
+
+		}
+
+	}
+
+	
+/** == MAIN CONTENT == */
+/** ================================================== */
+
+	body {
+		.page-content {
+
+			/** Company Details */
+			.entry-details {
+
+				// Company Header
+				.entry-header {}
+
+				// Company Meta
+				.entry-meta {}
+				.entry-meta--before {}
+				.entry-meta--after {}
+
+				// Company Description
+				.entry-description {}
+
+				// Company Positions
+				.company-positions {
+
+					> .title {
+						font-family: $primary-font-stack;
+						font-size: 16px;
+						font-weight: 400;
+						margin: 40px 0 20px 0;
+						text-transform: uppercase;
+						color: #95989a;
+						letter-spacing: 0.4px;
+
+						&:first-of-type { margin-top: 0; }
+					}
+
+					ul {
+						width: 100%;
+						list-style: none;
+						margin: 30px 0 0 0; padding: 0;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						
+						li {
+							position: relative;
+							width: 48%;
+							margin-bottom: 25px;
+
+							@include breakpoint($touch) { width: 100%; }
+	
+							&:nth-child(2) {
+								&::before {
+									position: absolute;
+									left: -30px; top: 7px; bottom: 5px;
+									content: '';
+									height: 100%;
+									width: 1px;
+									background: #D0D0D0;
+									
+									@include breakpoint($touch) { width: 0; }
+								}
+							}
+	
+							.entry-header {
+								display: flex;
+								flex-wrap: wrap;
+								margin-bottom: 5px !important;
+								padding-right: 10px;
+
+								.title {
+									font-family: $primary-font-stack;
+									font-size: 18px;
+									font-weight: 600;
+									margin: 0 10px 0 0;
+	
+									a {
+										background-image: linear-gradient(#f76020, #f76020);
+										background-size: 0% 1px;
+										background-position: 0 calc(100% + -1px);
+										background-repeat: no-repeat;
+										transition: all 150ms linear;
+										&:hover {
+											background-size: 100% 1px;
+										}
+									}
+	
+								}
+								.types {
+									display: flex;
+									align-items: center;
+									font-size: 15px;
+									font-weight: 400;
+									color: #AEAEAE;
+	
+									a {
+										padding: 0;
+									}
+								}
+							}
+							.entry-footer {
+								display: flex;
+								font-size: 16px;
+								font-weight: 400;
+								color: #8f8f8f;
+	
+								.location {}
+								.categories {
+									display: flex;
+									a {
+										display: none;
+										padding: 0;
+
+										&:first-of-type { display: block; }
+									}
+	
+									&:before {
+										content: '—';
+										padding-right: 10px;
+										padding-left: 6px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				// Company Actions
+				.entry-actions {}
+			}
+
+		}
+
+	}

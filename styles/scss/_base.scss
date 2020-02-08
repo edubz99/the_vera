@@ -1,0 +1,266 @@
+/*========================================================
+  4.  BASE STYLING 
+========================================================== */
+
+/** == DOCUMENT == */
+/** ================================================== */
+
+	html {
+		font-size: 62.5%;
+	}
+
+	body {
+		font-family: $primary-font-stack;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 1.6;
+		color: #000;
+		background: #FFF;
+		overflow-x: hidden; // FIX: to avoid horizontal scroll due to tooltip
+	}
+
+	*, *:before, *:after {
+	  box-sizing: border-box;
+	}
+
+
+/** == TYPOGRAPHY == */
+/** ================================================== */
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+		transition: 300ms ease-in all;
+	}
+
+	/** Headings */
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $secondary-font-stack;
+		font-weight: 600;
+		color: #000000;
+		margin: 3rem 0 2rem 0;
+	}
+	h5.allcaps, h6.allcaps {
+		font-family: $primary-font-stack;
+		text-transform: uppercase;
+		letter-spacing: 0.1px;
+	}
+
+	h1 { font-size: 4.4rem; }
+	h2 { font-size: 3.2rem; }
+	h3 { font-size: 2.2rem; }
+	h4 { font-size: 2rem; }
+	h5 { font-size: 1.6rem; }
+	h6 { font-size: 1.4rem; }
+
+	/** Paragraphs */
+	p { margin:  0 0 2.5rem 0; color: #3c3c3c; }
+	p:last-child { margin-bottom: 0; }
+
+
+/** == LISTS == */
+/** ================================================== */
+
+	ul, ol, dl {
+	  margin-bottom: 21px;
+		margin-left: 0;
+	}
+
+	ul {
+		list-style: disc;
+		padding-left: 20px;
+	}
+	ol {
+		list-style: decimal;
+		padding-left: 20px;
+	}
+
+	ul ul,
+	ol ol {
+	  margin: 0 0 0 21px;
+	}
+
+	dt {
+	  font-weight: bold;
+	}
+	dd {
+		margin: 0 0 20px;
+		color: #3c3c3c;
+	}
+
+
+/** == BLOCK QUOTES == */
+/** ================================================== */
+
+
+	blockquote {
+		background: #F7F7F7;
+		border-left: 10px solid #ccc;
+		margin: 1.5em 0;
+		padding: 1em 15px;
+		quotes: "\201C""\201D""\2018""\2019";
+
+		p { display: inline; }
+		code { background: #e6e6e6 !important; }
+
+		&:before {
+			color: #ccc;
+			content: open-quote;
+			font-size: 4em;
+			line-height: 0.1em;
+			margin-right: 0.25em;
+			vertical-align: -0.4em;
+		}
+		&:after {
+			visibility: hidden;
+			color: #ccc;
+			content: close-quote;
+			font-size: 4em;
+			line-height: 0.1em;
+			vertical-align: -0.4em;
+		  }
+	}
+
+
+/** == RULES == */
+/** ================================================== */
+
+	hr {
+		clear: both;
+		border: 0;
+		height: 1px;
+		background: #EAEAEB;
+		margin: 1.5em 0 !important;
+	}
+
+	hr.partial {
+		border: 0 !important;
+	}	
+
+	strong {
+		color: #1E2023;
+		font-weight: 600;
+	}
+
+	address { margin-bottom: 2.5rem; } 
+
+
+/** == TABLE == */
+/** ================================================== */
+
+	#site-body {
+
+		table * {
+			position: relative;
+		  }
+		  
+		  table:not(.shop_table) {
+			border-spacing: 1;
+			border-collapse: collapse;
+			background: white;
+			overflow: hidden;
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+	
+			caption {
+				font-size: 16px;
+				color: #95989a;
+				font-weight: 400;
+				letter-spacing: 0;
+				margin-top: 20px;
+				padding: 10px 0;
+				margin: 0;
+			}
+	
+			thead {
+				tr {
+					font-weight: 400;
+					height: 60px;
+					background: #5786EC;
+					background: var(--secondary-accent-color);
+					color: #FFF;
+			
+					th {
+						font-family: $primary-font-stack;
+						font-size: 16px;
+						color: #fff;
+						line-height: 1.2;
+						font-weight: 600;
+						text-transform: uppercase;
+						text-align: left;
+						padding-left: 12px;
+						letter-spacing: 0.7px;
+					}
+				}
+			}
+			tbody {
+				tr {
+					height: 50px;
+					font-family: $primary-font-stack;
+					font-size: 15px;
+					color: #808080;
+					line-height: 1.2;
+					font-weight: unset;
+	
+					&:hover {
+						color: #555555;
+						background-color: #f5f5f5;
+					}
+					&:last-child { border: 0; }
+	
+					a {
+						color: #027bfc; color: var(--secondary-accent-color);
+						&:hover { color: #f76020; }
+					}
+			
+					th {
+						font-weight: 400;
+						text-align: left;
+						padding-left: 12px;
+					}
+					td {
+						text-align: left;
+						padding-left: 12px;
+					}
+	
+					&:nth-child(even) { background-color: #f5f5f5; }
+				}
+			}
+		  }
+	}
+
+
+/** == CODE == */
+/** ================================================== */
+
+	pre {
+		background: #F7F7F7;
+		border-radius: 5px;
+		font-size: 16px;
+		line-height: 1.3125;
+		margin: 0 0 1.75em;
+		max-width: 100%;
+		overflow: auto;
+		padding: 1.75em;
+		white-space: pre;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+
+		h1, h2, h3, h4, h5, h6 {
+			&:first-of-type {
+				margin-top: 0;
+			}
+		}
+	}
+
+	:not(pre) > code {
+		background: #f7f7f7;
+		padding: 0 3px;
+	}
+
+/** == UTILITY == */
+/** ================================================== */
+
+	.mt-zero { margin-top: 0 !important; }

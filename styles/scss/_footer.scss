@@ -1,0 +1,148 @@
+/*========================================================
+  10.  FOOTER 
+========================================================== */
+
+	#site-footer {
+		position: relative;
+		font-size: 16px;
+		color: #888888;
+		background: #F7F7F7;
+		padding: 30px 0;
+		margin-top: 75px;
+
+		@include breakpoint($mobile) { margin-top: 90px; }
+		@include breakpoint($full-hd) { background-position: 75% 40%; }
+
+		p { color: inherit; }
+
+		// Top Footer
+		.top {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			padding: 15px 0 35px 0;
+			margin: 0 10px 20px 10px;
+			border-bottom: 1px solid #DFDFDF;
+
+			.widget {
+				flex-basis: 25%; // initial size of each flex item (before distribution)
+				flex-grow: 1; // "distribution ratio" of unallocated space (i.e. 1 for each means every item gets same pie from unallocated space)
+				flex-shrink: 1;
+				margin-right: 30px;
+
+				@include breakpoint($touch) { flex-basis: 100%; margin: 20px 0; }
+
+				.title {
+					font-family: $primary-font-stack;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					color: #3A3A3A;
+					margin: 0 0 10px 0;
+				}
+
+				&.widget-text {
+					a {
+						border-bottom: 1px solid #d8d8d8;
+						background-image: linear-gradient(#f76020, #f76020);
+						background-image: linear-gradient(var(--primary-accent-color), var(--primary-accent-color));
+						background-size: 0% 1px;
+						background-position: 0 calc(100% + 0px);
+						background-repeat: no-repeat;
+						transition: all 150ms linear;
+						&:hover {
+							border: 0;
+							background-size: 100% 1px;
+							border-color: transparent;
+						}
+					}
+				}
+	
+				&.widget-social-links {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					margin-right: 0; margin-left: auto;
+
+					@include breakpoint($touch) { justify-content: flex-start; }
+			
+					ul {
+						display: flex;
+						justify-content: flex-end;
+						margin: 0; padding: 0;
+						list-style: none;
+	
+						@include breakpoint($mobile) { justify-content: flex-start; }
+	
+						li {
+							margin-left: 18px;
+							font-size: 21px;
+	
+							&:first-child {
+								@include breakpoint($touch) { margin-left: 0; }
+							}
+	
+							a {
+								&:hover {
+									color: #393939;
+								}
+							}
+						}
+					}
+				}
+				&.widget-contact-info {}
+			}
+		}
+
+		// Bottom Footer
+		.bottom {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin: 0 10px 0 10px;
+
+			#footer-navigation, .menu {
+				@include breakpoint($touch) { flex-basis: 100%; }
+
+				> ul {
+					display: flex;
+					flex-wrap: wrap;
+					list-style: none;
+					padding-left: 0;
+					margin: 0;
+
+					li {
+						margin-right: 25px;
+
+						a {
+							font-family:  $primary-font-stack;
+							font-size: 15px;
+							letter-spacing: 0;
+
+							&:hover {
+								color: var(--primary-accent-color);
+							}
+						}
+					}
+
+					ul { display: none; }
+				}
+			}
+			.copyright-notice {
+				font-size: 15px;
+				letter-spacing: 0;
+				@include breakpoint($touch) { flex-basis: 100%; margin: 20px 0 0 0; }
+
+				.material-icons {
+					font-size: 16px;
+					color: #ff015b;
+					margin-top: 7px;
+				}
+			}
+
+		}
+
+	}

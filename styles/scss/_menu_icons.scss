@@ -1,0 +1,166 @@
+
+/** == ACCOUNT MENU POPUP == */
+/** ================================================== */
+
+  #account-menu-module,
+  .guest-menu
+  {
+    list-style: none;
+    // display: block !important;
+    // top: 160% !important;
+    background: #FFF url('../../images/menu-account-bg.svg') no-repeat !important;
+    background-position: calc(100% + 8px) calc(100% + 13px) !important;
+    background-size: 120px !important;
+  }
+
+/** == MOBILE MENU POPUP == */
+/** ================================================== */
+
+  #mobile-menu-module {
+    position: absolute;
+    top: 80px; left: 0; right: 0;
+    background: #F7F7F7;
+    border-bottom: 1px solid #eaeaea;
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+
+    .container {
+      margin: 0 auto !important;
+      padding: 45px 10px !important;
+      flex-wrap: wrap !important;
+
+      // Title
+      .title {
+        font-family: $primary-font-stack;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        color: #909090;
+      }
+
+      // Menu List
+      .mobile-menu-container {
+        width: 100%;
+
+        ul.mobile-menu {
+          display: block !important;
+          margin-top: 20px !important;
+          z-index: 999999 !important;
+
+          li {
+            position: relative !important;
+            text-align: left;
+            margin-right: 0 !important;
+
+            a {
+              font-size: 18px !important;
+              font-weight: 400;
+              text-transform: capitalize;
+              letter-spacing: 0 !important;
+              padding: 3px 0;
+            }
+            span.title {
+              opacity: 1 !important;
+              transform: translateY(0) !important;
+              display: block !important;
+              text-align: left;
+              padding-left: 0 !important; margin-left: 0 !important;
+            }
+
+            // Child Arrow Indicator
+            &.menu-item-has-children {
+              &:after {
+                content: '';
+                background: url('../../images/arrow-down-menu.svg') no-repeat center center;
+                width: 15px !important;
+                height: 8px !important;
+                position: absolute !important;
+                top: 15px !important;
+                right: 0 !important;
+                padding-right: 22px !important;
+              }
+            }
+
+            // Second Child
+            ul.mobile-menu-child {
+              background: #EFEFEF;
+              border-radius: 8px;
+              padding: 20px 30px !important;
+              margin-top: 20px !important;
+              margin-bottom: 15px !important;
+              
+              li {
+                margin-right: 0 !important;
+                a {
+                  font-size: 16px !important;
+                }
+              }
+
+              // Third Child
+              ul.mobile-menu-child {
+                position: relative;
+                background: #fdfdfd;
+                padding: 20px 30px !important;
+                // margin: 20px -30px 15px -30px !important;
+                border-radius: 0;
+                border: 1px solid #efefef;
+
+                li {
+                  line-height: 1.6;
+                  text-align: left;
+
+                  a { font-size: 15.5px !important; }
+                  span { display: none; }
+                }
+                li.more-link {
+                  margin: 10px 0 0 0;
+                  letter-spacing: 0;
+                  
+                  a {
+                    justify-content: flex-start;
+                    color: #5786ec;
+                    color: var(--secondary-accent-color, #5786ec) !important;
+                    font-size: 14px !important;
+      
+                    em {
+                      font-size: 18px !important;
+                      font-style: normal;
+                      line-height: 0.4;
+                      margin-left: 3px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      hr { width: 100% !important; padding: 0 !important; margin: 30px 0 !important; }
+      .menu-item {
+        hr {
+          margin: 15px 0 !important;
+        }
+      }
+
+      // CTA Container
+      .mobile-cta-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        .button {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+          padding: 20px 20px !important;
+          margin-top: 0 !important;
+          span { color: #FFF !important; margin-left: 10px !important; }
+        }
+      }
+
+    }
+  }

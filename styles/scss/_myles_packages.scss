@@ -1,0 +1,163 @@
+/*========================================================
+  0.  MYLES - PACKAGES
+========================================================== */
+
+
+/** == DASHBOARD TABLE == */
+/** ================================================== */
+
+    table.jmpack-my-packages-main-table {
+        thead {}
+        tbody {
+            tr {
+                // Package Name
+                &.jmpack-my-packages-main-row {
+                    td { padding: 20px 16px 20px 0; }
+                    td:first-child {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    td:last-child {
+                        .label {
+                            display: inline-flex;
+                            align-items: center;
+                            font-family: $primary-font-stack;
+                            font-size: 10px;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+
+                            .detail {
+                                font-weight: 400;
+                                background: #fff;
+                                color: #000;
+                                padding: 1px 4px;
+                                border-radius: 2px;
+                                opacity: 1;
+                            }
+
+                            .icon, .detail[data-type] { display: none; }
+                        }
+                    }
+                }
+                // package Details
+                &.jmpack-package-details {
+                    background: #FFF;
+
+                    > td {
+                        padding: 0;
+
+                        @include breakpoint($touch) {
+                            &:before { display: none; }
+                        }
+                    }
+
+                    table.jmpack-detail-table {
+                        background: #F1F1F1;
+                        margin: 0;
+                        padding: 0 10px;
+                        border-top: 2px solid #fff;
+
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 14px;
+                                    color: #95989a;
+                                    border: 0;
+
+                                    &:first-child {
+                                        padding-left: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            @include breakpoint($touch) {
+                                padding: 10px 15px;
+                            }
+
+                            tr {
+                                @include breakpoint($touch) {
+                                    border-top: 0 !important;
+                                    margin-bottom: 0 !important;
+                                }
+                            }
+                            tr:first-child {
+                                font-family: $primary-font-stack;
+                                font-size: 14px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                // border-bottom: 2px solid #fff;
+
+                                td { padding-bottom: 15px; text-align: left !important; }
+
+                                td:first-child {
+                                    padding-left: 15px;
+                                    width: 300px;
+
+                                    .label {
+                                        font-size: 10px;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
+                                        letter-spacing: 1px;
+
+                                        .icon, .detail { display: none; }
+                                    }
+                                }
+                            }
+                            tr.jmpack-detail-listings-header-row {
+                                @include breakpoint($touch) {
+                                    margin-bottom: 0;
+                                }
+
+                                td {
+                                    @include breakpoint($touch) {
+                                        margin-top: -45px; margin-bottom: -20px;
+                                        &:before { display: none; }
+                                    }
+
+                                    .ui {
+                                        font-size: 14px;
+                                        color: #95989a;
+                                        padding-left: 15px;
+                                        text-transform: uppercase;
+
+                                        @include breakpoint($touch) {
+                                            padding-left: 0;
+                                        }
+                                    }
+
+                                    .list.icon { display: none; }
+                                }
+                            }
+                            tr:not(.jmpack-detail-listings-header-row):not(:first-child) {
+                                @include breakpoint($touch) {
+                                   margin-bottom: 0 !important;
+                                }
+                                
+                                td {
+                                    @include breakpoint($touch) {
+                                        margin-top: -45px;
+                                        &:before { display: none; }
+                                    }
+                                }
+                                td:first-child {
+                                    font-size: 14px;
+                                    padding-left: 15px;
+                                }
+                                td:last-child {
+                                    font-size: 13px;
+                                    text-align: right;
+                                    padding-right: 30px;
+                                    color: #95989a;
+
+                                    .icon { display: none; }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
