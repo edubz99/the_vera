@@ -2,18 +2,28 @@
   0.  GLOBAL 
 ========================================================== */
 
-    .flash-notification {
-        border: 0 !important;
-        border-radius: 5px !important;
-        background: #EAF6FB;
-        font-size: 16px !important;
-        color: #28A8D3;
-        padding: 20px 25px !important;
-        box-shadow: none !important;
-        &:before { content: '' !important; }
-        &:after { content: '' !important; }
+.flash-notification {
+  border: 0 !important;
+  border-radius: 5px !important;
+  background: #EAF6FB;
+  font-size: 16px !important;
+  color: #28A8D3;
+  padding: 20px 25px !important;
+  box-shadow: none !important;
 
-        strong { color: #28A8D3; }
+  &:before {
+    content: '' !important;
+  }
 
-        @include breakpoint($mobile) { flex-wrap: wrap; }
-    }
+  &:after {
+    content: '' !important;
+  }
+
+  strong {
+    color: #28A8D3;
+  }
+
+  @include breakpoint($mobile) {
+    flex-wrap: wrap;
+  }
+}

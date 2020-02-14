@@ -64,3 +64,68 @@
 
                 <?php do_action('capstone_site_header_end'); ?>
             </header>
+            <?php if(!is_front_page()) :?>
+                <div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5e4449d15d24a" data-node="5e4449d15d24a">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e4449d15d3bd" data-node="5e4449d15d3bd">
+			<div class="fl-col fl-node-5e4449d15d41b" data-node="5e4449d15d41b">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-taxonomies-grid fl-node-5e4449d15d481 full-width-categories" data-node="5e4449d15d481">
+	<div class="fl-module-content fl-node-content">
+		      <section class="module-wrapper taxonomies-grid ">
+      <div class="inner">
+                                        <div class="taxonomy-term-119">
+              <a href="http://thevenari.co.uk/job-category/business_services/">
+                <img class="icon" src="http://thevenari.co.uk/wp-content/uploads/2019/05/suitcase.svg">
+                <h4 class="title">Business Services</h4>
+                <span class="count">2 jobs</span>
+              </a>
+            </div>
+                                                            <div class="taxonomy-term-120">
+              <a href="http://thevenari.co.uk/job-category/energy/">
+                <img class="icon" src="http://thevenari.co.uk/wp-content/uploads/2020/02/energy-icon-1.png">
+                <h4 class="title">Energy</h4>
+                <span class="count">3 jobs</span>
+              </a>
+            </div>
+                                                            <div class="taxonomy-term-117">
+              <a href="http://thevenari.co.uk/job-category/engineering/">
+                <img class="icon" src="http://thevenari.co.uk/wp-content/uploads/2020/02/engineering-icon-1.png">
+                <h4 class="title">Engineering</h4>
+                <span class="count">2 jobs</span>
+              </a>
+            </div>
+                                                            <div class="taxonomy-term-118">
+              <a href="http://thevenari.co.uk/job-category/technology/">
+                <img class="icon" src="http://thevenari.co.uk/wp-content/uploads/2020/02/technology-icon-1.png">
+                <h4 class="title">IT &amp; Technology</h4>
+                <span class="count">4 jobs</span>
+              </a>
+            </div>
+                                                            <div class="taxonomy-term-121">
+              <a href="http://thevenari.co.uk/job-category/life-sciences/">
+                <img class="icon" src="http://thevenari.co.uk/wp-content/uploads/2020/02/life-science-icon-1.png">
+                <h4 class="title">Life Sciences</h4>
+                <span class="count">2 jobs</span>
+              </a>
+            </div>
+                                                            <div class="taxonomy-term-116">
+              <a href="http://thevenari.co.uk/job-category/manufacturing/">
+                <img class="icon" src="http://thevenari.co.uk/wp-content/uploads/2020/02/manufacturing-icon-1.png">
+                <h4 class="title">Manufacturing</h4>
+                <span class="count">2 jobs</span>
+              </a>
+            </div>
+                          </div>
+          </section>
+  	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<?php endif ?>

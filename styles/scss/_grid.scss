@@ -5,230 +5,364 @@
 /** == SCAFFOLDING == */
 /** ================================================== */
 
-	.container {
-		@include row();
-		margin: 0 auto;
+.container {
+	@include row();
+	margin: 0 auto;
 
-		@include breakpoint($mobile)  			{ width: 90%; }
-		@include breakpoint($tablet)  			{ width: 80%; }
-		@include breakpoint($laptop)    		{ width: 1180px; }
-		@include breakpoint($full-hd)    		{ width: 1280px; }
+	@include breakpoint($mobile) {
+		width: 90%;
 	}
+
+	@include breakpoint($tablet) {
+		width: 80%;
+	}
+
+	@include breakpoint($laptop) {
+		width: 1180px;
+	}
+
+	@include breakpoint($full-hd) {
+		width: 1280px;
+	}
+}
 
 
 /** == HEADER == */
 /** ================================================== */
 
-	#site-header {
-		.container {
-			@include breakpoint($touch) { padding: 0 10px; }
+#site-header {
+	.container {
+		@include breakpoint($touch) {
+			padding: 0 10px;
+		}
 
-			#site-logo {}
-			#site-navigation {
-				@include breakpoint($touch) { display: none !important; }
+		#site-logo {}
+
+		#site-navigation {
+			@include breakpoint($touch) {
+				display: none !important;
 			}
-			#secondary-navigation {
-				margin-left: 50px;
-				justify-content: flex-end;
-				@include breakpoint($touch) { display: none !important; }
+		}
+
+		#secondary-navigation {
+			margin-left: 50px;
+			justify-content: flex-end;
+
+			@include breakpoint($touch) {
+				display: none !important;
 			}
 		}
 	}
+}
 
 
 /** == BODY == */
 /** ================================================== */
 
-	#site-body {
-		#inner-body {
-			@include row();
-	
-			&.has-sidebar {
-				@extend .container;
-				&.left-sidebar .page-sidebar, .page-sidebar { @include col(3.8); padding-right: 45px; }
-				&.right-sidebar .page-sidebar { padding-left: 45px; padding-right: 10px; }
-				.page-content, .page-content[data-blog-sidebar="true"] { @include col(8.2); } // sidebar layout
-				.page-content[data-blog-sidebar="false"] { @include col(12); } // sidebar layout
+#site-body {
+	#inner-body {
+		@include row();
+
+		&.has-sidebar {
+			@extend .container;
+
+			&.left-sidebar .page-sidebar,
+			.page-sidebar {
+				@include col(3.8);
+				padding-right: 45px;
 			}
-			&.has-full-width {
-				@extend .container;
-				.page-header  { @include col-offset("md", 1.8); @include col(8.2); }
-				.page-content {  @include col(12); } // standard layout
+
+			&.right-sidebar .page-sidebar {
+				padding-left: 45px;
+				padding-right: 10px;
 			}
+
+			.page-content,
+			.page-content[data-blog-sidebar="true"] {
+				@include col(8.2);
+			}
+
+			// sidebar layout
+			.page-content[data-blog-sidebar="false"] {
+				@include col(12);
+			}
+
+			// sidebar layout
+		}
+
+		&.has-full-width {
+			@extend .container;
+
+			.page-header {
+				@include col-offset("md", 1.8);
+				@include col(8.2);
+			}
+
+			.page-content {
+				@include col(12);
+			}
+
+			// standard layout
+		}
+
+		&.has-standard {
+			@extend .container;
+
+			.page-header {
+				@include col-offset("md", 1.8);
+				@include col(8.2);
+			}
+
+			.page-content {
+				@include col-offset("md", 1.8);
+				@include col(8.2);
+			}
+
+			// standard layout
+		}
+
+		@include breakpoint($touch) {
+
+			&.has-sidebar,
+			&.has-sidebar.left-sidebar,
+			&.has-full-width,
 			&.has-standard {
-				@extend .container;
-				.page-header  { @include col-offset("md", 1.8); @include col(8.2); }
-				.page-content {  @include col-offset("md", 1.8); @include col(8.2); } // standard layout
+				@include breakpoint($touch) {
+					padding-top: 60px
+				}
+
+				.page-header {
+					@include col(12);
+					padding: 10px !important;
+					margin-left: 0 !important;
+				}
+
+				.page-sidebar .page-header {
+					padding: 0 !important;
+				}
+
+				.page-sidebar {
+					@include col(12);
+					margin: 0 0 45px 0 !important;
+					padding: 10px !important;
+				}
+
+				.page-content.page-content {
+					@include col(12);
+					margin-left: 0 !important;
+					padding: 10px !important;
+					padding-top: 0 !important;
+				}
+
+				// sidebar layout
 			}
-	
-			@include breakpoint($touch) {
-				&.has-sidebar, &.has-sidebar.left-sidebar,
-				&.has-full-width,
-				&.has-standard
-				{
-					@include breakpoint($touch) { padding-top: 60px !important; }
-	
-					.page-header  { @include col(12); padding: 10px !important; margin-left: 0 !important; }
-					.page-sidebar .page-header { padding: 0 !important; }
-					.page-sidebar { @include col(12); margin: 0 0 45px 0 !important; padding: 10px !important; }
-					.page-content.page-content { @include col(12); margin-left: 0 !important; padding: 10px !important; } // sidebar layout
+		}
+	}
+}
+
+
+@include breakpoint($touch) {
+	body.single {
+		#site-body {
+			#inner-body.has-sidebar {
+				.page-sidebar {
+					margin-top: 45px !important;
 				}
 			}
 		}
 	}
-
-
-	@include breakpoint($touch) { 
-		body.single {
-			#site-body {
-				#inner-body.has-sidebar {
-					.page-sidebar { margin-top: 45px !important; }
-				}
-			}
-		}	
-	}
+}
 
 /** == PAGR HERO == */
 /** ================================================== */
 
-	.page-hero {
-		@include col(12);
-		.inner {
-			@extend .container;
-			.hero-title {
-				@include col(6);
-			}
-		}
+.page-hero {
+	@include col(12);
 
+	.inner {
+		@extend .container;
+
+		.hero-title {
+			@include col(6);
+		}
 	}
+
+}
 
 /** == BLOG == */
 /** ================================================== */
 
-	/** Posts Grid */
-	.posts-grid[data-layout="magazine"] {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+/** Posts Grid */
+.posts-grid[data-layout="magazine"] {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-		.post:first-of-type {
+	.post:first-of-type {
+		width: 100%;
+	}
+
+	.post:not(:first-of-type) {
+		width: 47.5%;
+
+		@include breakpoint($touch) {
 			width: 100%;
 		}
-		.post:not(:first-of-type) {
-			width: 47.5%;
-			@include breakpoint($touch) { width: 100%; }
-			@include breakpoint($full-hd) { width: 47%; }
-		}
 
-		.section-header {
-			width: 100%;
+		@include breakpoint($full-hd) {
+			width: 47%;
 		}
 	}
 
-	/** Posts Grid */
+	.section-header {
+		width: 100%;
+	}
+}
+
+/** Posts Grid */
+.posts-grid[data-layout="grid"] {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.post {
+		width: 47%;
+
+		@include breakpoint($touch) {
+			width: 100%;
+		}
+	}
+}
+
+body.home {
 	.posts-grid[data-layout="grid"] {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		margin-left: -17px;
+		margin-right: -17px;
 
 		.post {
-			width: 47%;
-			@include breakpoint($touch) { width: 100%; }
-		}
-	}
+			flex: 1;
 
-	body.home {
-		.posts-grid[data-layout="grid"] {
-			margin-left: -17px;
-			margin-right: -17px;
-			.post {
-				flex: 1;
-				@include breakpoint($touch) { flex: 100%; }
-				margin-left: 17px; margin-right: 17px;
+			@include breakpoint($touch) {
+				flex: 100%;
 			}
+
+			margin-left: 17px;
+			margin-right: 17px;
 		}
 	}
+}
 
 
 /** == PRICING == */
 /** ================================================== */
 
-	// Pricing Plans
-	.pricing-plans {
-		@include row();
-		flex-wrap: nowrap;
-		@include breakpoint($touch) { flex-wrap: wrap; }
+// Pricing Plans
+.pricing-plans {
+	@include row();
+	flex-wrap: nowrap;
 
-		&[data-col="1"] {
-			.pricing-panel {
+	@include breakpoint($touch) {
+		flex-wrap: wrap;
+	}
+
+	&[data-col="1"] {
+		.pricing-panel {
+			@include col(12);
+		}
+	}
+
+	&[data-col="2"] {
+		.pricing-panel {
+			@include col(6);
+
+			@include breakpoint($touch) {
 				@include col(12);
 			}
 		}
-		&[data-col="2"] {
-			.pricing-panel {
-				@include col(6);
-				@include breakpoint($touch) { @include col(12); }
-			}
-		}
-		&[data-col="3"] {
-			.pricing-panel {
-				@include col(4);
-				@include breakpoint($touch) { @include col(12); }
-				@include breakpoint($full-hd) { padding-left: 1.7rem; padding-right: 1.7rem; }
-			}
-		}
-		&[data-col="4"] {
-			.pricing-panel {
-				@include col(3);
-			}
-		}
-
 	}
 
-	// Pricing FAQs
-	.pricing-faqs {
-		.questions-list {
-			@include row();
+	&[data-col="3"] {
+		.pricing-panel {
+			@include col(4);
 
-			.question {
-				@include col(6);
-				@include breakpoint($touch) { @include col(12); }
-			}			
+			@include breakpoint($touch) {
+				@include col(12);
+			}
+
+			@include breakpoint($full-hd) {
+				padding-left: 1.7rem;
+				padding-right: 1.7rem;
+			}
 		}
 	}
-	
+
+	&[data-col="4"] {
+		.pricing-panel {
+			@include col(3);
+		}
+	}
+
+}
+
+// Pricing FAQs
+.pricing-faqs {
+	.questions-list {
+		@include row();
+
+		.question {
+			@include col(6);
+
+			@include breakpoint($touch) {
+				@include col(12);
+			}
+		}
+	}
+}
+
 
 /** == CUSTOM GRID == */
 /** ================================================== */
 
-	/** Row */
-	.row {
-		@include row();
+/** Row */
+.row {
+	@include row();
 
-		/** Alignmnet */
-		&.align-left {
-			justify-content: flex-start;
-		}
-		&.align-right {
-			justify-content: flex-end;
-		}
-		&.align-center {
-			justify-content: center;
-		}
-		&.align-justified {
-			justify-content: space-between;
-		}
+	/** Alignmnet */
+	&.align-left {
+		justify-content: flex-start;
+	}
 
-		/** General */
-		.column { margin-bottom: 30px; }
-		.last-column { padding-right: 0 !important; }
+	&.align-right {
+		justify-content: flex-end;
+	}
 
-		/** Mutiple Columns */
-		@for $i from 1 through 12 {
-			.column[data-col="#{$i}"] {
-				@include col($i);
-				@include breakpoint($mobile) { @include col(12); padding: 0; }
+	&.align-center {
+		justify-content: center;
+	}
+
+	&.align-justified {
+		justify-content: space-between;
+	}
+
+	/** General */
+	.column {
+		margin-bottom: 30px;
+	}
+
+	.last-column {
+		padding-right: 0 !important;
+	}
+
+	/** Mutiple Columns */
+	@for $i from 1 through 12 {
+		.column[data-col="#{$i}"] {
+			@include col($i);
+
+			@include breakpoint($mobile) {
+				@include col(12);
+				padding: 0;
 			}
 		}
-
 	}
+
+}
