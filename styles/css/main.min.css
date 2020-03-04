@@ -2891,12 +2891,25 @@ body.has-hero #inner-body{margin-top:0 !important}
 .has-not-sidebar,body.single-company #site-body #inner-body.has-not-sidebar{padding-top:0 !important}
 .page-content{padding-top:0 !important}
 body:not(.noscroll):before{content:none !important}
+#site-body #inner-body.has-full-width .page-header{margin-left:0 !important}
+header .seperator{background-color:white !important}
+header #search-module .submit-field:before{top:20px;right:20px}
+#site-body{margin-top:50px !important}
+.home #site-body{margin-top:0 !important}
+.post-type-archive-job_listing #site-body{margin-top:0 !important}
+.page-id-48 footer{padding-top:0 !important}
+.page-id-48 footer .footer-map{padding-bottom:30px}
+.page-id-48 footer .footer-map iframe{width:100%;height:300px}
 .submit-field{position:relative}
-.submit-field:before{position:absolute;content:url("../../images/venari-light-arrow.svg");top:8px;right:20px}
+.submit-field:hover:before{transform:translateX(20px)}
+.submit-field:before{position:absolute;content:url("../../images/venari-light-arrow.svg");top:8px;right:40px;transition:all .75s}
 .search-form .submit-field{position:relative}
-.search-form .submit-field:before{position:absolute;content:url("../../images/venari-light-arrow.svg");top:-5px;right:20px}
+.search-form .submit-field:before{position:absolute;content:url("../../images/venari-light-arrow.svg");top:-5px;right:40px}
+input[type="text"]:focus:not([name="search_keywords_dummy"]):not([name="search_location_dummy"]){border:1px solid #000;box-shadow:0 0 0 1px #000}
+.home .fl-node-5e4449d15d24a{margin-bottom:0 !important}
+.fl-node-5e4449d15d24a{margin-bottom:0}
 .fl-node-5e4449d15d24a .fl-row-content{padding-left:0 !important;padding-right:0 !important}
-.fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]{margin:0 !important;border-radius:0;border:none !important;box-shadow:-1px -1px 2px 1px #f3f3f3;-ms-flex:1 1 16.66% !important;flex:1 1 16.66% !important}
+.fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]{margin:0 !important;border-radius:0;border:none !important;box-shadow:-1px -1px 1px 1px #f3f3f3;-ms-flex:1 1 16.66% !important;flex:1 1 16.66% !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:first-of-type{border-bottom:5px solid #009995 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:nth-of-type(2){border-bottom:5px solid #7e3f91 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:nth-of-type(3){border-bottom:5px solid #fed100 !important}
@@ -2914,6 +2927,28 @@ body:not(.noscroll):before{content:none !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"] a .icon{width:40px}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"] a .count{display:none}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"] a:hover .icon{opacity:.7}
+.term-business_services [class^="taxonomy-term-"]:first-of-type{background:#009995 !important}
+.term-energy [class^="taxonomy-term-"]:nth-of-type(2){background:#7e3f91 !important}
+.term-engineering [class^="taxonomy-term-"]:nth-of-type(3){background:#fed100 !important}
+.term-technology [class^="taxonomy-term-"]:nth-of-type(4){background:#d00e48 !important}
+.term-life-sciences [class^="taxonomy-term-"]:nth-of-type(5){background:#0075be !important}
+.term-manufacturing [class^="taxonomy-term-"]:nth-of-type(6){background:#e5b634 !important}
+.tax-job_listing_category .page-sidebar .secondary{font-size:16px}
+.page-hero::after{opacity:1 !important}
+.page-hero .inner{-ms-flex-direction:column !important;flex-direction:column !important;-ms-flex-align:start;align-items:flex-start}
+.page-hero .inner .hero-title h1{padding-right:0 !important}
+.page-hero .search-form{max-width:100% !important;width:100% !important}
+.page-hero .search-form .inner{width:100% !important}
+.page-hero .search-form .inner form{width:100%}
+ul.job_listings li.job_listing.job_listing:hover{border:1px solid #000 !important;box-shadow:0 0 0 1px #000}
+ul.job_listings li.job_listing.job_listing.job_position_featured{border:1px solid #000 !important;box-shadow:0 0 0 1px #000}
+ul.job_listings li.job_listing.job_listing.job_position_featured:before{border-top:48px solid #000}
+ul.job_listings li.job_listing.job_listing.job_position_featured:hover{border:1px solid #000 !important;box-shadow:0 0 0 1px #000}
+ul.job_listings li.job_listing.job_listing.job_position_featured:hover:before{border-top:48px solid #00000090}
+ul.job_listings li.job_listing.job_listing ul.meta li.job-type.full-time,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.part-time,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.internship,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.freelance,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.temporary{color:#000 !important}
+body.single-job_listing #application-deadline{margin-left:0 !important}
+body.single-job_listing .page-sidebar .profile-module{display:none}
+#site-notice{background:#fff !important;border:5px solid #000}
 @media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:"Flaticon";src:url("../../fonts/Flaticon.svg#Flaticon") format("svg")}
 }@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){body.single-job_listing .page-content .entry-details .entry-meta .meta-link,body.single-resume .page-content .entry-details .entry-meta .meta-link,body.single-company .page-content .entry-details .entry-meta .meta-link{top:-40px}
 body.single-job_listing .page-content .entry-details .entry-tags ul.tags-list li a .icon .svg-icon,body.single-resume .page-content .entry-details .entry-tags ul.tags-list li a .icon .svg-icon,body.single-company .page-content .entry-details .entry-tags ul.tags-list li a .icon .svg-icon{max-height:45px}
@@ -3297,6 +3332,7 @@ table.jmpack-my-packages-main-table tbody tr.jmpack-package-details table.jmpack
 #registration-notice .popup-body .desc,#login-notice .popup-body .desc{padding-right:0}
 .demo-notice .close{top:15px;right:10px}
 .demo-notice .container .text,.demo-notice #site-body #inner-body.has-sidebar .text,#site-body .demo-notice #inner-body.has-sidebar .text,.demo-notice #site-body #inner-body.has-full-width .text,#site-body .demo-notice #inner-body.has-full-width .text,.demo-notice #site-body #inner-body.has-standard .text,#site-body .demo-notice #inner-body.has-standard .text,.demo-notice .page-hero .inner .text,.page-hero .demo-notice .inner .text,.demo-notice #site-body #inner-body.has-full-width .fl-builder-content .fl-row-fixed-width.fl-row .text,#site-body #inner-body.has-full-width .fl-builder-content .demo-notice .fl-row-fixed-width.fl-row .text,.demo-notice #site-body #inner-body.has-full-width .fl-builder-content .fl-row-fixed-width.fl-row .fl-row-content-wrap .fl-row-content.fl-row-fixed-width .text,#site-body #inner-body.has-full-width .fl-builder-content .fl-row-fixed-width.fl-row .fl-row-content-wrap .demo-notice .fl-row-content.fl-row-fixed-width .text,.demo-notice #site-body #inner-body.has-full-width .fl-builder-content .fl-row-full-width.fl-row .fl-row-content-wrap .fl-row-content.fl-row-fixed-width .text,#site-body #inner-body.has-full-width .fl-builder-content .fl-row-full-width.fl-row .fl-row-content-wrap .demo-notice .fl-row-content.fl-row-fixed-width .text{-ms-flex-align:start;align-items:flex-start;margin-bottom:15px}
+.page-hero .search-form{display:-ms-flexbox !important;display:flex !important}
 }@media only screen and (min-width:41rem){.col-sm{-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%;padding:1rem}
 .col-sm-1{-ms-flex-preferred-size:8.3333333333%;flex-basis:8.3333333333%;max-width:8.3333333333%;padding:1rem}
 .col-sm-offset-1{margin-left:8.3333333333%}
@@ -3480,6 +3516,12 @@ table.jmpack-my-packages-main-table tbody tr.jmpack-package-details table.jmpack
 }@media(min-width:641px){.posts-grid[data-layout="magazine"] .post:not(:first-of-type):nth-last-of-type(-n+2){margin-bottom:0}
 .taxonomies-popup ul.taxonomy-terms:before{position:absolute;top:0;bottom:30px;left:50%;content:'';width:1px;background:#e9e9e9}
 .module-wrapper.taxonomies-grid .inner [class^="taxonomy-term-"]:nth-child(3){margin-right:0}
+}@media(min-width:1200px){.page-hero .inner .hero-title{max-width:80% !important;width:80% !important}
+.page-hero .search-form{-ms-flex-direction:row;flex-direction:row}
+.page-hero .search-form .inner form>*{-ms-flex:0 0 calc(33.33% - 20px) !important;flex:0 0 calc(33.33% - 20px) !important}
+.page-hero .search-form .inner form{-ms-flex-direction:row;flex-direction:row}
+.page-hero .search-form .inner form .sortable{-ms-flex-direction:row !important;flex-direction:row !important}
+.page-hero .search-form .inner form .sortable p.form-field{height:75px !important;padding:6px 25px !important}
 }@media(min-width:1201px){#site-header #site-menu ul.icons-nav li.hamburger{display:none}
 .posts-grid[data-layout="magazine"] .post:not(:first-of-type) .entry-content .entry-header .title{margin-bottom:15px}
 #dashboard-container #dashboard-icons-nav li.hamburger{display:none}
@@ -3510,10 +3552,13 @@ body.single-job_listing .page-content .entry-details .entry-header .left,body.si
 #compact-container #compact-sidebar{width:470px}
 #compact-container #compact-body{padding:210px 120px;max-width:1140px}
 #map-wrapper{height:550px}
+}@media(max-width:1200px){.page-hero .inner .hero-title h1{font-size:40px !important}
 }@media all and (max-width:900px){.mfp-arrow{transform:scale(0.75)}
 .mfp-arrow-left{transform-origin:0 0}
 .mfp-arrow-right{transform-origin:100%}
 .mfp-container{padding-left:6px;padding-right:6px}
+}@media(max-width:900px){.page-hero .inner .hero-title{max-width:100% !important;width:100% !important}
+.page-hero .inner .hero-title h1{font-size:30px !important}
 }@media screen and (max-width:800px) and (orientation:landscape),screen and (max-height:300px){.mfp-img-mobile .mfp-image-holder{padding-left:0;padding-right:0}
 .mfp-img-mobile img.mfp-img{padding:0}
 .mfp-img-mobile .mfp-figure:after{top:0;bottom:0}
