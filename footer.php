@@ -7,9 +7,17 @@
     $footer_text_widget_2_content = get_theme_mod('capstone_footer_text_widget_2_content');
     
     $footer_copyright_text = get_theme_mod('capstone_footer_copyright_text', __('Made with <i class="material-icons">favorite_border</i> by wpscouts - &copy; All rights reserved', 'capstone'));
+
+    global $post;
 ?>
 
                 <footer id="site-footer">
+            <?php
+                if( $post->ID == 48) { ?>
+                    <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4965.644745747051!2d-0.17819787949997443!3d51.516474699999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab2e6f14fd3%3A0xf229bdfe6e99891c!2s139%20Praed%20St%2C%20Paddington%2C%20London%20W2%201RL!5e0!3m2!1sen!2suk!4v1582407321435!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                <?php } ?>
 
                     <div class="container">
                         <?php do_action('capstone_footer_container_start'); ?>
