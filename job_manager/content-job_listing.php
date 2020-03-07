@@ -20,6 +20,7 @@
 	global $post;
 	$job_excerpt = get_field('_job_excerpt');
 	$auto_job_excerpt = get_theme_mod('capstone_jobs_enable_auto_excerpt', false);
+	$job_salary = get_post_meta( $post->ID, '_job_salary', true );
 ?>
 
 <li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_lat ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_long ); ?>" data-listing-id="<?php echo esc_attr(get_the_ID()); ?>" data-title="<?php echo esc_attr(get_the_title()); ?>">
@@ -29,9 +30,15 @@
 		</div>
 		<div class="position">
 			<h3><?php wpjm_the_job_title(); ?></h3>
+
 			<div class="company">
-				<?php the_company_name( '<strong>', '</strong> ' ); ?>
-				<?php the_company_tagline( '<span class="tagline">', '</span>' ); ?>
+				<?php if($job_salary) : 
+					echo esc_html($job_salary);
+					the_company_tagline( '<span class="tagline">', '</span>' ); 
+				else :
+					the_company_name( '<strong>', '</strong> ' );
+					the_company_tagline( '<span class="tagline">', '</span>' );
+				endif; ?>
 			</div>
 		</div>
 		<div class="location">
