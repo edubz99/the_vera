@@ -50,26 +50,48 @@ class Capstone_WP_Job_Manager_Fields {
     function frontend_job_salary_field( $fields ) {
         $fields['job']['job_salary'] = array(
             'label'       => __( 'Salary', 'capstone' ),
-            'type'        => 'select',
+            'type'        => 'textarea',
             'required'    => false,
-            'options'     => apply_filters( 'capstone_job_salary_options', array('Not Disclosed', 
-            '£0 - £100pd', '£100 - £200pd', '£200 - £300pd', '£300 - £400pd', '£400 - £500pd', '£500 - £750pd', '£750 - £1000pd', '£1000 - £1250pd', '£1250 - £1500pd', '£1500 - £1750pd', '£1750 - £2000pd','£10,000 - £20,000' => '£10,000 - £20,000', '£20,000 - £30,000' => '£20,000 - £30,000', '£30,000 - £40,000' => '£30,000 - £40,000', '£40,000 - £50,000' => '£40,000 - £50,000', '£50,000 - £60,000' => '£50,000 - £60,000', '£60,000 - £70,000' => '£60,000 - £70,000', '£70,000 - £80,000' => '£70,000 - £80,000', '£80,000 - £90,000' => '£80,000 - £90,000', '£90,000 - £100,000' => '£90,000 - £100,000', '£100000+' => '£100,000 - Higher') ),
-            'priority'    => 7
+            'description' => __( 'Define job salary value which will appear in job listing view.', 'capstone' ),
+            'priority'    => 8
         );
         return $fields;
     }
 
     // add field in "back-end"
-    function admin_job_salary_field( $fields ) {
+    function  admin_job_salary_field( $fields ) {
         $fields['_job_salary'] = array(
           'label'       => __( 'Salary', 'capstone' ),
-          'type'        => 'select',
-          'options'     => apply_filters( 'capstone_job_salary_options', array('Not Disclosed', 
-          '£0 - £100pd', '£100 - £200pd', '£200 - £300pd', '£300 - £400pd', '£400 - £500pd', '£500 - £750pd', '£750 - £1000pd', '£1000 - £1250pd', '£1250 - £1500pd', '£1500 - £1750pd', '£1750 - £2000pd','£10,000 - £20,000' => '£10,000 - £20,000', '£20,000 - £30,000' => '£20,000 - £30,000', '£30,000 - £40,000' => '£30,000 - £40,000', '£40,000 - £50,000' => '£40,000 - £50,000', '£50,000 - £60,000' => '£50,000 - £60,000', '£60,000 - £70,000' => '£60,000 - £70,000', '£70,000 - £80,000' => '£70,000 - £80,000', '£80,000 - £90,000' => '£80,000 - £90,000', '£90,000 - £100,000' => '£90,000 - £100,000', '£100000+' => '£100,000 - Higher') ),
-          'description' => ''
+          'type'        => 'textarea',
+          'placeholder' => __( 'Define job salary value which will appear in job listing view.', 'capstone' ),
         );
         return $fields;
     }
+
+
+    // function frontend_job_salary_field( $fields ) {
+    //     $fields['job']['job_salary'] = array(
+    //         'label'       => __( 'Salary', 'capstone' ),
+    //         'type'        => 'select',
+    //         'required'    => false,
+    //         'options'     => apply_filters( 'capstone_job_salary_options', array('Not Disclosed', 
+    //         '£0 - £100pd'  => '£0 - £100pd' , '£100 - £200pd' => '£100 - £200pd', '£200 - £300pd' => '£200 - £300pd', '£300 - £400pd' => '£300 - £400pd', '£400 - £500pd' => '£400 - £500pd','£500 - £750pd' => '£500 - £750pd', '£750 - £1000pd' => '£750 - £1000pd', '£1000 - £1250pd' => '£1000 - £1250pd', '£1250 - £1500pd' => '£1250 - £1500pd', '£1500 - £1750pd' => '£1500 - £1750pd', '£1750 - £2000pd' => '£1750 - £2000pd','£10,000 - £20,000' => '£10,000 - £20,000', '£20,000 - £30,000' => '£20,000 - £30,000', '£30,000 - £40,000' => '£30,000 - £40,000', '£40,000 - £50,000' => '£40,000 - £50,000', '£50,000 - £60,000' => '£50,000 - £60,000', '£60,000 - £70,000' => '£60,000 - £70,000', '£70,000 - £80,000' => '£70,000 - £80,000', '£80,000 - £90,000' => '£80,000 - £90,000', '£90,000 - £100,000' => '£90,000 - £100,000', '£100000+' => '£100,000 - Higher') ),
+    //         'priority'    => 7
+    //     );
+    //     return $fields;
+    // }
+
+    // // add field in "back-end"
+    // function admin_job_salary_field( $fields ) {
+    //     $fields['_job_salary'] = array(
+    //       'label'       => __( 'Salary', 'capstone' ),
+    //       'type'        => 'select',
+    //       'options'     => apply_filters( 'capstone_job_salary_options', array('Not Disclosed', 
+    //       '£0 - £100pd'  => '£0 - £100pd' , '£100 - £200pd' => '£100 - £200pd', '£200 - £300pd' => '£200 - £300pd', '£300 - £400pd' => '£300 - £400pd', '£400 - £500pd' => '£400 - £500pd','£500 - £750pd' => '£500 - £750pd', '£750 - £1000pd' => '£750 - £1000pd', '£1000 - £1250pd' => '£1000 - £1250pd', '£1250 - £1500pd' => '£1250 - £1500pd', '£1500 - £1750pd' => '£1500 - £1750pd', '£1750 - £2000pd' => '£1750 - £2000pd','£10,000 - £20,000' => '£10,000 - £20,000', '£20,000 - £30,000' => '£20,000 - £30,000', '£30,000 - £40,000' => '£30,000 - £40,000', '£40,000 - £50,000' => '£40,000 - £50,000', '£50,000 - £60,000' => '£50,000 - £60,000', '£60,000 - £70,000' => '£60,000 - £70,000', '£70,000 - £80,000' => '£70,000 - £80,000', '£80,000 - £90,000' => '£80,000 - £90,000', '£90,000 - £100,000' => '£90,000 - £100,000', '£100000+' => '£100,000 - Higher') ),
+    //       'description' => ''
+    //     );
+    //     return $fields;
+    // }
 
 
     #-------------------------------------------------------------------------------#
@@ -82,7 +104,7 @@ class Capstone_WP_Job_Manager_Fields {
             'label'       => __( 'Career Level', 'capstone' ),
             'type'        => 'select',
             'required'    => false,
-            'options'     => apply_filters( 'capstone_job_career_level_options', array('', 'Intern' => 'Intern', 'Assistant' => 'Assistant', 'Administrator' => 'Administrator', 'Technician' => 'Technician', 'Tester' => 'Tester','Engineer' => 'Engineer', 'Sales' => 'Sales', 'Internal Sales' => 'Internal Sales', 'Senior Sales' => 'Senior Sales', 'Supervisor' => 'Supervisor', 'Manager' => 'Manager', 'Account Manager' => 'Account Manager', 'Senior Manager' => 'Senior Manager', 'Director' => 'Director', 'Executive' => 'Executive') ),
+            'options'     => apply_filters( 'capstone_job_career_level_options', array('',  'Account Manager' => 'Account Manager', 'Administrator' => 'Administrator', 'Analyst' => 'Analyst', 'Assistant' => 'Assistant', 'Architect' => 'Architect', 'Business Development Manager' => 'Business Development Manager', 'Designer' => 'Designer', 'Director' => 'Director', 'Engineer' => 'Engineer', 'Entry Level' => 'Entry Level', 'Executive' => 'Executive', 'Graduate' => 'Graduate', 'Intern' => 'Intern', 'Internal Sales' => 'Internal Sales', 'Manager' => 'Manager', 'Mid-Level' => 'Mid-Level','Mid-Manager' => 'Mid-Manager', 'Marketing' => 'Marketing', 'Operations' => 'Operations', 'Sales' => 'Sales','Supervisor' => 'Supervisor', 'Seasoned Professional' => 'Seasoned Professional', 'Senior Manager' => 'Senior Manager', 'Senior Sales' => 'Senior Sales', 'Team Leader' => 'Team Leader', 'Technician' => 'Technician', 'Tester' => 'Tester', 'Warehousing' => 'Warehousing') ),
             'priority'    => 7
         );
         return $fields;
@@ -93,7 +115,7 @@ class Capstone_WP_Job_Manager_Fields {
         $fields['_job_career_level'] = array(
           'label'       => __( 'Career Level', 'capstone' ),
           'type'        => 'select',
-          'options'     =>  apply_filters( 'capstone_job_career_level_options', array('', 'Intern' => 'Intern', 'Assistant' => 'Assistant', 'Administrator' => 'Administrator', 'Technician' => 'Technician', 'Tester' => 'Tester','Engineer' => 'Engineer', 'Sales' => 'Sales', 'Internal Sales' => 'Internal Sales', 'Senior Sales' => 'Senior Sales', 'Supervisor' => 'Supervisor', 'Manager' => 'Manager', 'Account Manager' => 'Account Manager', 'Senior Manager' => 'Senior Manager', 'Director' => 'Director', 'Executive' => 'Executive') ),
+          'options'     =>  apply_filters( 'capstone_job_career_level_options', array('',  'Account Manager' => 'Account Manager', 'Administrator' => 'Administrator', 'Analyst' => 'Analyst', 'Assistant' => 'Assistant', 'Architect' => 'Architect', 'Business Development Manager' => 'Business Development Manager', 'Designer' => 'Designer', 'Director' => 'Director', 'Engineer' => 'Engineer', 'Entry Level' => 'Entry Level', 'Executive' => 'Executive', 'Graduate' => 'Graduate', 'Intern' => 'Intern', 'Internal Sales' => 'Internal Sales', 'Manager' => 'Manager', 'Mid-Level' => 'Mid-Level','Mid-Manager' => 'Mid-Manager', 'Marketing' => 'Marketing', 'Operations' => 'Operations', 'Sales' => 'Sales','Supervisor' => 'Supervisor', 'Seasoned Professional' => 'Seasoned Professional', 'Senior Manager' => 'Senior Manager', 'Senior Sales' => 'Senior Sales', 'Team Leader' => 'Team Leader', 'Technician' => 'Technician', 'Tester' => 'Tester', 'Warehousing' => 'Warehousing') ),
           'description' => ''
         );
         return $fields;
@@ -138,7 +160,7 @@ class Capstone_WP_Job_Manager_Fields {
             'label'       => __( 'Qualification', 'capstone' ),
             'type'        => 'select',
             'required'    => false,
-            'options'     => apply_filters( 'capstone_job_qualification_options', array('No Qualification', 'Associate Degree' => 'Associate Degree', 'Bachelor Degree' => 'Bachelor Degree', 'Master Degree' => 'Master Degree', 'Doctorate Degree' => 'Doctorate Degree', 'Certificate' => 'Certificate', 'Diploma' => 'Diploma') ),
+            'options'     => apply_filters( 'capstone_job_qualification_options', array('No Qualification',  'PhD' => 'PhD', 'Masters Degree or Higher' => 'Masters Degree or Higher', 'University Degree' => 'University Degree','Senior Business or Technical Qualification' => 'Senior Business or Technical Qualification', 'HND / HNC' => 'HND / HNC', 'Diploma' => 'Diploma', 'BTEC' => 'BTEC', 'City & Guilds' => 'City & Guilds', 'A-Levels / Advanced GNVQ' => 'A-Levels / Advanced GNVQ', 'GCSE / GNVQ / O-Levels' => 'GCSE / GNVQ / O-Levels') ),
             'priority'    => 7
         );
         return $fields;
@@ -149,7 +171,7 @@ class Capstone_WP_Job_Manager_Fields {
         $fields['_job_qualification'] = array(
           'label'       => __( 'Qualification', 'capstone' ),
           'type'        => 'select',
-          'options'     => apply_filters( 'capstone_job_qualification_options', array('No Qualification', 'Associate Degree' => 'Associate Degree', 'Bachelor Degree' => 'Bachelor Degree', 'Master Degree' => 'Master Degree', 'Doctorate Degree' => 'Doctorate Degree', 'Certificate' => 'Certificate', 'Diploma' => 'Diploma') ),
+          'options'     => apply_filters( 'capstone_job_qualification_options', array('No Qualification', 'PhD' => 'PhD', 'Masters Degree or Higher' => 'Masters Degree or Higher', 'University Degree' => 'University Degree','Senior Business or Technical Qualification' => 'Senior Business or Technical Qualification', 'HND / HNC' => 'HND / HNC', 'Diploma' => 'Diploma', 'BTEC' => 'BTEC', 'City & Guilds' => 'City & Guilds', 'A-Levels / Advanced GNVQ' => 'A-Levels / Advanced GNVQ', 'GCSE / GNVQ / O-Levels' => 'GCSE / GNVQ / O-Levels') ),
           'description' => ''
         );
         return $fields;
