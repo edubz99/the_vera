@@ -2900,6 +2900,9 @@ header #search-module .submit-field:before{top:20px;right:20px}
 .page-id-48 footer{padding-top:0 !important}
 .page-id-48 footer .footer-map{padding-bottom:30px}
 .page-id-48 footer .footer-map iframe{width:100%;height:300px}
+.module-wrapper.listing-spotlight .listing-entry{border:1px solid #e1e1e1 !important}
+.module-wrapper.listing-spotlight .listing-entry .desc{border-right:none !important;border-left:none !important}
+.module-wrapper.listing-spotlight .listing-entry .media .image{width:inherit !important;margin:auto !important;max-height:150px;padding:20px 0}
 .submit-field{position:relative}
 .submit-field:hover:before{transform:translateX(20px)}
 .submit-field:before{position:absolute;content:url("../../images/venari-light-arrow.svg");top:8px;right:40px;transition:all .75s}
@@ -2915,14 +2918,14 @@ input[type="text"]:focus:not([name="search_keywords_dummy"]):not([name="search_l
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:nth-of-type(3){border-bottom:5px solid #fed100 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:nth-of-type(4){border-bottom:5px solid #d00e48 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:nth-of-type(5){border-bottom:5px solid #0075be !important}
-.fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:last-of-type{border-bottom:5px solid #e5b634 !important}
+.fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:last-of-type{border-bottom:5px solid #4b7a47 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover{box-shadow:0 0 0 1px #a8a4db}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:first-of-type{background:#009995 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:nth-of-type(2){background:#7e3f91 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:nth-of-type(3){background:#fed100 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:nth-of-type(4){background:#d00e48 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:nth-of-type(5){background:#0075be !important}
-.fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:last-of-type{background:#e5b634 !important}
+.fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"]:hover:last-of-type{background:#4b7a47 !important}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"] a{height:120px}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"] a .icon{width:40px}
 .fl-node-5e4449d15d24a .fl-row-content .full-width-categories .inner [class^="taxonomy-term-"] a .count{display:none}
@@ -2932,7 +2935,8 @@ input[type="text"]:focus:not([name="search_keywords_dummy"]):not([name="search_l
 .term-engineering [class^="taxonomy-term-"]:nth-of-type(3){background:#fed100 !important}
 .term-technology [class^="taxonomy-term-"]:nth-of-type(4){background:#d00e48 !important}
 .term-life-sciences [class^="taxonomy-term-"]:nth-of-type(5){background:#0075be !important}
-.term-manufacturing [class^="taxonomy-term-"]:nth-of-type(6){background:#e5b634 !important}
+.term-manufacturing [class^="taxonomy-term-"]:nth-of-type(6){background:#4b7a47 !important}
+.tax-job_listing_category .page-sidebar{padding-right:0 !important}
 .tax-job_listing_category .page-sidebar .secondary{font-size:16px}
 .page-hero::after{opacity:1 !important}
 .page-hero .inner{-ms-flex-direction:column !important;flex-direction:column !important;-ms-flex-align:start;align-items:flex-start}
@@ -2945,6 +2949,7 @@ ul.job_listings li.job_listing.job_listing.job_position_featured{border:1px soli
 ul.job_listings li.job_listing.job_listing.job_position_featured:before{border-top:48px solid #000}
 ul.job_listings li.job_listing.job_listing.job_position_featured:hover{border:1px solid #000 !important;box-shadow:0 0 0 1px #000}
 ul.job_listings li.job_listing.job_listing.job_position_featured:hover:before{border-top:48px solid #00000090}
+ul.job_listings li.job_listing.job_listing ul.meta li.job-type{color:#000 !important}
 ul.job_listings li.job_listing.job_listing ul.meta li.job-type.full-time,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.part-time,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.internship,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.freelance,ul.job_listings li.job_listing.job_listing ul.meta li.job-type.temporary{color:#000 !important}
 body.single-job_listing #application-deadline{margin-left:0 !important}
 body.single-job_listing .page-sidebar .profile-module{display:none}
@@ -3552,7 +3557,8 @@ body.single-job_listing .page-content .entry-details .entry-header .left,body.si
 #compact-container #compact-sidebar{width:470px}
 #compact-container #compact-body{padding:210px 120px;max-width:1140px}
 #map-wrapper{height:550px}
-}@media(max-width:1200px){.page-hero .inner .hero-title h1{font-size:40px !important}
+}@media(max-width:1200px){.fl-builder-content .fl-row-fixed-width.fl-row .fl-row-content-wrap .fl-row-content .fl-node-5bbd03a73d032{display:-ms-flexbox !important;display:flex !important;-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}
+.page-hero .inner .hero-title h1{font-size:40px !important}
 }@media all and (max-width:900px){.mfp-arrow{transform:scale(0.75)}
 .mfp-arrow-left{transform-origin:0 0}
 .mfp-arrow-right{transform-origin:100%}
